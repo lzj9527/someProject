@@ -1,0 +1,252 @@
+*{color:#737373;}
+input {
+    outline: none;
+}
+
+a{ text-decoration: none; }
+
+.icon-back-act-my {
+    width: 6em;
+    height: 1.4em;
+    background-image: url(../images/icon-back.png)
+}
+
+.icon-back-my {
+    width: 6em;
+    height: 1.4em;
+    background-image: url(../images/icon-back.png)
+}
+
+#btnBack {
+    width: 6em;
+    height: 3em;
+    background-image: url(../images/bt_back.png)
+}
+
+.icon-block-act {
+    width: 2em;
+    height: 1.6em;
+    background-image: url(../images/bt_blocklist.png)
+}
+
+.icon-block {
+    width: 2em;
+    height: 1.6em;
+    background-image: url(../images/1_btn_Tile_normal.png)
+}
+
+.icon-list-act {
+    width: 2em;
+    height: 1.6em;
+    background-image: url(../images/bt_list_list.png)
+}
+
+.icon-list {
+    width: 2em;
+    height: 1.6em;
+    background-image: url(../images/1_btn_roll_selected.png)
+}
+
+.icon-search-act-my {
+    width: 2em;
+    height: 1.6em;
+    background-image: url(../images/bt_seach_r.png)
+}
+
+.icon-search-my {
+    width: 2em;
+    height: 1.6em;
+    background-image: url(../images/1_btn_search.png)
+}
+
+.ub-search-input-my {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.umar-r1 {
+    margin-right: 1em;
+}
+
+.plist {
+    min-height: 14em;
+    
+}
+
+.pimg {
+    height: 8em;
+    width: 8em;
+    margin: 0 auto;
+    /*margin-top: 2em*/
+}
+
+.plistimg0902 {
+  
+ 
+    width:100%;
+    padding-bottom:100%;
+    height:0px;
+    margin: 0 auto;
+    /*margin-top: 2em*/
+}
+
+
+
+.pimg-ani {
+    margin: 0 auto;
+    height: 10em;
+    width: 100%;
+}
+
+.ub-p-new {
+    background-image: url(../images/new.png);
+    width: 2.4em;
+    height: 2.4em;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.none-padding {
+    padding: 0 !important;
+}
+
+.bold {
+    font-weight:
+}
+
+#cartlist td {
+    vertical-align: middle;
+}
+
+.ubh-1{ height: 1em; }
+.ubh-2{ height: 2em; }
+.ubh-3{ height: 3em; }
+.ubh-4{ height: 4em; }
+.ubh-5{ height: 5em; }
+
+.op_num1_left{display: inline-block; width: 2em; background-color: #efefef; border-right:1px #dcdddd solid; padding:0.2em 0em; font-size: 1.2em  }
+.op_num1{display: inline-block; width: 2em; background-color: #efefef; padding:0.2em 0em; font-size: 1.2em  }
+.op_numd{display: inline-block;}
+.op_num1_right{display: inline-block; width: 2em; background-color: #efefef; border-left:1px #dcdddd solid; padding:0.2em 0em; font-size: 1.2em  }
+
+.op_num2_left{display: inline-block; width: 2em; background-color: #efefef; border-right:1px #dcdddd solid; padding:0.2em 0em; font-size: 1.2em  }
+.op_num2{display: inline-block; width: 2em; background-color: #efefef; padding:0.2em 0em; font-size: 1.2em  }
+.op_num2_right{display: inline-block; width: 2em; background-color: #efefef; border-left:1px #dcdddd solid; padding:0.2em 0em; font-size: 1.2em  }
+
+
+.tooltip-inner {
+    background-color: #737373;
+    color: #fff;
+    text-align: left;
+}
+
+.tooltip.top .tooltip-arrow {
+    border-top-color: #737373;
+}
+
+.tooltip.right .tooltip-arrow {
+    border-right-color: #737373;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #737373;
+}
+
+.tooltip.left .tooltip-arrow {
+    border-left-color: #737373;
+}
+
+
+.tabs .active{ border-bottom: 1px #f65959 solid; margin-bottom: -1px }
+.tabs a{text-align: center; text-decoration: none;}
+.tabs  div{ text-align: center; color:#737373 }
+.tabs .active div{color:#f65959}
+
+.noborder{ border:0 !important;}
+
+.btn-height{ height: 2.8em; }
+
+.size10{font-size: 12px !important;}
+.size12{font-size: 12px !important;}
+.size14{font-size: 14px !important;}
+.size16{font-size: 16px !important;}
+.size18{font-size: 18px !important;}
+
+.btcate {
+  width: 100%;
+}
+
+.btcate:after {
+  content: '';
+  display: block;
+  margin-top: 100%; /* margin 百分比相对父元素宽度计算 */
+}
+
+.selected-address{
+    border: 2px solid rgb(255, 137, 119) !important;
+    border-radius: 4px;
+}
+
+
+.catelist .swiper-slide {
+    padding: 0 7px;
+    width:auto;
+}
+.catelist .cutline {
+    padding: 0px;
+    width:auto;
+}
+
+@media screen and ( min-width: 212px){/*213px显示屏样式 LG Optimus One*/
+
+}
+@media screen and ( min-width: 319px){/*320px显示屏样式 苹果4/4S/5C/5S黑莓Z30 */
+
+}
+@media screen and ( min-width: 359px){/*360px显示屏样式 索尼Z1*/
+
+
+}
+
+@media screen and ( min-width: 375px){/*375px显示屏样式 iphone 6*/
+
+   .catelist .swiper-slide {
+    padding: 0 6px;
+    width:auto;
+
+}
+
+@media screen and ( min-width: 383px){/*384px显示屏样式 黑莓Z10 谷歌 Nexus 6 LG Optimus G*/
+
+}
+@media screen and ( min-width: 399px){/*399px显示屏样式 三星galaxyNote*/
+
+}
+
+
+
+@media screen and ( min-width: 414px){/*414px显示屏样式 苹果6plus*/
+
+   .catelist .swiper-slide {
+    padding: 0 7px;
+    width:auto;
+} 
+
+}
+@media screen and ( min-width: 423px){/*424px显示屏样式 LG 4X */
+
+}
+@media screen and ( min-width: 479px){/*480px显示屏样式 索尼MT27i Xperia sola*/
+
+}
+@media screen and ( min-width: 539px){/*640px显示屏样式 摩托罗拉Droid3/4/Razr Atrix 4g*/
+
+}
+@media screen and ( min-width: 639px){/*640px显示屏样式*/
+
+}
+@media screen and ( min-width: 640px){/*640px以上显示屏样式*/
+
+}

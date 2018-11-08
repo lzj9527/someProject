@@ -1,0 +1,828 @@
+<!doctype html>
+<html>
+<!-- 有分页版本 -->
+<head>
+    <title>列表</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- bootstrap start -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/font-awesome.min.css">
+    <script src="../static/js/jquery-3.0.0.js"></script>
+    <script src="../static/js/bootstrap-paginator.js"></script><!-- 分页插件 -->
+    <script src="../static/js/jquery.lazyload.js"></script>
+    <script type="text/javascript" src="../static/js/androidJSInterface.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!-- bootstrap end -->
+    <script src="../static/js/touch.js"></script>
+    <script src="../static/js/config.js"></script>
+    <script src="../static/js/function.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-box.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-base.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-color.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-control.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-icon.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-my.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/swiper.min.css">
+    <script src="../static/js/swiper.min.js"></script>
+
+    <style>
+        .pagination{
+            margin:0;
+        }
+        .pagination>li>a{
+            border:1px solid #b1001d;
+            color:#b1001d;
+        }
+        .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+            z-index: 2;
+            color: #fff;
+            cursor: default;
+            background-color: firebrick;
+            border-color: firebrick;
+        }
+        .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+            z-index: 3;
+            color: #b1001d;
+            background-color: #fff;
+            border-color: #b1001d;
+        }
+        .pagination li:nth-child(2) a{
+            border-radius:50%;
+        }
+        .pagination>.active>a{
+            border:1px solid #ccc;
+            background-color: #b1001d;
+            border-radius:10%;
+            margin:0 0.2rem;
+        }
+
+        .jumpTo,.jumpTo span{
+            font-size:0.66rem;
+        }
+
+    </style>
+
+</head>
+
+<body class="um-vp" ontouchstart>
+
+<div id="page_1" class="up ub" tabindex="0">
+    <div class="ub ub-fh">
+        <!-- <div id="menu" class="ub sc-bg" style="width: 7em;">
+            <div id="btlist" class="ub ub-ver uinn-t">
+                <div class="ub   bc-bg ub-ac ub-pc " style="height: 5em; width: 5em;  border-radius: 50%; margin:1em">头像</div>
+                <div id="btnCategory" class="ub  umar-t umar-b ub-ac ub-pc sc-btn" style="height: 7em; width: 7em;">分 类</div>
+                <div id="btCat" class="ub  umar-t umar-b ub-ac ub-pc " style="height: 7em; width: 7em;">购物车</div>
+                <div id="btSearch" class="ub  umar-t umar-b ub-ac ub-pc " style="height: 7em; width: 7em;">搜 索</div>
+            </div>
+        </div> -->
+        <div id="content" class="ub ub-f1">
+            <div class="ub ub-f1 ub-ver " id="list_box">
+                <div class="ub ub-ac uhide" id="list_header" style="height:4em">
+                    <div class="ub  ub-f1 ufr ub-pe">
+                        <div class="ub">
+                            <input name="keyword" type="text" placeholder="搜索" class="ub-search-input-my keywords">
+                        </div>
+                        <div class="ub umar-r1">
+                            <div class="ub ub-img icon-search-my submit" id="btnProSearch"></div>
+                        </div>
+                        <div class="ub umar-r1">
+                            <div class="ub ub-img icon-block" id="btnBlock"></div>
+                        </div>
+                        <div class="ub umar-r1">
+                            <div class="ub ub-img umar-r icon-list" id="btnList"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ub uinn umar-t umar-b catelist" style="overflow: hidden;">
+
+                </div>
+                <div class="ub uinn-tb umar-l umar-r ubt ubb bc-border-c3">
+                    <span class="uinn" style="line-height: 180%"> 筛选</span>
+                    <div class="select uba bc-border-d2  umar-r bc-text selcect_weight">
+                        <div class="text bc-text-c2" style="font-size:10px;">主石重量</div>
+                        <div class="icon bc-text-a1"></div>
+                        <select selectedindex="0" >
+                            <option value="0">不限</option>
+                            <option value="0-0.19">0.19 以下</option>
+                            <option value="0.2-0.29">0.2-0.29</option>
+                            <option value="0.3-0.39">0.3-0.39</option>
+                            <option value="0.4-0.49">0.4-0.49</option>
+                            <option value="0.5">0.5 以上</option>
+                        </select>
+                    </div>
+
+                    <div class="select uba bc-border-d2  umar-r  bc-text selcect_jingdu">
+                        <div class="text bc-text-c2" style="font-size:10px;">主石净度</div>
+                        <div class="icon bc-text-a1"></div>
+                        <select selectedindex="0" >
+                            <option value="">不限</option>
+                            <option value="VVS">VVS</option>
+                            <option value="VS">VS</option>
+                            <option value="SI">SI</option>
+                            <!--<option value="P1">P1</option>-->
+                            <option value="P">P</option>
+                        </select>
+                    </div>
+
+                    <div class="select uba bc-border-d2  bc-text umar-r selcect_color">
+                        <div class="text bc-text-c2" style="font-size:10px;">主石颜色</div>
+                        <div class="icon bc-text-a1"></div>
+                        <select selectedindex="0">
+                            <option value="">不限</option>
+                            <!--<option value="白色">白色</option>-->
+                            <!--<option value="无色">无色</option>-->
+                            <option value="D-E">D-E</option>
+                            <option value="F-G">F-G</option>
+                            <option value="H">H</option>
+                            <option value="I-J">I-J</option>
+                            <option value="K-L">K-L</option>
+                            <option value="M-N">M-N</option>
+                            <!--<option value="<L">&lt;L</option>-->
+                            <option value="<N">&lt;N</option>
+                        </select>
+                    </div>
+
+                    <div class="select uba bc-border-d2 bc-text umar-r selcect_price">
+                        <div class="text  bc-text-c2" style="font-size:10px;">价格</div>
+                        <div class="icon bc-text-a1"></div>
+                        <select selectedindex="0" style="-webkit-appearance:none">
+                            <option value="0">不限</option>
+                            <option value="0-2500">2500 以下</option>
+                            <option value="2500-5000">2500-5000</option>
+                            <option value="5000-8000">5000-8000</option>
+                            <option value="8000-12000">8000-12000</option>
+                            <option value="12000-20000">12000-20000</option>
+                            <option value="20000">20000 以上</option>
+
+                        </select>
+                    </div>
+
+                </div>
+                <div class="" id="list_body" >
+                    <div class="container ub-fh " style="margin-top:1.5em;" id="htmlBox">
+                        <!--
+                        <div class="col-md-3 col-sm-6 plist  ">
+                            <div class="ub-img ub-p-new"></div>
+                            <div class="ub ub-img pimg " style="background-image: url(../static/images/eg.png)"></div>
+                            <div class="ub ub-ver">
+                                <div class="ub ub-pc umar-t">18K白金钻石女戒</div>
+                                <div class="ub ub-pc" style="color: #ccc">共4件</div>
+                            </div>
+                        </div>
+                       -->
+                    </div>
+                </div>
+
+                <!-- 分页 -->
+                <div style="text-align: center;">
+                    <ul id="pagination">
+
+                    </ul>
+                </div>
+
+                <!-- 跳转 -->
+                <div style="text-align: center;margin-top:0.5rem;" class="jumpTo">
+                    <span >跳转到&nbsp;:</span>
+                    <input id="toNum" type="tel" style="width: 3em;text-align: center;">&nbsp;页
+                    <button id="GO" type="button" style="width: 3em; text-align: center;" value="GO !">GO!</button>&nbsp;共&nbsp;<strong id="allPage">00</strong>&nbsp;页
+                </div>
+                <br>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script>
+//    appUrl = "http://www.zsmtvip.com"; // 测试
+    var n = null;
+    var ccate = '';
+    var select_ccate='';
+
+    ccate = getUrlParam("ccate");
+    if (ccate != '' && isDefine(ccate)) {
+        select_ccate = '&ccate=' + ccate;
+    } else {
+        select_ccate = '';
+    }
+
+    if (ccate != '' && isDefine(ccate) && getUrlParam("ccate")=='isdiscount') {
+        select_ccate = '&isdiscount=1';
+    }
+
+    var select_price_value='';
+    var select_price_text='';
+
+    var select_weight_value='';
+    var select_weight_text='';
+
+    var select_color_value='';
+    var select_color_text='';
+
+    var select_jingdu_value='';
+    var select_jingdu_text='';
+
+    var select_price='';
+    var select_weight='';
+    var select_color='';
+    var select_jingdu='';
+
+    var psize = "30"; // 分页的每页显示数量
+
+//    var isEmployeeUploadUrl = "";
+//        if(!isDefine(getUrlParam('isEmployeeUpload'))){
+//            isEmployeeUploadUrl = "&isEmployeeUpload=0";
+////            showToast(isEmployeeUploadUrl)
+//        }else{
+//            isEmployeeUploadUrl = "&isEmployeeUpload=" + getUrlParam("isEmployeeUpload");
+////            showToast(isEmployeeUploadUrl);
+//        }
+//        console.log(isEmployeeUploadUrl);
+
+    $(function() {
+        //setFilterCondition('','','','');
+
+        //下拉
+        $('.selcect_price').find('select').change(function(){
+            select_price_value=$(this).children('option:selected').val();
+            select_price_text=$(this).children('option:selected').text();
+            if (select_price_value=='0'){
+                $('.selcect_price').find('.text').html('价格');
+            }else{
+                $('.selcect_price').find('.text').html(select_price_text);
+            }
+            select_price='&price='+select_price_value;
+            if (ccate != '' && isDefine(ccate)) {
+                select_ccate = '&ccate=' + ccate;
+            } else {
+                select_ccate = '';
+            }
+            // console.log('ccate'+ccate);
+
+            date_ajax(appUrl+'/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods_list&psize='+psize+select_ccate+select_price+select_weight+select_color+select_jingdu+isEmployeeUploadUrl);
+            // console.log('http://www.zsmtvip.com/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods_list&psize=9999'+select_ccate+select_price+select_weight+select_color+select_jingdu);
+            //传筛选条件
+            setFilterCondition(select_price_value,select_weight_value,select_color_value,select_jingdu_value);// isEmployeeUploadUrl 测试
+
+        });
+
+        $('.selcect_weight').find('select').change(function(){
+            select_weight_value=$(this).children('option:selected').val();
+            select_weight_text=$(this).children('option:selected').text();
+            if (select_weight_value=='0'){
+                $('.selcect_weight').find('.text').html('主石重量');
+            }else{
+                $('.selcect_weight').find('.text').html(select_weight_text);
+            }
+            select_weight='&weight='+select_weight_value;
+            if (ccate != '' && isDefine(ccate)) {
+                select_ccate = '&ccate=' + ccate;
+            } else {
+                select_ccate = '';
+            }
+
+            date_ajax(appUrl+'/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods_list&psize='+psize+select_ccate+select_price+select_weight+select_color+select_jingdu+isEmployeeUploadUrl);
+            // console.log('http://www.zsmtvip.com/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods_list&psize=9999'+select_ccate+select_price+select_weight+select_color+select_jingdu);
+
+            //传筛选条件
+            setFilterCondition(select_price_value,select_weight_value,select_color_value,select_jingdu_value); // 测试
+        });
+
+        $('.selcect_color').find('select').change(function(){
+            select_color_value=$(this).children('option:selected').val();
+            select_color_text=$(this).children('option:selected').text();
+            if (select_color_value==''){
+                $('.selcect_color').find('.text').html('主石颜色');
+            }else{
+                $('.selcect_color').find('.text').html(select_color_text.replace(/</,"&lt;"));
+            }
+            select_color='&color='+select_color_value;
+            if (ccate != '' && isDefine(ccate)) {
+                select_ccate = '&ccate=' + ccate;
+            } else {
+                select_ccate = '';
+            }
+
+            date_ajax(appUrl+'/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods_list&psize='+psize+select_ccate+select_price+select_weight+select_color+select_jingdu+isEmployeeUploadUrl);
+            //console.log(appUrl+'/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods_list&psize='+psize+select_ccate+select_price+select_weight+select_color+select_jingdu);
+
+            //传筛选条件
+            setFilterCondition(select_price_value,select_weight_value,select_color_value,select_jingdu_value);//测试
+        });
+
+        $('.selcect_jingdu').find('select').change(function(){
+            select_jingdu_value=$(this).children('option:selected').val();
+            select_jingdu_text=$(this).children('option:selected').text();
+            if (select_jingdu_value==''){
+                $('.selcect_jingdu').find('.text').html('主石净度');
+            }else{
+                $('.selcect_jingdu').find('.text').html(select_jingdu_text);
+            }
+
+            select_jingdu='&jingdu='+select_jingdu_value;
+            if (ccate != '' && isDefine(ccate)) {
+                select_ccate = '&ccate=' + ccate;
+            } else {
+                select_ccate = '';
+            }
+
+            date_ajax(appUrl+'/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods_list&psize='+psize+select_ccate+select_price+select_weight+select_color+select_jingdu+isEmployeeUploadUrl);
+            //console.log('http://www.zsmtvip.com/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods_list&psize=9999'+select_ccate+select_price+select_weight+select_color+select_jingdu);
+
+            //传筛选条件
+            setFilterCondition(select_price_value,select_weight_value,select_color_value,select_jingdu_value); // isEmployeeUploadUrl 测试
+        })
+    });
+
+    var weight_f = "0";
+    var price = "0";
+
+    var keywords = '';
+
+
+    if (getUrlParam("keywords") != '' && (isDefine(getUrlParam("keywords")))) {
+        keywords = '&keyword=' + getUrlParam("keywords");
+    } else {
+        keywords = '';
+    }
+
+    touch.on('#btnProSearch', 'touchstart  touchmove', function(ev) {
+        $("#btnProSearch").removeClass("icon-search-my");
+        $("#btnProSearch").addClass("icon-search-act-my");
+    });
+
+    touch.on('#btnProSearch', 'touchend', function(ev) {
+        $("#btnProSearch").removeClass("icon-search-act-my");
+        $("#btnProSearch").addClass("icon-search-my");
+    });
+
+    touch.on('#btnBlock', 'touchstart  touchmove', function(ev) {
+        $("#btnBlock").removeClass("icon-block");
+        $("#btnBlock").addClass("icon-block-act");
+    });
+
+    touch.on('#btnBlock', 'touchend', function(ev) {
+        $("#btnBlock").removeClass("icon-block-act");
+        $("#btnBlock").addClass("icon-block");
+        openWindow(6, '产品列表', appUrl+'/addons/ewei_shop/template/pad/default/shop/list.html','shop,list.html'); // 测试
+    });
+
+    touch.on('.weight_f', 'tap', function(ev) {
+        weight_f = $(this).data("values");
+        if (weight_f == "0") {
+            if (price == "0") {
+                date_ajax(appUrl+'/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods_list&psize='+ psize + keywords +  select_ccate +isEmployeeUploadUrl);
+            } else {
+                date_ajax(appUrl+'/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods_list&psize='+ psize + keywords +  select_ccate + '&price=' + price+isEmployeeUploadUrl);
+            }
+        } else {
+            if (price == "0") {
+                date_ajax(appUrl+'/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods_list&psize='+ psize + keywords +  select_ccate + '&weight_f=' + weight_f+isEmployeeUploadUrl);
+            } else {
+                date_ajax(appUrl+'/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods_list&psize='+ psize + keywords +  select_ccate + '&weight_f=' + weight_f + '&price=' + price+isEmployeeUploadUrl);
+            }
+        }
+    });
+
+    touch.on('.price', 'tap', function(ev) {
+        price = $(this).data("values");
+        if (weight_f == "0") {
+            if (price == "0") {
+                date_ajax(appUrl+'/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods_list&psize='+ psize + keywords +  select_ccate + isEmployeeUploadUrl);
+            } else {
+                date_ajax(appUrl+'/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods_list&psize='+ psize + keywords +  select_ccate + '&price=' + price+isEmployeeUploadUrl);
+            }
+        } else {
+            if (price == "0") {
+                date_ajax(appUrl+'/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods_list&psize='+ psize + keywords +  select_ccate + '&weight_f=' + weight_f+isEmployeeUploadUrl);
+            } else {
+                date_ajax(appUrl+'/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods_list&psize='+ psize + keywords +  select_ccate + '&weight_f=' + weight_f + '&price=' + price+isEmployeeUploadUrl);
+            }
+        }
+    });
+
+    var isEmployeeUpload = getUrlParam('isEmployeeUpload'); //isEmployeeUpload 0:不是内部上传 1:是内部上传
+    var isEmployeeUploadUrl;
+    var n = null;
+
+// 打包的时候不要取反 测试
+    if(isDefine(isEmployeeUpload)){
+        isEmployeeUploadUrl = "&isEmployeeUpload=0";
+        console.log('========0');
+//        showToast(isEmployeeUploadUrl);
+    }else{
+        isEmployeeUploadUrl = "&isEmployeeUpload=1";
+        console.log('========1');
+//        showToast(isEmployeeUploadUrl)
+    }
+    console.log(isEmployeeUpload); // 只执行一次
+    console.log(isEmployeeUploadUrl);
+
+    var init_url= appUrl+'/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods_list&psize='+ psize + select_ccate + isEmployeeUploadUrl;
+
+    if (keywords!==''){
+        init_url= appUrl+'/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=search'+keywords+isEmployeeUploadUrl;
+    }
+
+
+    $.ajax({
+        url: init_url,
+        type: "get",
+        dataType: 'jsonp',
+        success: function(data) {
+//            console.log(data.pageInfo); // 分页的参数
+            if (data.resultCode == "0") {
+                show_list(data);
+                if(data.datas.list === n){
+                    totalPage = 0;
+                }else{
+                    // 分页
+                    totalPage = data.pageInfo.totalPage;
+                }
+                $("#allPage").text(totalPage); // 总页数
+                tablePage(totalPage,data);
+// 无用代码，以警后人
+//                if (isDefine(getUrlParam("catename"))){
+//                    openWindow(18, getUrlParam("catename"),'');
+//                }else{
+//                    openWindow(18,'产品列表','');
+//                }
+            } else {
+                showToast(data.error);
+            }
+        },
+        error: function() {
+            //showToast("error!");
+        }
+    });
+
+    function product_onclick() {
+        //console.log('here');
+        touch.on('.btnProduct', 'tap', function(ev) { // 监听点击的每个产品
+            id = $(this).data("values");
+            var tag = $(this).data("tag");
+            if (tag == 'two') {
+                openDetailWindowInCoupleRing(id, '');
+            } else {
+                openDetailWindow(id, '');
+            }
+        });
+
+        $("div.lazy").lazyload({
+            effect:"fadeIn"
+        });
+    }
+
+    function show_list(data) {
+        //console.log("loading list");
+        //console.log(JSON.stringify(data));
+        var strHtml = "";
+        // console.log(data.datas.list);
+
+        if (isDefine(data.datas.list)){
+            //console.log(data.datas.list.length);
+            for (var i = 0; i < data.datas.list.length; i++) {
+                strHtml += '<div class="col-md-3 col-sm-3  col-xs-6 plist " style="position:relative;">';
+                // 新品的添加
+                if (isDefine(data.datas.list[i].createtime)){
+                    // console.log(data.datas.list[0].createtime);
+                    // 获取上传时间
+                    var oldtime =data.datas.list[i].createtime*1000;
+                    // console.log(new Date(oldtime));
+                    // 获取现在的时间
+                    var notime = Date.parse(new Date());
+                    // console.log(new Date(notime));
+                    // 时间差
+                    var times=notime-oldtime;
+                    var days=Math.floor( times/(24*3600*1000));
+
+                    // console.log("超出天数"+days);
+                    if(days<=3){
+                        strHtml +='<div style="position:absolute;z-index:3;top:0;right:15px;"><img src="../static/images/newIcon.png" alt="" width="30" /></div>'; // 新品
+                    }
+
+                }
+                //strHtml+='                                <div class="ub-img ub-p-new"></div>';
+                if (isDefine(data.datas.list[i].thumb)) {
+                    strHtml += ' <div class="ub ub-img5 plistimg0902 btnProduct lazy"   data-tag="'+data.datas.list[i].tag+'" data-values="' + data.datas.list[i].id + '"  data-original="' + data.datas.list[i].thumb.url + '"    style="background-image: url(../static/images/grey.gif);">'
+                        +'</div>';
+                } else {
+                    strHtml += ' <div class="ub ub-img5 plistimg0902 btnProduct" data-tag="'+data.datas.list[i].tag+'" data-values="' + data.datas.list[i].id + '"  style="background-image: url()"></div>';
+                }
+                strHtml += '<div class="ub ub-ver">';
+                strHtml += '<div class="ub ub-pc umar-t" style="line-height:1.5em;height:3em; margin-bottom:1.5em; overflow:hidden">' + data.datas.list[i].title + '</div>';
+                // if (data.datas.list[i].count>0){
+                //strHtml += '                                    <div class="ub ub-pc bc-text-a1" >共' + data.datas.list[i].count + '件</div>';
+                // }
+                strHtml += '</div>';
+                strHtml += '</div>';
+
+                if (i==data.datas.list.length && i % 2 != 0){
+
+                    strHtml += '                            <div class="col-md-3 col-sm-3  col-xs-6 plist">';
+                    strHtml += '                                <div class="ub ub-img5 plistimg0902 btnProduct" ></div>';
+                    strHtml += '                                <div class="ub ub-ver">';
+                    strHtml += '                                    <div class="ub ub-pc umar-t"></div>';
+                    strHtml += '                                </div>';
+                    strHtml += '                            </div>';
+                }
+            }
+        }
+        //console.log(strHtml);
+        $("#htmlBox").html(strHtml); // 指定填充位置
+        product_onclick();
+    }
+
+    var totalPage;
+    var changeCcate;
+    function date_ajax(url) {
+        console.log(url);// 查看对应参数传入后请求的地址
+//        showToast(url);
+//        changeCcate = url.substring(97);
+        var regHaveCcate = /ccate=\d{2}|ccate=/; // 匹配两位数字
+        console.log();
+        if(regHaveCcate.test(url)){
+            console.log(RegExp.rightContext);
+            changeCcate = RegExp.rightContext
+        }
+        console.log(changeCcate);
+
+        $.ajax({
+            url: url,
+            type: "get",
+            dataType: 'jsonp',
+            success: function(data) {
+                if (data.resultCode == "0") {
+                    show_list(data);// 页面数据填充调用这个
+                    if(data.datas.list === n){
+                         totalPage = 0;
+                    }else{
+                        // 分页
+                         totalPage = data.pageInfo.totalPage;
+                    }
+//                     console.log(totalPage);
+                    $("#allPage").text(totalPage);
+                    tablePage(totalPage,data);
+                } else {
+                    showToast(data.error);
+                }
+                return changeCcate,totalPage;
+            },
+            error: function() {
+                //showToast("error!");
+            }
+        })
+    }
+
+    //加载分类数据
+    function show_category(data) {
+        var strHtml ='<div class="swiper-wrapper">';
+
+        if (ccate){
+            strHtml += '<div class="swiper-slide bc-text-c1 btncate size12 " data-values=""  data-names="全部">全部</div>';
+        }else{
+            strHtml += '<div class="swiper-slide bc-text-a1 btncate size12" data-values="" data-names="全部">全部</div>';
+        }
+        for (var i = 0; i < data.datas.list[0].child.length; i++) {
+            strHtml += '<div class="swiper-slide size12 cutline">|</div>';
+            if (ccate != '' && getUrlParam("ccate")==data.datas.list[0].child[i].id){
+                strHtml += '<div class="swiper-slide bc-text-a1 btncate  size12" data-names="'+data.datas.list[0].child[i].name+'"  data-values="' + data.datas.list[0].child[i].id + '" >'+data.datas.list[0].child[i].name+'</div>';
+            }else{
+                strHtml += '<div class="swiper-slide bc-text-c1 btncate  size12"  data-names="'+data.datas.list[0].child[i].name+'"    data-values="' + data.datas.list[0].child[i].id + '" >'+data.datas.list[0].child[i].name+'</div>';
+            }
+        }
+
+//        strHtml += '<div class="swiper-slide size12 cutline">|</div>';
+//        strHtml += '<div class="swiper-slide bc-text-c1  size12"  id="cate_8">裸钻</div>';
+
+        strHtml += '</div>';
+
+        $('.catelist').html(strHtml);
+
+        var topmenu= new Swiper('.catelist',{
+            freeMode : true,
+            slidesPerView : 'auto'
+        });
+
+        touch.on('.allproduct', 'tap', function(ev) {
+            date_ajax(appUrl+'/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods_list&psize='+ psize+isEmployeeUploadUrl);
+        });
+
+        touch.on('.btncate', 'tap', function(ev) {
+            ccate=$(this).data("values");
+
+            date_ajax(appUrl+'/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods_list&psize='+psize+'&ccate='+ccate+isEmployeeUploadUrl);
+            $('.btncate').removeClass('bc-text-a1');
+            $(this).removeClass('bc-text-c1');
+            $(this).addClass('bc-text-a1');
+            var names=$(this).data("names");
+
+            //筛选条件重置
+            select_price='';
+            select_price_value='';
+            select_weight='';
+            select_weight_value='';
+            select_color='';
+            select_color_value='';
+            select_jingdu='';
+            select_jingdu_value='';
+            $('.selcect_price').find('.text').html('价格');
+            $('.selcect_price').find("select").prop('selectedIndex', 0);
+            $('.selcect_weight').find('.text').html('主石重量');
+            $('.selcect_weight').find("select").prop('selectedIndex', 0);
+            $('.selcect_color').find('.text').html('主石颜色');
+            $('.selcect_color').find("select").prop('selectedIndex', 0);
+            $('.selcect_jingdu').find('.text').html('主石净度');
+            $('.selcect_jingdu').find("select").prop('selectedIndex', 0);
+            setFilterCondition('','','',''); // 测试
+
+//            showToast('筛选重置完成');
+
+            openWindow(18, names, ''); // 测试
+        });
+
+        touch.on('#cate_8', 'tap', function(ev) {
+            openWindow(10, '裸钻', appUrl+'/addons/ewei_shop/template/app/default/api/select.html','api,select.html');
+            setFilterCondition('','','',''); // 测试
+        });
+    }
+
+    //加载分类
+    $.ajax({
+        url: appUrl+'/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods_cate',
+        type: "get",
+        dataType: 'jsonp',
+        success: function(data) {
+            if (data.resultCode == "0") {
+                show_category(data);
+            } else {
+                showToast(data.error);
+            }
+        },
+        error: function() {
+            //showToast("");
+        }
+    });
+
+var changeUrl = appUrl + "/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods_list&psize=30";
+
+    // 分页
+    function tablePage(Page,data) {
+//        showToast(data);
+        console.log(data);
+        Page = Page.toString();
+        console.log("总页数 : " + Page);
+//        showToast(Page);
+        if(Page === "0"){
+            $("#pagination").hide();
+            $("#htmlBox").html('<p style="width: 90%;height: 50%; margin: 50% auto; text-align: center; font-size: 1rem;">抱歉，没有找到匹配的商品</p>')
+        }else{
+            console.log(ccate);
+            $("#pagination").show();
+            var options = {
+                bootstrapMajorVersion: 3,
+                alignment:'center',
+                currentPage:1,
+                numberOfPages:1, // 显示多少个控件
+                totalPages: Page,
+                size: "small",
+                pageUrl: function(type, page, current){
+                    if(ccate == null){
+                        console.log("进入了全部产品");
+                        ccate = "";
+                        return changeUrl + "&ccate=" + ccate + isEmployeeUploadUrl + "&page=" + page + select_price+select_weight+select_color+select_jingdu;
+                    }else if(select_ccate === "&isdiscount=1"){
+                        console.log("进入了热销");
+                        return changeUrl + "&ccate=" + "&isdiscount=1" + isEmployeeUploadUrl + "&page=" + page + select_price+select_weight+select_color+select_jingdu;
+                    }else{
+                        console.log("进入了其他");
+                        return changeUrl + "&ccate=" + ccate + isEmployeeUploadUrl + "&page=" + page + select_price+select_weight+select_color+select_jingdu; // 测试
+                    }
+                },
+                itemTexts: function (type, page, current) {
+                    switch (type) {
+                        case "first":
+                            return "首页";
+                        case "prev":
+                            return "上一页";
+                        case "next":
+                            return "下一页";
+                        case "last":
+                            return "末页";
+                        case "page":
+                            return page;
+                    }
+                },
+                shouldShowPage:function (type, page, current) { //设置按钮的显示和隐藏
+
+                    switch (type) {
+                        case "first": // 不显示首页按钮
+                            return false;
+                        case "prev":
+                            return true;
+                        case "next":
+                            return true;
+                        case "last": // 不显示尾页按钮
+                            return false;
+                        case "page":
+                            return page;
+                    }
+                },
+                onPageClicked: function (event, originalEvent, type, page) {
+                    originalEvent.preventDefault();
+                    originalEvent.stopPropagation();
+
+
+                    $.ajax({
+                        url:originalEvent.target.href,
+                        type:"GET",
+                        dataType:"jsonp", // json 不行,因为后台返回的是 josnp 数据
+                        success: function(data){
+                            $("#htmlBox div").remove();
+                            show_list(data);
+                        },
+                        error: function(error){
+                            alert("error");
+                        }
+                    });
+                    // 点击返回顶部
+                    $('body,html').animate({scrollTop:0},700);
+
+                }
+            };
+            $(document).ready(function(){
+                $("#pagination").bootstrapPaginator(options);
+            });
+        }
+
+    }
+
+    // 跳转
+    $("#GO").click(function () {
+        var toNum;
+        toNum = $("#toNum").val().toString();
+        $('#pagination').bootstrapPaginator("show",toNum);
+        // 返回顶部
+        $('body,html').animate({scrollTop:0},700);
+//    console.log(toNum);
+
+        var jumpToUrl;
+        if(ccate == null){
+            console.log("进入了全部产品");
+            ccate = "";
+            jumpToUrl = changeUrl + "&ccate=" + ccate + isEmployeeUploadUrl + "&page=" + toNum + select_price+select_weight+select_color+select_jingdu;
+        }else if(select_ccate === "&isdiscount=1"){
+            console.log("进入了热销");
+            jumpToUrl = changeUrl + "&ccate=" + "&isdiscount=1" + isEmployeeUploadUrl + "&page=" + toNum + select_price+select_weight+select_color+select_jingdu;
+        }else{
+            console.log("进入了其他");
+            jumpToUrl = changeUrl + "&ccate=" + ccate + isEmployeeUploadUrl + "&page=" + toNum + select_price+select_weight+select_color+select_jingdu; // 测试
+        }
+        $.ajax({
+            url:  jumpToUrl,
+            type: "get",
+            dataType: 'jsonp',
+            success: function(data) {
+//            var totalPage = data.pageInfo.totalPage;
+                if (data.resultCode == "0") {
+                    show_list(data);
+                } else {
+                    showToast(data.error);
+                }
+            },
+            error: function() {
+                showToast("error!");
+            }
+        });
+
+    });
+    //监听浏览器文字大小代码
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+
+
+
+</script>
+
+</html>

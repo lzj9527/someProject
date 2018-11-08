@@ -1,0 +1,336 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <title>用户中心</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <!-- bootstrap start -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/font-awesome.min.css">
+
+    <script src="../static/js/jquery-3.0.0.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+
+    <!-- bootstrap end -->
+    <script type="text/javascript" src="../static/js/config.js"></script>
+    <script type="text/javascript" src="../static/js/function.js"></script>
+
+    <script type="text/javascript" src="../static/js/androidJSInterface.js"></script>
+    <script src="../static/js/touch.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-box.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-base.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-color.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-control.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-icon.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-my.css">
+</head>
+
+<body class="um-vp" ontouchstart>
+    <div id="page_1" class="ub  ub-ver" tabindex="0">
+
+
+<!--
+     <div class="ub ub-fh ub-img1" style="background-image:url(../static/images/bgusertitle.png);height:6em">
+    	<div class="ub-img" style="background-image:url(../static/images/redlogo.png); height:3em;width:3em; margin:1.5em 2em; float:left"></div>
+    	<div class="ub ub-f1"></div>
+    	<div class="ub-img btlogout" style="background-image:url(../static/images/logoout.png);height:2em;width:2em; margin:2em 2em; float:right"></div>
+    </div>
+ -->
+
+     <!--  <div class="ub ub-fh ub-img2" style="background-image:url(../static/images/line-57.png); height:0.5em"></div>    -->
+
+     <div class="ub  umar-a uinn ubb bc-border-c4">
+        <div class="ub ub-f1">
+	     	<div class="ub ub-f1 ">我的订单</div>
+	     	<div class="ub ufr  bc-text-b1 btnOrder">查看我的全部订单 <i class="icon-angle-right icon-large"></i></div>
+		</div>
+     </div>
+
+     <div class="ub  umar-a uinn">
+     	<div class="ub ub-f1 text-center ub-pc ub-ac btnCreatOrder"><img src="../static/images/waiting.png" width="50%"></div>
+        <div class="ub ubl bc-border-c4"></div>
+     	<div class="ub ub-f1 text-center ub-pc ub-ac btnComfirmOrder"><img src="../static/images/hading.png"  width="50%"></div>
+		<div class="ub ubl bc-border-c4"></div>
+     	<div class="ub ub-f1 text-center ub-pc ub-ac btnSendOrder"><img src="../static/images/sending.png" width="50%"></div>
+		<div class="ub ubl bc-border-c4"></div>
+     	<div class="ub ub-f1 text-center ub-pc ub-ac btnFinishOrder"><img src="../static/images/finish.png"  width="50%"></div>
+
+     </div>
+
+     <div class="ub ub-ver ">
+        <div class="ub ub-fh ub-img2" style="background-image:url(../static/images/line-57.png); height:0.5em"></div>
+        <div class="ub  uinn ub-f1 btnPrice">
+     	<div class="ub ub-f1 bc-text-c1 umar-a uinn">门店价格设置</div>
+     	<div class="ub ufr umar-t umar-b bc-text-b1 uinn"><i class="icon-angle-right icon-large bc-text-c1"></i></div>
+     	</div>
+     </div>
+
+     <div class="ub ub-ver ">
+        <div class="ub ub-fh ub-img2" style="background-image:url(../static/images/line-57.png); height:0.5em"></div>
+        <div class="ub  uinn ub-f1 btnAddress">
+     	<div class="ub ub-f1 bc-text-c1 umar-a uinn">门店管理</div>
+     	<div class="ub ufr umar-t umar-b bc-text-b1 uinn"><i class="icon-angle-right icon-large bc-text-c1"></i></div>
+     	</div>
+     </div>
+
+
+     <div class="ub ub-ver ">
+        <div class="ub ub-fh ub-img2" style="background-image:url(../static/images/line-57.png); height:0.5em"></div>
+        <div class="ub  uinn ub-f1 btnCart">
+     	<div class="ub ub-f1 bc-text-c1 umar-a uinn">我的购物车</div>
+     	<div class="ub ufr umar-t umar-b bc-text-b1 uinn"><i class="icon-angle-right icon-large bc-text-c1"></i></div>
+     	</div>
+     </div>
+
+     <!--积分 -->
+    <div class="ub ub-ver ">
+        <div class="ub ub-fh ub-img2" style="background-image:url(../static/images/line-57.png); height:0.5em"></div>
+        <div class="ub  uinn ub-f1 btnIntegral">
+            <div class="ub ub-f1 bc-text-c1 umar-a uinn">积分兑换</div>
+            <div class="ub ufr umar-t umar-b bc-text-b1 uinn"><i class="icon-angle-right icon-large bc-text-c1"></i></div>
+        </div>
+    </div>
+
+  <!--    <div class="ub ub-ver ">
+        <div class="ub ub-fh ub-img2" style="background-image:url(../static/images/line-57.png); height:0.5em"></div>
+        <div class="ub  uinn ub-f1  btnNotice">
+     	<div class="ub ub-f1 bc-text-c1 umar-a uinn">店铺公告</div>
+     	<div class="ub ufr umar-t umar-b bc-text-b1 uinn"><i class="icon-angle-right icon-large bc-text-c1"></i></div>
+     	</div>
+     </div>
+
+     <div class="ub ub-ver ">
+        <div class="ub ub-fh ub-img2" style="background-image:url(../static/images/line-57.png); height:0.5em"></div>
+        <div class="ub  uinn ub-f1 btnSale">
+     	<div class="ub ub-f1 bc-text-c1 umar-a uinn">销售记录</div>
+     	<div class="ub ufr umar-t umar-b  bc-text-b1 uinn"><i class="icon-angle-right icon-large bc-text-c1"></i></div>
+     	</div>
+     </div> -->
+
+     <div class="ub ub-ver ">
+        <div class="ub ub-fh ub-img2" style="background-image:url(../static/images/line-57.png); height:0.5em"></div>
+        <div class="ub  uinn ub-f1  sys_clear">
+        <div class="ub ub-f1 bc-text-c1 umar-a uinn">清理缓存</div>
+        <div class="ub ufr umar-t umar-b bc-text-b1 uinn"><i class="icon-angle-right icon-large bc-text-c1"></i></div>
+        </div>
+     </div>
+
+<!--    <div class="ub ub-ver ">
+        <div class="ub ub-fh ub-img2" style="background-image:url(../static/images/line-57.png); height:0.5em"></div>
+        <div class="ub  uinn ub-f1 sys_check">
+        <div class="ub ub-f1 bc-text-c1 umar-a uinn">检查更新</div>
+        <div class="ub ufr umar-t umar-b  bc-text-b1 uinn"><i class="icon-angle-right icon-large bc-text-c1"></i></div>
+        </div>
+     </div>  -->
+
+     <div class="ub ub-ver ">
+        <div class="ub ub-fh ub-img2" style="background-image:url(../static/images/line-57.png); height:0.5em"></div>
+        <div class="ub  uinn ub-f1 sys_set">
+        <div class="ub ub-f1 bc-text-c1 umar-a uinn">修改密码</div>
+        <div class="ub ufr umar-t umar-b  bc-text-b1 uinn"><i class="icon-angle-right icon-large bc-text-c1"></i></div>
+        </div>
+     </div>
+
+     <div class="ub ub-ver ">
+        <div class="ub ub-fh ub-img2" style="background-image:url(../static/images/line-57.png); height:0.5em"></div>
+        <div class="ub  uinn ub-f1 sys_logout">
+        <div class="ub ub-f1 bc-text-c1 umar-a uinn">退出帐号</div>
+        <div class="ub ufr umar-t umar-b  bc-text-b1 uinn"><i class="icon-angle-right icon-large bc-text-c1"></i></div>
+        </div>
+     </div>
+
+    <!--<div class="ub-ver" id="btnForUpLoad">-->
+        <!--<div class="ub ub-fh ub-img2" style="background-image:url(../static/images/line-57.png); height:0.5em"></div>-->
+        <!--<div class="ub  uinn ub-f1 btnForUpLoad">-->
+            <!--<div class="ub ub-f1 bc-text-c1 umar-a uinn">照片上传</div>-->
+            <!--<div class="ub ufr umar-t umar-b bc-text-b1 uinn"><i class="icon-angle-right icon-large bc-text-c1"></i></div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+    <div class="ub ub-ver ">
+        <div class="ub ub-fh ub-img2" style="background-image:url(../static/images/line-57.png); height:0.5em"></div>
+        <div class="ub  uinn ub-f1 btnForUse">
+            <div class="ub ub-f1 bc-text-c1 umar-a uinn">APP使用说明</div>
+            <div class="ub ufr umar-t umar-b bc-text-b1 uinn"><i class="icon-angle-right icon-large bc-text-c1"></i></div>
+        </div>
+    </div>
+
+
+     <div class="ub ub-ver ">
+       <div class="ub ub-fh ub-img2" style="background-image:url(../static/images/line-57.png); height:0.5em"></div>
+
+     </div>
+
+    </div>
+
+
+     <!--弹出表单 -->
+    <div class="modal fade" id="mymodal" style="top:-10%">
+         <div class="ub ub-con ub-pc ub-ac">
+                      <div class="ub uc-a1 bc-bg ub-ver" style="width: 90%; height:auto">
+
+                           <!-- ===== -->
+                            <div class="ub ub-ver ubb bc-border-c4 ">
+                              <div class="ub ub-f1 umar-t umar-b">
+                              <div class="ub bc-text-c1 umar-l uinn  tx-c" style="min-width: 80px" >新密码:</div>
+                              <div class="ub ub-f1 bc-text-b1 uinn"><input type="password" value="" class="ub ub-f1 noborder uinn bc-text-c1 " id="re-password"></div>
+                              </div>
+                           </div>
+                            <div class="ub ub-ver ubb bc-border-c4 " style="height:4em;">
+                              <div class="ub  ub-f1 umar-t umar-b">
+                              <div class="ub bc-text-c1 umar-l uinn  tx-c" style="min-width: 80px" >确认密码:</div>
+                              <div class="ub ub-f1 bc-text-b1 uinn"><input type="password" value="" class="ub ub-f1 noborder uinn bc-text-c1 " id="check-password"></div>
+                              </div>
+                           </div>
+
+                        <!-- ===== -->
+                           <div class="ub ub-ver umar-a " style="height:4em;">
+
+                                <div style=" margin:0em 2em 1em 2em" class="ub ub-pc">
+                                  <div class="ub uc-a1 bc-bg-d3  ub-ac ub-pc ulev1 uinn bc-text-head ub-f1 umar-a btok">确定</div>
+                                  <div class="ub uc-a1 bc-bg-d3  ub-ac ub-pc ulev1 uinn bc-text-head ub-f1 umar-a" data-dismiss="modal" >取消</div>
+                              </div>
+                           </div>
+                      </div>
+                  </div>
+    </div>
+</body>
+<script>
+ var key = getKey();
+
+ $(function() {
+
+ touch.on('.btlogout', 'tap', function(ev) {
+    openWindow(2, '用户设置', appUrl + '/addons/ewei_shop/template/app/default/shop/logout.html', 'shop,logout.html');
+ });
+
+ touch.on('.btnPrice', 'tap', function(ev) {
+    openWindow(9, '门店价格设置', appUrl + '/addons/ewei_shop/template/app/default/shop/price.html', 'shop,price.html');
+ });
+
+ touch.on('.btnAddress', 'tap', function(ev) {
+    openWindow(11, '门店管理', appUrl + '/addons/ewei_shop/template/app/default/shop/address.html', 'shop,address.html');
+ });
+
+ touch.on('.btnCart', 'tap', function(ev) {
+    openWindow(7, '我的购物车', appUrl + '/addons/ewei_shop/template/app/default/shop/cart.html', 'shop,cart.html');
+ });
+
+ touch.on('.btnForUse', 'tap', function(ev) {
+     openWindow(12, 'APP使用说明', appUrl + '/addons/ewei_shop/template/app/default/shop/howToUseApp.html', 'shop,howToUseApp.html');
+ });
+
+ touch.on('.btnIntegral', 'tap', function(ev) {
+     openWindow(20, '积分兑换', appUrl + '/addons/ewei_shop/template/app/default/shop/integral_mall.html', 'shop,integral_mall.html');
+ });
+
+// 照片上传
+//var isEmployee = getUrlParam("isEmployee");
+//if(isEmployee === "1" && /(Android)/i.test(navigator.userAgent)){ // 而且是安卓终端
+//    $("#btnForUpLoad").show();
+//    touch.on('.btnForUpLoad', 'tap', function(ev) {
+//        openWindow(13,'','','');
+//    });
+//}else{
+//    $("#btnForUpLoad").hide();
+//}
+
+touch.on('.sys_set', 'tap', function(ev) {
+//修改密码
+$('#mymodal').modal();
+
+});
+
+ touch.on('.btnNotice', 'tap', function(ev) {
+    //openWindow(16, '店铺公告管理', appUrl + '/addons/ewei_shop/template/app/default/shop/notice.html');
+    showToast('待开发');
+ });
+
+ touch.on('.btnSale', 'tap', function(ev) {
+    //openWindow(17, '销售记录', appUrl + '/addons/ewei_shop/template/app/default/shop/sale.html');
+    showToast('待开发');
+ });
+
+
+
+//订单
+//全部订单
+ touch.on('.btnOrder', 'tap', function(ev) {
+    openWindow(8, '全部订单', appUrl + '/addons/ewei_shop/template/app/default/shop/order.html', 'shop,order.html'); 
+ });
+
+//待审核
+ touch.on('.btnCreatOrder', 'tap', function(ev) {
+    openWindow(8, '待审核订单', appUrl + '/addons/ewei_shop/template/app/default/shop/order.html?slide=1', 'shop,order.html?slide=1');
+ });
+
+//已审核
+ touch.on('.btnComfirmOrder', 'tap', function(ev) {
+    openWindow(8, '已审核订单', appUrl + '/addons/ewei_shop/template/app/default/shop/order.html?slide=2', 'shop,order.html?slide=2');
+ });
+
+//待发货
+ touch.on('.btnSendOrder', 'tap', function(ev) {
+    openWindow(8, '待发货订单', appUrl + '/addons/ewei_shop/template/app/default/shop/order.html?slide=3', 'shop,order.html?slide=3');
+
+ });
+
+//已完成
+ touch.on('.btnFinishOrder', 'tap', function(ev) {
+    openWindow(8, '已完成订单', appUrl + '/addons/ewei_shop/template/app/default/shop/order.html?slide=4', 'shop,order.html?slide=4');
+
+ });
+
+
+ touch.on('.sys_clear', 'tap', function(ev) {
+       clearCache();
+    });
+
+
+ touch.on('.sys_check', 'tap', function(ev) {
+       checkVersion();
+    });
+
+  touch.on('.sys_logout', 'tap', function(ev) {
+        openWindow(1, '登录', appUrl + '/addons/ewei_shop/template/app/default/shop/index.html', 'shop,index.html');
+    });
+
+
+  touch.on('.btok', 'tap', function(ev) {
+       if ($('#re-password').val()==''||$('#check-password').val()==''){
+          showToast('密码不能为空！请重新设置！');
+       }else if($('#re-password').val()!=$('#check-password').val()){
+           showToast('输入密码不一致！请重新设置！');
+        }else{
+            $.ajax({
+                url : appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_pwd&act=edit&pwd='+$('#re-password').val()+'&repwd='+$('#check-password').val()+'&key='+key+'&js='+Math.random(),
+                type: "post",
+                timeout:10000,
+                dataType : 'jsonp',
+                success : function(data) {
+                      if (data.resultCode=='0' && data.code=='200'){
+                           showToast('密码修改成功');
+                           $('#mymodal').modal('hide');
+                           storage["upwd"] = $('#re-password').val();
+                       } else{
+                         showToast(data.error);
+                       }
+
+                },
+               error : function(data2) {
+                        showToast('系统错误请重试');
+                        $('#mymodal').modal('hide');
+               }
+            })
+        }
+    });
+})
+</script>
+
+</html>

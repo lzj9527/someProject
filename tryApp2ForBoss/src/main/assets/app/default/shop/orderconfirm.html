@@ -1,0 +1,658 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>确认购物车</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <!-- bootstrap start -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/bootstrap-theme.min.css">
+    <script src="../static/js/jquery-3.0.0.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!-- bootstrap end -->
+    <script type="text/javascript" src="../static/js/config.js"></script>
+    <script type="text/javascript" src="../static/js/function.js"></script>
+    <script type="text/javascript" src="../static/js/androidJSInterface.js"></script>
+    <script src="../static/js/touch.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-box.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-base.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-color.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-control.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-icon.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-my.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/swiper.min.css">
+    <script src="../static/js/swiper.min.js"></script>
+</head>
+
+<body class="um-vp" ontouchstart>
+    <div id="page_1" class="up ub ub-ver" tabindex="0">
+        <div class="ub ub-f1 ub-ver" style="overflow:auto">
+            <div class="ub btAddAddress ">
+                <div class="ub ub-pe ub-ac ub-f1"><img src="../static/images/address-96.png" style="width:24px;"></div>
+                <div class="ub ub-f1 ub-ver umar-l">
+                    <div class="ub uinn bc-text-a2 ulev1 size12">新建收货信息<span class="bc-text-c2 ulev2"></span></div>
+                </div>
+            </div>
+            <div class="ub ub-fh " style="background:url(../static/images/line-95.png) left top repeat-x; height:0.2em; margin:0.5em 0em"></div>
+
+
+            <div class="ub ub-ver addresslist">
+
+            </div>
+            <div class="ub ub-fh " style="background:url(../static/images/line-95.png) left top repeat-x; height:0.5em; margin:0.5em 0em 0em 0em"></div>
+
+            <div class="ub  ub-ver ub-fh ub-f1 " id="cartBox">
+                <!-- <div class="ub  umar-a ub-ver">
+                          <div class="ub">
+                              <div class="ub ub-f1 bc-bg-b1 uinn ub-pc">门店A</div>
+                              <div class="ub ub-f3 bc-bg-c4 uinn">订单号:2555222255522</div>
+                          </div>
+                          <div class="ub uinn ubb bc-border-c4">
+                              <div class="ub ub-img uba bc-border-c4" style="width:4em;height:4em; background-image: url(../static/images/eg.png); "></div>
+                              <div class="ub ub-f1 ub-ver">
+                                  <div class="ub umar-l ">
+                                      <div class="ub ub-f1">18K白金钻石女戒</div>
+                                      <div class="ub  bc-text-b1"><i class="ub ub-img" style="width:1.2em; height:1.2em;background-image:url(../static/images/pprice.png)"></i>￥67999.00</div>
+                                  </div>
+                                  <div class="ub umar-l  umar-b  " style="padding-bottom:.5em; border-bottom:1px #a9a9a9 dashed">
+                                      <div class="ub ub-f1">
+                                          <div class="ub bc-text-b1">
+                                              <span class="bc-text-c1">手寸:</span>12
+                                              <span class="bc-text-c1">数量:</span>X1
+                                          </div>
+                                      </div>
+                                      <div class="ub"><i class="ub ub-img" style="width:1.2em; height:1.2em; background-image:url(../static/images/iconprice.png)"></i>￥67999.00</div>
+                                  </div>
+                                  <div class="umar-l  bc-text-b1">
+                                      <div class="ub ufl">HDC554587</div>
+                                      <div class="ub ufl" style="margin:0 0.1em">|</div>
+                                      <div class="ub ufl">0.961g</div>
+                                      <div class="ub ufl ufl" style="margin:0 0.1em">|</div>
+                                      <div class="ub ufl">18K白</div>
+                                      <div class="ub ufl" style="margin:0 0.1em">|</div>
+                                      <div class="ub ufl"><span class="bc-text-c2">副</span>0.8/8</div>
+                                      <div class="ub ufl" style="margin:0 0.1em">|</div>
+                                      <div class="ub ufl"><span class="bc-text-c2">副</span>白色</div>
+                                      <div class="ub ufl" style="margin:0 0.1em">|</div>
+                                      <div class="ub ufl ufl ufl"><span class="bc-text-c2">主</span>0.31ct/1</div>
+                                      <div class="ub ufl ufl" style="margin:0 0.1em">|</div>
+                                      <div class="ub ufl">VS1</div>
+                                      <div class="ub ufl" style="margin:0 0.1em">|</div>
+                                      <div class="ub ufl">GIA5213496771</div>
+                                      <div class="ub ufl" style="margin:0 0.1em">|</div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="ub  ">
+                              <div class="ub ub-f1 ub-pe uinn ">共1件商品</div>
+                              <div class="ub ub-f1 ub-pe uinn "><i class="ub ub-img" style="width:1.3em; height:1.3em;background-image:url(../static/images/pprice.png)"></i>￥67999.00</div>
+                              <div class="ub ub-f1 ub-pe uinn bc-text-b1"><i class="ub ub-img" style="width:1.3em; height:1.3em; background-image:url(../static/images/iconprice.png)"></i>￥67999.00</div>
+                          </div>
+                      </div> -->
+            </div>
+        </div>
+        <div class="ub ">
+            <div class="ub ub-f2 uinn  bc-bg-c4 ub-ac ub-pc totalmoney"></div>
+            <div class="ub ub-f1 uinn bc-bg-d3 ub-ac ub-pc bc-text-c5 btPostOrder">
+                <div class="ub ub-f1  ub-ac ub-pc umar-t umar-b sc-text-active">
+                    提交订单
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 提交订单弹框 -->
+    <div class="modal fade" id="jions" style="top:-10%">
+        <div class="ub ub-con ub-pc ub-ac">
+            <div class="ub uc-a1 bc-bg ub-ver" style="width: 90%; height:auto">
+                <div class="ub ub-pe uinn umar">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:#ec3a49;width: 0.8em; height: 0.8em"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <form name="form1" role="form" action="1.php" method="post" style="margin:0em;padding:0em;" class="form-horizontal" onSubmit="return myCheck()">
+                    <!-- 信息更新  -->
+
+                    <div style=" margin:2em 2em 1em 2em;text-align:center;" class="ub ub-pc ">
+                        <div class="ub uc-a1 bc-bg-d3  ub-ac ub-pc ulev1 uinn bc-text-head ub-f1 umar-a" data-dismiss="modal" style="border:none;text-align:center;">
+                            <input type="submit" class="bc-bg-d3" value="成功提交订单" style="border:none;" onclick="" />
+                        </div>
+
+                        <div class="ub uc-a1 bc-bg-d3  ub-ac ub-pc ulev1 uinn bc-text-head ub-f1 umar-a" data-dismiss="modal" style="border:none;text-align:center;">朕知道
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 弹编辑框 -->
+    <div class="modal fade" id="btedit" style="top:-10%">
+        <div class="ub ub-con ub-pc ub-ac">
+            <div class="ub uc-a1 bc-bg ub-ver" style="width: 90%; height:auto">
+                <div class="ub ub-pe uinn umar">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:#ec3a49;width: 0.8em; height: 0.8em"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <form name="form1" role="form" action="1.php" method="post" style="margin:0em;padding:0em;" class="form-horizontal" onSubmit="return myCheck()">
+                    <!-- 信息更新  -->
+                    <fieldset style=" margin: 0em 2em;">
+                        <div id="legend" class="">
+                            <legend class="ub  bc-text-c2 size12" style="padding:0.1em 0em">基本信息</legend>
+                        </div>
+                        <div class="form-group control-group" style="margin:0em;padding:0em;">
+                            <div class="container-fluid ">
+                                <!--  <div class="bc-text-c6 ubi umw5">收 货 人:</div>
+                                                         <div class=" bc-text-c6 ubi umw5">联系电话:<span></span></div>
+                                                         <div class="bc-text-c6 ubi umw5">联系地址:</div>    
+                                                    </div>  -->
+
+                                <!-- 收货人-->
+                                <div class="control-group">
+                                    <label class="control-label bc-text-c6 ubi umw5 op_numd" for="input01">收货人：</label>
+                                    <div class="controls op_numd">
+                                        <input type="text" placeholder="&nbsp;&nbsp;收货人" class="input-rename" id="or-consignee" value="" style="padding-left:0.9em;"
+                                            required="required">
+                                    </div>
+                                </div>
+
+                                <!-- 联系电话-->
+                                <div class="control-group">
+                                    <label class="control-label bc-text-c6 ubi umw5 op_numd" for="input01">联系电话：</label>
+                                    <div class="controls op_numd">
+                                        <input type="text" placeholder="&nbsp;&nbsp;联系电话" class="input-num" id="or-tel" value="" style="padding-left:0.8em;" required="required">
+                                    </div>
+                                </div>
+
+
+                                <!-- 联系地址-->
+                                <div class="control-group">
+                                    <label class="control-label bc-text-c6 ubi umw5 op_numd" for="input01">联系地址：</label>
+                                    <div class="controls op_numd">
+                                        <input type="text" placeholder="&nbsp;&nbsp;联系地址" class="input-num" id="or-caddress" value="" style="padding-left:0.8em;"
+                                            required="required">
+                                    </div>
+                                </div>
+                            </div>
+                    </fieldset>
+
+                    <fieldset style=" margin: 0.5em 2em;">
+                        <div id="legend" class="">
+                            <legend class="ub  bc-text-c2 size12" style="padding:0.1em 0em">重置(不修改为空)</legend>
+                        </div>
+                        <div class="form-group control-group" style="margin:0em;padding:0em;">
+                            <div class="container-fluid ">
+
+                                <!-- 密码-->
+                                <div class="control-group">
+                                    <label class="control-label bc-text-c6 ubi umw5 op_numd" for="input01">密码</label>
+                                    <div class="controls op_numd">
+                                        <input id="ore-password" type="password" placeholder="&nbsp;&nbsp;密码设置" class="input-rename" style="padding-left:0.8em;"
+                                            required="required" value="">
+                                    </div>
+                                </div>
+
+                                <!-- 确认密码-->
+                                <div class="control-group">
+                                    <label class="control-label bc-text-c6 ubi umw5 op_numd" for="input01">确认密码</label>
+                                    <div class="controls op_numd">
+                                        <input id="ocheck-password" type="password" placeholder="&nbsp;&nbsp;重新输入" class="input-rename" style="padding-left:0.8em;"
+                                            required="required" value="">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                    </fieldset>
+                    <div style=" margin:2em 2em 1em 2em;text-align:center;" class="ub ub-pc ">
+                        <div class="ub uc-a1 bc-bg-d3  ub-ac ub-pc ulev1 uinn bc-text-head ub-f1 umar-a" data-dismiss="modal" style="border:none;text-align:center;">
+                            <input type="submit" class="bc-bg-d3" value="提交" style="border:none;" onclick="load_oraddress()" />
+                        </div>
+
+
+
+                        <div class="ub uc-a1 bc-bg-d3  ub-ac ub-pc ulev1 uinn bc-text-head ub-f1 umar-a" data-dismiss="modal" style="border:none;text-align:center;">取消
+                        </div>
+                    </div>
+
+                </form>
+                </div>
+                </div>
+            </div>
+            <!-- 以上为弹出框 -->
+</body>
+
+<script>
+    $(document).ready(function () {
+
+        touch.on('.btAddAddress', 'tap', function (ev) {
+
+            openWindow(14, '新建收货信息',
+                appUrl + '/addons/ewei_shop/template/app/default/shop/addaddress.html',
+                'shop,addaddress.html'
+            );
+
+        })
+        var key = getKey();
+
+        $.ajax({
+            url: appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_address&key=' +
+                key,
+            type: "get",
+            dataType: 'jsonp',
+            success: function (data) {
+                if (data.resultCode == "0") {
+                    var strHtml = '';
+                    var strdefault = '';
+                    console.log(data.datas.list);
+                    for (var i = 0; i < data.datas.list.length; i++) {
+                        // if (data.datas.list[i].isdefault=='1'){
+                        //      strdefault ='默认地址';
+                        // }else{
+                        //      strdefault ='';
+                        // }
+
+                        strHtml += '<div class="ub  umar-l umar-r ubb  bc-border-c4" data-dataid="' +
+                            data.datas.list[i].id + '">' +
+                            '                <div class="ub ub-ver ub-pc ub-ac bc-bg-a3 uinn" style="min-width:1em"><input type="radio" name="bossaddress" class="selects" data-addressid="' +
+                            data.datas.list[i].id + '" value="' + data.datas.list[i].id +
+                            '"></div>' +
+                            '                <div class="ub ub-ver ub-f1 uinn">' +
+                            '                    <div class="ub bc-text-c7"><span class="bc-text-c6 ubi umw5  size10">收 货 人:</span><span class="size10 consignee">' +
+                            data.datas.list[i].realname + '</span></div>' +
+                            '                    <div class="ub bc-text-c7"><span class="bc-text-c6 ubi umw5  size10">联系电话:</span><span class="size10 tel">' +
+                            data.datas.list[i].mobile + '</span></div>' +
+                            '                    <div class="ubi ut-s bc-text-c7"><span class="bc-text-c6 ubi umw5  size10">联系地址:</span><span class="size10 caddress" >' +
+                            data.datas.list[i].address + '</span></div>' +
+                            '                </div>' +
+                            '                 <div class="ub ub-ver uinn" style="min-width:3em">' +
+
+                            '                    <div class="ub bc-text-a1 ub-pc btDefault" data-dataid="' +
+                            data.datas.list[i].id + '">' + strdefault + '</div>' +
+
+                            '                    <div class="ub umar-t">' +
+                            '                    <div class="ub ub-img btEdit" data-dataid="' +
+                            data.datas.list[i].id +
+                            '" style="background-image:url(../static/images/btedit.png); width:2.5em;height:2.5em; "></div>' +
+                            '                   <div class="ub ub-img btDel" data-dataid="' + data.datas
+                            .list[i].id +
+                            '" style="background-image:url(../static/images/btdelete.png); width:2.5em;height:2.5em; "></div>' +
+                            '                    </div>' +
+                            '                </div>' +
+                            '            </div>';
+
+                    }
+
+                    $('.addresslist').html(strHtml);
+
+                    // 编辑弹框
+
+                    touch.on('.btEdit', 'tap', function (ev) {
+                        $('#or-consignee').val($('.consignee').text());
+                        $('#or-tel').val($('.tel').text());
+                        $('#or-caddress').val($('.caddress').text());
+
+                        $('#btedit').modal();
+
+
+                    })
+
+
+                    // 删除弹框
+
+                    touch.on('.btDel', 'tap', function (ev) {
+
+                        $('.bc-border-c4').remove();
+                        location.reload();
+
+                    })
+
+                } else {
+                    //showToast(data.error);
+                }
+            },
+            error: function () {
+                //showToast("error!");
+            }
+        })
+        var totalmoney = 0;
+
+        function date_ajax(url) {
+            //console.log(url);
+            $.ajax({
+                url: url,
+                type: "get",
+                dataType: 'jsonp',
+                success: function (data) {
+                    if (data.resultCode == "0") {
+                        show_list(data);
+                    } else {
+                        //showToast(data.error);
+                    }
+                },
+                error: function () {
+                    //showToast("error!");
+                }
+            })
+        }
+
+        var totalmoney = 0;
+
+        function show_list(data) {
+            //console.log(JSON.stringify(data));
+            var strHtml = "";
+            //console.log(data.datas.list.length);
+            totalmoney = 0;
+            for (var i = 0; i < data.datas.list.length; i++) {
+                //console.log(data.datas.list[i].gia);
+                //GIA
+                if (getUrlParam("orderid").indexOf(data.datas.list[i].id) >= 0) {
+                    if (isDefine(data.datas.list[i].gia)) {
+                        for (var key in data.datas.list[i].gia) {
+                            if (key == 'sn') {
+                                strHtml1 = '货号:' + data.datas.list[i].gia[key];
+                            }
+
+                            if (key == 'style') {
+                                strHtml2 = '<div class="ub ufl  size10"><span class="bc-text-c2">形状:' +
+                                    '</span>' + data.datas.list[i].gia[key] +
+                                    '</div><div class="ub ufl  size10 bc-text-c2" style="margin:0 0.1em">|</div>';
+                            }
+
+                            if (key == 'weight') {
+                                strHtml3 = '<div class="ub ufl  size10"><span class="bc-text-c2">重量:' +
+                                    '</span>' + data.datas.list[i].gia[key] +
+                                    '</div><div class="ub ufl  size10 bc-text-c2" style="margin:0 0.1em">|</div>';
+                            }
+
+                            if (key == 'color') {
+                                strHtml4 = '<div class="ub ufl  size10"><span class="bc-text-c2">颜色:' +
+                                    '</span>' + data.datas.list[i].gia[key] +
+                                    '</div><div class="ub ufl  size10 bc-text-c2" style="margin:0 0.1em">|</div>';
+                            }
+
+                            if (key == 'clarity') {
+                                strHtml5 = '<div class="ub ufl  size10"><span class="bc-text-c2">净度:' +
+                                    '</span>' + data.datas.list[i].gia[key] +
+                                    '</div><div class="ub ufl  size10 bc-text-c2" style="margin:0 0.1em">|</div>';
+                            }
+
+                            if (key == 'cut') {
+                                strHtml6 = '<div class="ub ufl  size10"><span class="bc-text-c2">切工:' +
+                                    '</span>' + data.datas.list[i].gia[key] +
+                                    '</div><div class="ub ufl  size10 bc-text-c2" style="margin:0 0.1em">|</div>';
+                            }
+
+                            if (key == 'polish') {
+                                strHtml7 = '<div class="ub ufl  size10"><span class="bc-text-c2">抛光:' +
+                                    '</span>' + data.datas.list[i].gia[key] +
+                                    '</div><div class="ub ufl  size10 bc-text-c2" style="margin:0 0.1em">|</div>';
+                            }
+
+                            if (key == 'symmetry') {
+                                strHtml8 = '<div class="ub ufl  size10"><span class="bc-text-c2">对称:' +
+                                    '</span>' + data.datas.list[i].gia[key] +
+                                    '</div><div class="ub ufl  size10 bc-text-c2" style="margin:0 0.1em">|</div>';
+                            }
+
+                            if (key == 'fluorescence') {
+                                strHtml9 = '<div class="ub ufl  size10"><span class="bc-text-c2">荧光:' +
+                                    '</span>' + data.datas.list[i].gia[key] +
+                                    '</div><div class="ub ufl  size10 bc-text-c2" style="margin:0 0.1em">|</div>';
+                            }
+
+                            if (key == 'certtype') {
+                                strHtml10 = '<div class="ub ufl  size10"><span class="bc-text-c2">证书:' +
+                                    '</span>' + data.datas.list[i].gia[key] +
+                                    '</div><div class="ub ufl  size10 bc-text-c2" style="margin:0 0.1em">|</div>';
+                            }
+
+                            if (key == 'certno') {
+                                strHtml11 = '<div class="ub ufl  size10"><span class="bc-text-c2">证书号:' +
+                                    '</span>' + data.datas.list[i].gia[key] + '</div>';
+                            }
+
+                            if (key == 'price') {
+                                strHtml12 = data.datas.list[i].gia[key];
+                            }
+                        }
+                        totalmoney = parseFloat(totalmoney) + parseFloat(strHtml12);
+                        strHtml += '<div class="ub uinn ubb bc-border-c4">';
+                        //           strHtml += '<div class="ub ub-pc ub-ac" style="width:1.5em; ">';
+                        //            strHtml += '<input type="checkbox" name="" class="selects" data-cartid="'+data.datas.list[i].id+'" data-price="'+strHtml12+'">';
+                        //           strHtml += '</div>';
+                        strHtml +=
+                            '<div class="ub ub-img uba bc-border-c4" style="width:4em;height:4em; background-image: url(../static/images/diamond.png);"></div>';
+                        strHtml += '<div class="ub ub-f1 ub-ver">';
+                        strHtml +=
+                            '<div class="ub umar-l " style="padding-bottom:.5em; border-bottom:1px #a9a9a9 dashed">';
+                        strHtml += '<div class="ub ub-f1  size12">' + strHtml1 + '</div>';
+                        strHtml +=
+                            '<div class="ub  bc-text-b1"><i class="ub ub-img" style="width:1.2em; height:1.2em;"></i>￥<span class="pricelist">' +
+                            strHtml12 + '</span></div>';
+                        strHtml += '</div>';
+                        strHtml +=
+                            '<div class="umar-l umar-t  bc-text-b1">                                        ';
+                        strHtml = strHtml + strHtml2 + strHtml3 + strHtml4 + strHtml5 + strHtml6 + strHtml7 +
+                            strHtml8 + strHtml9 + strHtml10 + strHtml11;
+                        strHtml += '</div>';
+                        strHtml += '</div>';
+                        strHtml += '</div>';
+                    } else {
+                        totalmoney = parseFloat(totalmoney) + parseFloat(data.datas.list[i].marketprice);
+                        strHtml += '<div class="ub uinn ubb bc-border-c4">';
+                        //strHtml +='<div class="ub ub-pc ub-ac " style="width:1.5em; ">';
+                        //strHtml +='<input type="checkbox" name=""  class="selects" data-cartid="'+data.datas.list[i].id+'" data-price="'+data.datas.list[i].marketprice+'">';
+                        //strHtml +='</div>   ';
+                        strHtml +=
+                            '<div class="ub ub-img uba bc-border-c4" style="width:4em;height:4em; background-image: url(' +
+                            data.datas.list[i].goods.thumb.url + '); "></div>';
+                        strHtml += '<div class="ub ub-f1 ub-ver">';
+                        strHtml += '<div class="ub umar-l ">';
+                        strHtml += '<div class="ub ub-f1 size12">' + data.datas.list[i].goods.title + '</div>';
+                        strHtml +=
+                            '<div class="ub  bc-text-b1"><i class="ub ub-img" style="width:1.2em; height:1.2em;"></i>￥<span class="pricelist">' +
+                            data.datas.list[i].marketprice + '</span></div>';
+                        strHtml += '</div>';
+                        strHtml +=
+                            '<div class="ub umar-l  umar-b  " style="padding-bottom:.5em; border-bottom:1px #a9a9a9 dashed">';
+                        strHtml += '<div class="ub ub-f1">';
+                        strHtml += '<div class="ub bc-text-b1">';
+                        strHtml += '<span class="bc-text-c1 size12">手寸:</span><span  class="size12">' + data.datas
+                            .list[i].size + '</span';
+                        strHtml += '<span class="bc-text-c1 size12">数量:</span><span  class="size12">X' + data.datas
+                            .list[i].total + '</span>';
+                        strHtml += '</div>';
+                        strHtml += '</div>';
+                        strHtml +=
+                            '<div class="ub"><i class="ub ub-img" style="width:1.2em; height:1.2em; "></i></div>';
+                        strHtml += '</div>';
+                        strHtml += '<div class="umar-l  bc-text-b1">';
+                        //strHtml +='<div class="ub ufl">HDC554587</div>';
+                        //strHtml +='<div class="ub ufl" style="margin:0 0.1em">|</div>';
+                        var erpHtml = '';
+                        for (var key in data.datas.list[i].erp) {
+                            if (data.datas.list[i].erp[key] != '') {
+                                if (key == 'p1') {
+                                    erpHtml += '<div class="ub ufl size10">' + data.datas.list[i].erp[key] +
+                                        '</div><div class="ub ufl size10" style="margin:0 0.1em">|</div>';
+                                }
+                                if (key == 'p2') {
+                                    erpHtml += '<div class="ub ufl size10">' + data.datas.list[i].erp[key] +
+                                        '</div><div class="ub ufl size10" style="margin:0 0.1em">|</div>';
+                                }
+                                if (key == 'p3') {
+                                    erpHtml += '<div class="ub ufl size10">' + data.datas.list[i].erp[key] +
+                                        '</div><div class="ub ufl size10" style="margin:0 0.1em">|</div>';
+                                }
+                                if (key == 'p4') {
+                                    erpHtml += '<div class="ub ufl size10">' + data.datas.list[i].erp[key] +
+                                        '</div><div class="ub ufl size10" style="margin:0 0.1em">|</div>';
+                                }
+                                //if (key=='p5') {erpHtml+='<div class="ub ufl size10">'+data.datas.list[i].erp[key]+'</div>';}
+                                //if (key=='p6') {erpHtml+='<div class="ub ufl size10">'+data.datas.list[i].erp[key]+'</div><div class="ub ufl size10" style="margin:0 0.1em">|</div>';}
+                                //if (key=='p7') {erpHtml+='<div class="ub ufl size10">'+data.datas.list[i].erp[key]+'</div><div class="ub ufl size10" style="margin:0 0.1em">|</div>';}
+                                // if (key=='p8') {erpHtml+='<div class="ub ufl size10">'+data.datas.list[i].erp[key]+'</div><div class="ub ufl size10" style="margin:0 0.1em">|</div>';}
+                                // if (key=='p9') {erpHtml+='<div class="ub ufl size10">'+data.datas.list[i].erp[key]+'</div><div class="ub ufl size10" style="margin:0 0.1em">|</div>';}
+
+                            }
+
+                        }
+
+                        strHtml += erpHtml;
+                        strHtml += '</div>';
+                        strHtml += '</div>';
+                        strHtml += '</div>';
+                    }
+
+                }
+
+            }
+
+            //////console.log(strHtml);
+            $("#cartBox").html(strHtml);
+            $(".totalmoney").html('合计:￥' + totalmoney.toFixed(2));
+
+            init_data();
+
+        }
+        //加载购物车
+        var key = getKey();
+        date_ajax(
+            appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_cart&key=' +
+            key);
+        //全选
+        $('#selectAll').on('change', function (evt) {
+            if (this.checked) {
+                //alert('1');
+                $('.selects').each(function () {
+
+                    if (!$(this).is(":checked")) {
+                        $(this).prop('checked', true);
+                    }
+                })
+            } else {
+
+                $('.selects').each(function () {
+                    if ($(this).is(":checked")) {
+                        $(this).prop('checked', false);
+                    }
+                })
+            }
+            //add_price();
+        });
+
+        function init_data() {
+
+            $('.selects').each(function () {
+
+                //$(this).on('change', function(evt) { add_price();   })
+            })
+        }
+        // function add_price(){
+        //       var totalmoney=0;
+        //      $('.selects').each(function() {             
+        //                 if ($(this).is(":checked")) {
+        //                    // alert($(this).data("price"));
+
+        //                    totalmoney=parseFloat(totalmoney)+parseFloat($(this).data("price"));
+        //                    //alert(totalmoney);
+        //                 }
+
+        //             })
+
+        //         $(".totalmoney").html('合计:￥'+totalmoney.toFixed(2));
+        // }
+        //alert(orderparam);
+        touch.on('.btPostOrder', 'tap', function (ev) {
+
+            $('#joins').modal();
+            var orderparam = getUrlParam("orderparam");
+            var key = getKey();
+
+            var addressid = $('input:radio[name="bossaddress"]:checked').val();
+            //alert(addressid);
+
+            if (!isDefine(addressid)) {
+
+                showToast('请选择收货地址');
+                return false;
+
+            } else {
+
+                console.log(
+                    appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_order&key=' +
+                    key + '&act=add&cart_id=' + orderparam + '&addressid=' + addressid);
+                $.ajax({
+                    url: appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_order&key=' +
+                        key + '&act=add&cart_id=' + orderparam + '&addressid=' + addressid,
+                    type: "get",
+                    dataType: 'jsonp',
+                    success: function (data) {
+                        if (data.resultCode == "0") {
+                            var key = getKey();
+                            date_ajax(
+                                appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_cart&key=' +
+                                key);
+                            openWindow(17, '订单列表',
+                                appUrl + '/addons/ewei_shop/template/app/default/shop/order.html'
+                            );
+
+                        } else {
+                            //showToast(data.error);                            
+                        }
+                    },
+                    error: function () {
+                        //showToast("error!");
+                    }
+                })
+
+            }
+        })
+
+        //$(".totalmoney").html(getUrlParam("else"));
+        //
+        function load_oraddress() {
+            // myCheck();
+            // 获取表单的编辑的信息
+            // 检测password是否一致
+            if ($('#ore-password').val() === $('#ocheck-password').val()) {
+                // console.log($('#or-consignee').val());
+                // console.log($('#or-tel').val());
+                // console.log($('#or-consignee').val());
+                // console.log($('#ore-password').val());
+                // console.log($('#ocheck-password').val());
+                // location.reload();
+                load_change();
+
+
+            } else {
+
+            }
+
+
+        }
+
+        function load_change() {
+            // $('.consignee').html(($('#or-consignee').val()));
+            // $('.tel').text(($('#or-tel').val()));
+            // $('.caddress').text(($('#or-caddress').val()));
+            data.datas.list[i].realname = $('#or-consignee').val();
+            data.datas.list[i].mobile = $('#or-tel').val();
+            data.datas.list[i].address = $('#or-caddress').val();
+        }
+
+    });
+</script>
+
+<script type="text/javascript">
+    $(function () {
+
+
+
+
+    })
+</script>
+
+</html>

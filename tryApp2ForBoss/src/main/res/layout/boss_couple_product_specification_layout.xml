@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/specification_pop"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/detail_title_separator" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="现货(可多选)"
+                    android:textColor="@color/detail_title_font"
+                    android:textSize="10dp" />
+
+                <android.extend.widget.MenuBar
+                    android:id="@+id/menubar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp" >
+
+                    <LinearLayout
+                        android:id="@+id/menugroup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal" >
+
+                        <android.extend.widget.MenuView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_boss_couple_bg"
+                            android:clickable="true"
+                            android:padding="5dp" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="男戒"
+                                    android:textColor="@drawable/selector_boss_couple_font" />
+
+                                <TextView
+                                    android:id="@+id/men_product_num"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text="款号D008521"
+                                    android:textColor="@drawable/selector_boss_couple_font"
+                                    android:textSize="10dp" />
+                            </LinearLayout>
+                        </android.extend.widget.MenuView>
+
+                        <android.extend.widget.MenuView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_boss_couple_bg"
+                            android:clickable="true"
+                            android:padding="5dp" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="女戒"
+                                    android:textColor="@drawable/selector_boss_couple_font" />
+
+                                <TextView
+                                    android:id="@+id/wmen_product_num"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text="款号D008521"
+                                    android:textColor="@drawable/selector_boss_couple_font"
+                                    android:textSize="10dp" />
+                            </LinearLayout>
+                        </android.extend.widget.MenuView>
+                    </LinearLayout>
+                </android.extend.widget.MenuBar>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/detail_title_separator" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/men_specification_v"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical" >
+
+                    <android.extend.widget.adapter.ScrollListView
+                        android:id="@+id/select_men_specification"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:scrollbars="none" >
+                    </android.extend.widget.adapter.ScrollListView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wmen_specification_v"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical" >
+
+                    <android.extend.widget.adapter.ScrollListView
+                        android:id="@+id/select_wmen_specification"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:scrollbars="none" >
+                    </android.extend.widget.adapter.ScrollListView>
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@color/detail_separator" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="选择数量"
+                    android:textColor="@color/detail_title_font" />
+
+                <TextView
+                    android:id="@+id/product_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="0"
+                    android:textColor="@color/detail_text_font" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="件"
+                    android:textColor="@color/detail_title_font" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@color/detail_separator" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

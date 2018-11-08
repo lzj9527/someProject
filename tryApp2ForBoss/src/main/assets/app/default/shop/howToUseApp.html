@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width,height=device-height,initau08l-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <script src="../static/js/jquery-3.0.0.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-3.0.0.js"><\/script>')</script>
+    <script src="../static/js/jquery.lazyload.js"></script>
+    <!--<script src="js/config.js"></script>-->
+    <title>使用说明</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav_style a{
+            display: inline-block;
+            margin:0.3rem 0;
+            list-style: none;
+            text-decoration: none;
+            color:#2b2b2b;
+            width:10%;
+            font-size:100%;
+            font-weight:bold;
+            border-right:1px solid #000;
+            padding:0 4%;
+            /*cursor:pointer;*/
+        }
+        .nav_style a:last-child{
+            border-right:none;
+        }
+        .navStyleForIos{
+            font-size:90% !important;
+        }
+        .main{
+            display: none;
+        }
+        .active{
+            color:#b1001d !important;
+        }
+        #price_box img{
+            width: 100%;
+            margin:0;
+            padding: 0;
+            border:none;
+            display: block;
+        }
+        #goTop{
+            position:fixed;
+            display:none;
+            width:2rem;
+            height:2rem;
+            background:rgba(0,0,0,0) url(../static/images/gotop.png) no-repeat center center;
+            border:none;
+            border-radius:6px;
+        }
+    </style>
+</head>
+<body>
+
+<nav style="width:100%; text-align: center;" id="p_nav" class="nav_style">
+    <a href="javascript:;" id="p_0" class="active">教学目录</a>
+    <a href="javascript:;" id="p_4">首页介绍</a>
+    <a href="javascript:;" id ="p_1">商品下单</a>
+    <a href="javascript:;" id ="p_2">门店管理</a>
+    <a href="javascript:;" id ="p_3">GIA下单</a>
+</nav>
+
+<!-- 数据填充 -->
+<div style="width:95%; margin: 0 auto;" id="price_box">
+    <div class="main">
+        <img src="../static/images/p_0.jpg" alt="目录篇" >
+    </div>
+    <div class="main" style="text-align: center;">
+        <img src="../static/images/p_4_1.jpg" alt="首页" >
+        <img src="../static/images/p_4_2.jpg" alt="首页" >
+        <img src="../static/images/p_4_3.jpg" alt="首页" >
+        <img src="../static/images/p_4_4.jpg" alt="首页" >
+        <img src="../static/images/p_4_5.jpg" alt="首页" >
+        <img src="../static/images/p_4_6.jpg" alt="首页" >
+        <img src="../static/images/p_4_7.jpg" alt="首页" >
+        <img src="../static/images/p_4_8.jpg" alt="首页" >
+    </div>
+    <div class="main">
+        <img src="../static/images/p_1_1.jpg" alt="商品下单流程" >
+        <img src="../static/images/p_1_2.jpg" alt="商品下单流程" >
+        <img src="../static/images/p_1_3.jpg" alt="商品下单流程" >
+        <img src="../static/images/p_1_4.jpg" alt="商品下单流程" >
+        <img src="../static/images/p_1_5.jpg" alt="商品下单流程" >
+        <img src="../static/images/p_1_6.jpg" alt="商品下单流程" >
+        <img src="../static/images/p_1_7.jpg" alt="商品下单流程" >
+        <img src="../static/images/p_1_8.jpg" alt="商品下单流程" >
+        <img src="../static/images/p_1_9.jpg" alt="商品下单流程" >
+        <img src="../static/images/p_1_10.jpg" alt="商品下单流程" >
+        <img src="../static/images/p_1_11.jpg" alt="商品下单流程" >
+        <img src="../static/images/p_1_12.jpg" alt="商品下单流程" >
+        <img src="../static/images/p_1_13.jpg" alt="商品下单流程" >
+        <img src="../static/images/p_1_14.jpg" alt="商品下单流程" >
+        <img src="../static/images/p_1_15.jpg" alt="商品下单流程" >
+    </div>
+    <div class="main">
+        <img src="../static/images/p_2_1.jpg" alt="门店管理流程" >
+        <img src="../static/images/p_2_2.jpg" alt="门店管理流程" >
+        <img src="../static/images/p_2_3.jpg" alt="门店管理流程" >
+        <img src="../static/images/p_2_4.jpg" alt="门店管理流程" >
+        <img src="../static/images/p_2_5.jpg" alt="门店管理流程" >
+        <img src="../static/images/p_2_6.jpg" alt="门店管理流程" >
+        <img src="../static/images/p_2_7.jpg" alt="门店管理流程" >
+        <img src="../static/images/p_2_8.jpg" alt="门店管理流程" >
+    </div>
+    <div class="main">
+        <img src="../static/images/p_3_1.jpg" alt="GIA/裸钻现货下单流程" >
+        <img src="../static/images/p_3_2.jpg" alt="GIA/裸钻现货下单流程" >
+        <img src="../static/images/p_3_3.jpg" alt="GIA/裸钻现货下单流程" >
+        <img src="../static/images/p_3_4.jpg" alt="GIA/裸钻现货下单流程" >
+        <img src="../static/images/p_3_5.jpg" alt="GIA/裸钻现货下单流程" >
+        <img src="../static/images/p_3_6.jpg" alt="GIA/裸钻现货下单流程" >
+        <img src="../static/images/p_3_7.jpg" alt="GIA/裸钻现货下单流程" >
+        <img src="../static/images/p_3_8.jpg" alt="GIA/裸钻现货下单流程" >
+    </div>
+
+
+</div>
+
+<nav style="width:100%; text-align: center;" id="bottomNav" class="nav_style">
+    <a href="javascript:;" id="p_0_0" class="active">教学目录</a>
+    <a href="javascript:;" id="p_4_4">首页介绍</a>
+    <a href="javascript:;" id="p_1_1" >商品下单</a>
+    <a href="javascript:;" id="p_2_2" >门店管理</a>
+    <a href="javascript:;" id="p_3_3" >GIA下单</a>
+</nav>
+
+<!-- 返回顶部 -->
+<div id="goTop" class="goTop" style="display: none; text-align: center; font-weight: bold; font-size: 0.3rem;">
+    TOP
+</div>
+
+</body>
+<script>
+
+    window.onload = function () {
+// 判断终端
+        if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+//            alert('这是苹果终端');
+            $("#p_nav a").addClass('navStyleForIos');
+            $("#bottomNav a").addClass('navStyleForIos');
+        } else if (/(Android)/i.test(navigator.userAgent)) {
+//            alert('这是安卓终端');
+        } else {
+//            alert('这是pc终端')
+        }
+
+// Tab
+        $(".main").eq(0).show();
+        $("#p_nav a").click(function(){
+            var num =$("#p_nav a").index(this);
+            $(".main").hide();
+            $(".main").eq(num).show().siblings().hide();
+            $('#p_nav a').eq(num).addClass('active').siblings().removeClass('active');
+            $('#bottomNav a').eq(num).addClass('active').siblings().removeClass('active');
+        });
+
+////监听浏览器文字大小代码
+//    (function (doc, win) {
+//        var docEl = doc.documentElement,
+//            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+//            recalc = function () {
+//                var clientWidth = docEl.clientWidth;
+//                if (!clientWidth) return;
+//                docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+//            };
+//
+//        if (!doc.addEventListener) return;
+//        win.addEventListener(resizeEvt, recalc, false);
+//        doc.addEventListener('DOMContentLoaded', recalc, false);
+//    })(document, window);
+
+// bottomNav
+        $("#bottomNav a").click(function () {
+            var index =$("#bottomNav a").index(this);
+//    console.log(index);
+            switch (index){
+                case 0:
+                    $("#p_0").click(); // 目录
+                    break;
+                case 1:
+                    $("#p_4").click(); // 首页介绍
+                    break;
+                case 2:
+                    $("#p_1").click(); // 商品下单
+                    break;
+                case 3:
+                    $("#p_2").click(); // 门店管理
+                    break;
+                case 4:
+                    $("#p_3").click(); // GIA 下单
+                    break;
+            }
+            $('#bottomNav a').eq(index).addClass('active').siblings().removeClass('active');
+            $("#goTop").click();
+        })
+    };
+
+    // 滚回顶部
+    $(window).scroll(function(){
+        var sc=$(window).scrollTop();
+//    var rwidth=$(window).width()+$(document).scrollLeft();
+//    var rheight=$(window).height()+$(document).scrollTop();
+        if(sc>300){
+            $("#goTop").css("display","block");
+            $("#goTop").css("left", 85+"%");
+            $("#goTop").css("top", 85+"%");
+        }else{
+            $("#goTop").css("display","none");
+        }
+    });
+    $("#goTop").click(function(){
+        $('body,html').animate({scrollTop:0},700);
+    });
+
+    $("img").lazyload({effect: "fadeIn"});
+</script>
+
+</html>

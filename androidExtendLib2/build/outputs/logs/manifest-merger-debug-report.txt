@@ -1,0 +1,41 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml:1:1-10:12
+INJECTED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml:1:1-10:12
+INJECTED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml:1:1-10:12
+INJECTED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml:1:1-10:12
+INJECTED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml:1:1-10:12
+INJECTED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml:1:1-10:12
+INJECTED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml:1:1-10:12
+	package
+		ADDED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml:2:5-33
+		INJECTED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml
+		INJECTED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml:4:5-30
+		INJECTED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml
+		INJECTED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml:1:11-69
+	android:versionCode
+		ADDED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml:3:5-28
+		INJECTED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml
+		INJECTED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml
+application
+ADDED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml:7:5-8:19
+	android:allowBackup
+		ADDED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml:7:18-44
+uses-sdk
+INJECTED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml
+INJECTED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml
+INJECTED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml
+INJECTED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml
+		ADDED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml
+		INJECTED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml
+		ADDED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml
+		INJECTED from D:\TryApp2ForBoss-master\androidExtendLib2\src\main\AndroidManifest.xml

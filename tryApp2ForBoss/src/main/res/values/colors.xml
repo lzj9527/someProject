@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="base_background">#ffffff</color>
+    <color name="rect_button_font">#f9eef2</color>
+    <color name="rect_button_background">#b1001d</color>
+    <color name="dialog_background">#ffffff</color>
+    <color name="dialog_title_font">#737373</color>
+    <color name="dialog_button_font">#f9eef2</color>
+    <color name="dialog_positive_button_background">#b1001d</color>
+    <color name="dialog_negative_button_background">#b1001d</color>
+    <color name="navigationbar_background">#b1001d</color>
+    <color name="navigationbar_title_font">#ffffff</color>
+    <color name="navigationbar_spiner_font">#737373</color>
+    <color name="statusbar_background">#b1001d</color>
+    <color name="spinner_border">#737373</color>
+    <color name="spinner_background">#ffffff</color>
+    <color name="spinner_font">#737373</color>
+    <color name="spinner_item_focus_background">#b1001d</color>
+    <color name="spinner_item_background">#ffffff</color>
+    <color name="download_progress_background">#ff8a78</color>
+    <color name="download_progress">#b1001d</color>
+    <color name="download_progress_font">#f9eef2</color>
+    <color name="main_menubar_background">#b1001d</color>
+    <color name="main_menubar_badge_background">#ffffff</color>
+    <color name="main_menubar_badge_border">#b1001d</color>
+    <color name="main_menubar_badge_font">#b1001d</color>
+    <color name="detail_title_font">#a9a9a9</color>
+    <color name="detail_title_focus_font">#f65959</color>
+    <color name="detail_title_separator">#a9a9a9</color>
+    <color name="detail_text_font">#ce1d36</color>
+    <color name="detail_separator">#f0efef</color>
+    <color name="detail_item_focus_background">#ff8a78</color>
+    <color name="detail_item_title_font">#d0ac84</color>
+    <color name="detail_item_text_font">#737373</color>
+    <color name="detail_item_spiner_font">#ec3a49</color>
+    <color name="detail_item_separator">#a9a9a9</color>
+
+</resources>

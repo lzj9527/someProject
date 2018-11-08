@@ -1,0 +1,1221 @@
+<!doctype html>
+<html style="width:100%; height:100%">
+
+<head>
+    <title>订单</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <!-- bootstrap start -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/bootstrap-theme.min.css">
+    <script src="../static/js/jquery-3.0.0.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!-- bootstrap end -->
+    <script type="text/javascript" src="../static/js/config.js"></script>
+    <script type="text/javascript" src="../static/js/function.js"></script>
+    <script type="text/javascript" src="../static/js/androidJSInterface.js"></script>
+    <script src="../static/js/touch.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-box.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-base.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-color.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-control.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-icon.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-my.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/dropload.min.css">
+    <script src="../static/js/swiper.min.js"></script>
+</head>
+
+<body class="ub ub-ver" style="width:100%;  min-height:100%" ontouchstart>
+    <div class="tabs ub  umar-b ubb bc-border-c4 ub-fh bc-wihte"  id="tabs" style="z-index:200;position:fixed;left:0;top:0;">
+        <div class="ub ub-f1">
+            <a href="javascript:void(0)" class="active ub ub-f1 ub-pc" data-status="0" data-curpage="1" data-totalpage="1" id="menu_0">
+                <div class="ub uinn-tb umar-t umar-b bc-text-c2">全部</div>
+            </a>
+            <a href="javascript:void(0)" class="ub ub-f1 ub-pc" data-status="4" data-curpage="1" data-totalpage="1" id="menu_4">
+                <div class="ub uinn-tb umar-t umar-b bc-text-c2">待审核
+                    <SUP class="statustip4 hide" style="background-color: #f00;color:#fff;padding:1px">0</SUP>
+                </div>
+            </a>
+            <a href="javascript:void(0)" class="ub ub-f1 ub-pc" data-status="5" data-curpage="1" data-totalpage="1" id="menu_5">
+                <div class="ub uinn-tb umar-t umar-b bc-text-c2">已审核</div>
+            </a>
+            <a href="javascript:void(0)" class="ub ub-f1 ub-pc" data-status="2" data-curpage="1" data-totalpage="1" id="menu_2">
+                <div class="ub uinn-tb umar-t umar-b bc-text-c2">待收货</div>
+            </a>
+            <a href="javascript:void(0)" class="ub ub-f1 ub-pc" data-status="3" data-curpage="1" data-totalpage="1" id="menu_3">
+                <div class="ub uinn-tb umar-t umar-b  bc-text-c2">已完成</div>
+            </a>
+        </div>
+    </div>
+    <div class="ub ub-f1" style="position:relative; padding-top:4em; width:100%; height:100%; box-sizing:border-box ">
+        <div id="page_1" class="ub ub-ver" tabindex="0" style="width:100%; min-height:80%">
+            <div class="ub ub-f1" style="width:100%; height:100%">
+                <div id="tabs-container" class="swiper-container" style="width:100%; min-height:100%">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide">
+                            <div class="content-slide  order_0 ub ub-ver"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-slide order_4 ub ub-ver"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-slide order_5 ub ub-ver"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-slide order_2 ub ub-ver"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-slide order_3 ub ub-ver"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="../static/js/jquery.confirm.js"></script>
+<script type="text/javascript" src="../static/js/dropload.min.js"></script>
+
+
+<script type="text/javascript">
+    var key = getKey();
+//   key = "17d375be1a87810c5d6f0176c167e84c"; // 测试
+//    console.log(key);
+
+    //地址栏参数
+    var slideid = getUrlParam("slide") ? getUrlParam("slide") : 0;
+
+    var page_tab_status = '0'; // nav栏的index
+
+    if (isDefine(slideid)) {
+
+        if (slideid == '0') {
+            page_tab_status = '0';
+        } else if(slideid == '1'){
+            page_tab_status = '4';
+        } else if (slideid == '2') {
+            page_tab_status = '5';
+        } else if (slideid == '3') {
+            page_tab_status = '2';
+        } else if (slideid == '4') {
+            page_tab_status = '3';
+        }
+
+//        console.log(page_tab_status);
+    }
+
+
+    function order_detele(tabid, id1, e) {
+
+        ////alert(id1);
+        ////alert(id2);
+
+        //console.log('delgood');
+        event.stopPropagation();
+
+        $.confirm({
+            title: "删除订单",
+            text: "你确认要删除本订单吗?",
+            confirm: function (button) {
+
+                var url =
+                    appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_order&key=' +
+                    key + "&act=orderdel&id=" + id1;
+                $.ajax({
+                    url: url,
+                    type: "get",
+                    dataType: 'jsonp',
+                    success: function (data) {
+
+                        if (data.resultCode = "0") {
+
+                            // var goodscount=$("#good_"+tabid+"_"+id1).data("count");
+                            // $("#good_"+tabid+"_"+id1).data("count",goodscount-1);
+
+                            // if (goodscount>2){
+                            //    $("#good_"+tabid+"_"+id1+'_'+id2).addClass("uhide");
+                            // }else{
+                            //     $("#good_"+tabid+"_"+id1+'_'+id2).addClass("uhide");
+                            //     $("#good_"+tabid+"_"+id1+" .goodsli").addClass("uhide");
+                            // }
+
+                            var curpage = parseInt($('.tabs .active').data('curpage'));
+                            var status = parseInt($('.tabs .active').data('status'));
+
+                            ////alert(openid);
+                            if (!isDefine(openid)) {
+                                var order_url =
+                                    appUrl +
+                                    '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_order&key=' +
+                                    key + '&page=' + curpage + '&psize=10&status=';
+                            } else {
+                                var order_url =
+                                    appUrl +
+                                    '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_order&openid=' +
+                                    openid + '&page=' + curpage + '&psize=10&key=' + key +
+                                    '&status=';
+                            }
+
+                            data_ajax(order_url + status, status);
+
+                        } else {
+                            showToast(data.error);
+                        }
+
+                    },
+                    error: function (data2) {
+                        showToast(data2);
+                    }
+                })
+            },
+            cancel: function (button) {
+                //button.fadeOut(2000).fadeIn(2000);
+                ////alert("You aborted the operation.");
+            },
+            confirmButton: "删除",
+            cancelButton: "取消"
+        });
+    }
+
+    //删除商品
+    function delgood(tabid, id1, id2, e) {
+
+        ////alert(id1);
+        ////alert(id2);
+
+        //console.log('delgood');
+        event.stopPropagation();
+        $.confirm({
+            title: "删除商品",
+            text: "你确认要删除本商品吗?",
+            confirm: function (button) {
+                var url =
+                    appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_order&key=' +
+                    key + "&act=del&id=" + id1 + "&ogid=" + id2;
+                $.ajax({
+                    url: url,
+                    type: "get",
+                    dataType: 'jsonp',
+                    success: function (data) {
+                        if (data.resultCode = "0") {
+                            // var goodscount=$("#good_"+tabid+"_"+id1).data("count");
+                            // $("#good_"+tabid+"_"+id1).data("count",goodscount-1);
+
+                            // if (goodscount>2){
+                            //    $("#good_"+tabid+"_"+id1+'_'+id2).addClass("uhide");
+                            // }else{
+                            //     $("#good_"+tabid+"_"+id1+'_'+id2).addClass("uhide");
+                            //     $("#good_"+tabid+"_"+id1+" .goodsli").addClass("uhide");
+                            // }
+
+                            var curpage = parseInt($('.tabs .active').data('curpage'));
+                            var status = parseInt($('.tabs .active').data('status'));
+
+                            ////alert(openid);
+                            if (!isDefine(openid)) {
+                                var order_url =
+                                    appUrl +
+                                    '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_order&key=' +
+                                    key + '&page=' + curpage + '&psize=10&status=';
+                            } else {
+                                var order_url =
+                                    appUrl +
+                                    '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_order&openid=' +
+                                    openid + '&page=' + curpage + '&psize=10&key=' + key +
+                                    '&status=';
+                            }
+                            data_ajax(order_url + status, status);
+                        } else {
+                            showToast(data.error);
+                        }
+                    },
+                    error: function (data2) {
+                        showToast(data2);
+                    }
+                })
+            },
+            cancel: function (button) {
+                //button.fadeOut(2000).fadeIn(2000);
+                ////alert("You aborted the operation.");
+            },
+            confirmButton: "删除",
+            cancelButton: "取消"
+        });
+    }
+
+
+
+    //查看订单详情
+    function order_detail(orderid) {
+        //console.log(appUrl + '/addons/ewei_shop/template/app/default/shop/orderdetail.html?orderid=' + orderid);
+        openWindow(16, '订单详情',
+            appUrl + '/addons/ewei_shop/template/app/default/shop/orderdetail.html?orderid=' + orderid,
+            'shop,orderdetail.html?orderid=' + orderid
+        );
+    }
+
+
+    var tabsSwiper = new Swiper('#tabs-container', {
+        autoHeight: true,
+        onInit: function () {},
+        onSlideChangeStart: function () {
+            $(".tabs .active").removeClass('active');
+            $(".tabs a").eq(tabsSwiper.activeIndex).addClass('active');
+            ////console.log(tabsSwiper.activeIndex);
+
+            if (tabsSwiper.activeIndex == '1') {
+                window.scrollTo(0,0);
+                page_tab_status = '4';
+            } else if (tabsSwiper.activeIndex == '2') {
+                window.scrollTo(0,0);
+                page_tab_status = '5';
+            } else if (tabsSwiper.activeIndex == '3') {
+                window.scrollTo(0,0);
+                page_tab_status = '2';
+            } else if (tabsSwiper.activeIndex == '4') {
+                window.scrollTo(0,0);
+                page_tab_status = '3';
+            } else {
+                window.scrollTo(0,0);
+                page_tab_status = '0';
+            }
+
+            ////alert(openid);
+            if (!isDefine(openid)) {
+                var order_url =
+                    appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_order&key=' +
+                    key + '&page=1&psize=10&status=';
+            } else {
+                var order_url =
+                    appUrl +
+                    '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_order&openid=' +
+                    openid + '&page=1&psize=10&key=' + key + '&status=';
+            }
+            data_ajax(order_url + page_tab_status, page_tab_status);
+        },
+        onSlideChangeEnd: function () {
+            //////console.log('onSlideChangeEnd');
+        }
+    })
+
+
+    //加载数据
+    function init_data() {
+        if (isDefine(slideid)) {
+            ////alert('1');
+            slideid = parseInt(slideid);
+            tabsSwiper.slideTo(slideid);
+            $(".tabs .active").removeClass('active');
+            $(".tabs a").eq(tabsSwiper.activeIndex).addClass('active');
+            slideid = null;
+        }
+
+//        // 获取索引(与原生交互)
+//       var selectOrderIndex = function selectOrderIndex() {
+//            $('#tabs a').on('touchstart mousedown',function (e) {
+//                e.preventDefault();
+//                index = $(this).index();
+//                var message = {
+//                    "index": index.toString()
+//                };
+//                console.log(message.index);
+//            });
+//        };
+//        selectOrderIndex();
+
+
+        // 获取索引 发送给 原生（安卓/IOS）
+//        $('#tabs a').on('touchstart mousedown',function (e) {
+//            e.preventDefault();
+//            var index = $(this).index();
+//            selectOrderIndex(index); // 这方法只为原生服务
+//        });
+
+        $(".tabs a").on('touchstart mousedown', function (e) {
+            e.preventDefault();
+            $(".tabs .active").removeClass('active');
+            $(this).addClass('active');
+            tabsSwiper.slideTo($(this).index());
+            var index = $(this).index();
+            selectOrderIndex(index);
+            console.log(index);
+        });
+
+        $("#tabs a").click(function (e) {
+            e.preventDefault();
+        });
+
+        // touch.on('.btnFinish', 'tap', function(ev) {
+        //     var statusflag = '3';
+        //     var id = $(this).data("id");
+        //     op_order_status(id, statusflag);
+        // })
+
+        // touch.on('.btnCheck', 'tap', function(ev) {
+        //     var statusflag = '5';
+        //     var id = $(this).data("id");
+        //     op_order_status(id, statusflag);
+        // })
+
+        // touch.on('.btnCancel', 'tap', function(ev) {
+        //     var statusflag = '-1';
+        //     var id = $(this).data("id");
+
+        //     op_order_status(id, statusflag);
+
+        // })
+
+        //var H = $(".swiper-container").eq(tabsSwiper.activeIndex).height();
+        //  $(".swiper-slide").css('height', H + 'px');
+        // $(".swiper-wrapper").css('height', H + 'px');
+        tabsSwiper.onResize();
+    }
+
+    function data_ajax(url, status) {
+        ////console.log(url);
+        $.ajax({
+            url: url,
+            type: "get",
+            dataType: 'jsonp',
+            success: function (data) {
+                //if (data.resultCode == "0") {
+                //if (isDefine(data.datas.list)){
+                show_list(data, status);
+                //   }
+
+                // } else {
+                //    showToast(data.error);
+                // }
+            },
+            error: function () {
+                //showToast("error!");
+            }
+        })
+    }
+
+
+    function show_list(data, status) {
+        ////console.log(JSON.stringify(data));
+        console.log(data);
+        strHtml = '';
+        // strHtml += '<div id="wrapper">';
+        //     strHtml += '<div id="scroller">';
+        //         strHtml += '<div id="scroller-pullDown">';
+        //             strHtml += '<span id="down-icon" class="icon-double-angle-down pull-down-icon"></span>';
+        //             strHtml += '<span id="pullDown-msg" class="pull-down-msg">下拉刷新</span>';
+        //         strHtml += '</div>';
+        //         strHtml += '<div id="scroller-content">';
+
+        strHtml += '<div class="ub ub-ver">';
+        ////////console.log(data.datas.list.length);
+        var orderstatus = '';
+        var goodnum = 0;
+        var totalprice = 0;
+        var changeprice = 0;
+
+        ////////console.log(data.datas.list.length);
+
+        if (!data.datas || (data.datas && data.datas.list && data.datas.list.length == 0)) {
+            strHtml +=
+                '<div class="ub ub-pc ub-ac" style="text-align:center; margin-top:10%;"><img src="../static/images/no_order.jpg" style="display:block; width:90%"></div>';
+            ////////console.log('没有');
+        } else {
+            for (var i = 0; i < data.datas.list.length; i++) {
+                goodnum = 0;
+                totalprice = 0;
+                changeprice = 0;
+
+                if (i > 0) {
+                    strHtml +=
+                        '<div class="ub" style="height:0.6em; background-color:#e0e0e0; border-bottom:1px #d0d0d0 solid; border-top:1px #d0d0d0 solid;"></div>';
+                }
+
+                strHtml += '<!--开始--><div class="ub   umar-b ub-ver" id="good_' + page_tab_status + '_' + data.datas.list[
+                        i]
+                    .id + '"  data-count="' + data.datas.list[i].count + '">';
+
+                strHtml += '<div class="" style="position: relative;">'; <!-- 测试 class='ub' 多了相对定位-->
+                strHtml += '<div class="ubi  ulim8  bc-bg-b1 uinn ub-pc size10" style="text-align: center; max-width: 100%">' + data.datas.list[i].nickname +
+                    '</div>';<!-- 测试 -->
+                strHtml += '<div class="ub ub-f3 bc-bg-c4 uinn size10" >订单号:' + data.datas.list[i].ordersn + '</div>';
+
+                if (data.datas.list[i].status == '1') {
+                    orderstatus = '待发货';
+                } else if (data.datas.list[i].status == '2') {
+                    orderstatus = '待收货';
+                } else if (data.datas.list[i].status == '3') {
+                    orderstatus = '已完成';
+                } else if (data.datas.list[i].status == '4') {
+                    orderstatus = '待审核';
+                } else if (data.datas.list[i].status == '5') {
+                    orderstatus = '已审核';
+                } else if (data.datas.list[i].status == '-1') {
+                    orderstatus = '已取消';
+                } else {
+                    orderstatus = '';
+                }
+                strHtml += '<div class="ub ub-f1 bc-bg-a1 uinn ub-pc bc-text-c5 size10" style="width: 20%;position: absolute;right: 0;top: 50%;">' + orderstatus + '</div>'; <!-- 测试 多了绝对定位-->
+
+                strHtml += '</div>';
+
+                //加载商品开始
+                var strHtml1, strHtml2, strHtml3, strHtml4, strHtml5, strHtml6, strHtml7, strHtml8, strHtml9, strHtml10,
+                    strHtml11, strHtml12,strHtml13,strHtml14;
+
+                if (isDefine(data.datas.list[i].order_goods)) {
+
+                 //  console.log(data.datas.list[i].order_goods);
+                    for (var j = 0; j < data.datas.list[i].order_goods.length; j++) {
+                        goodnum = goodnum + 1;
+                        strHtml +=
+                            '<div class="ub uinn ubb bc-border-c3" style="padding-left:0px; padding-right:0px;"  id="good_' +
+                            page_tab_status + '_' + data.datas.list[i].id + '_' + data.datas.list[i].order_goods[j].id +
+                            '">';
+
+                        ////////console.log(data.datas.list[i].order_goods[j].gia);
+                        //GIA
+                        if (isDefine(data.datas.list[i].order_goods[j].gia) && data.datas.list[i].order_goods[j].gia !=
+                            '' &&
+                            data.datas.list[i].order_goods[j].goodsid == '0') {
+                                //console.log('GIA定制');
+                            for (var key in data.datas.list[i].order_goods[j].gia) {
+
+                                //alert('11');
+
+                                if (key == 'sn') {
+                                    strHtml1 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">货号:' +
+                                        '</span>' + data.datas.list[i].order_goods[j].gia[key] +
+                                        '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                                }
+
+                                if (key == 'style') {
+                                    strHtml2 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">形状:' +
+                                        '</span>' + data.datas.list[i].order_goods[j].gia[key] +
+                                        '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                                }
+
+                                if (key == 'weight') {
+                                    strHtml3 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">重量:' +
+                                        '</span>' + data.datas.list[i].order_goods[j].gia[key] +
+                                        '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                                }
+
+                                if (key == 'color') {
+                                    strHtml4 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">颜色:' +
+                                        '</span>' + data.datas.list[i].order_goods[j].gia[key] +
+                                        '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                                }
+
+                                if (key == 'clarity') {
+                                    strHtml5 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">净度:' +
+                                        '</span>' + data.datas.list[i].order_goods[j].gia[key] +
+                                        '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                                }
+
+                                if (key == 'cut') {
+                                    strHtml6 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">切工:' +
+                                        '</span>' + data.datas.list[i].order_goods[j].gia[key] +
+                                        '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                                }
+
+                                if (key == 'polish') {
+                                    strHtml7 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">抛光:' +
+                                        '</span>' + data.datas.list[i].order_goods[j].gia[key] +
+                                        '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                                }
+
+                                if (key == 'symmetry') {
+                                    strHtml8 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">对称:' +
+                                        '</span>' + data.datas.list[i].order_goods[j].gia[key] +
+                                        '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                                }
+
+                                if (key == 'fluorescence') {
+                                    strHtml9 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">荧光:' +
+                                        '</span>' + data.datas.list[i].order_goods[j].gia[key] +
+                                        '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                                }
+
+                                if (key == 'certtype') {
+                                    strHtml10 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">证书:' +
+                                        '</span>' + data.datas.list[i].order_goods[j].gia[key] +
+                                        '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                                }
+
+                                if (key == 'certno') {
+                                    //alert('certno');
+                                    //console.log(data.datas.list[i].order_goods[j]);
+                                    strHtml11 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">证书号:' +
+                                        '</span>' + data.datas.list[i].order_goods[j].gia[key] + '</div>'+
+                                        '<div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                                }
+                                if (key == 'caffeine') {
+                                        strHtml13 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">奶咖:' + '</span>' +
+                                            data.datas.list[i].order_goods[j].gia[key] +
+                                            '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                                }
+                                if (key == 'diameter') {
+                                    if(data.datas.list[i].order_goods[j].gia[key] != ""){
+                                        strHtml14 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">尺寸:' + '</span>' +
+                                            data.datas.list[i].order_goods[j].gia[key] + '</div>';
+                                    }else{
+                                        strHtml14 = '';
+                                    }
+                                }
+                                if (key == 'price') {
+                                    var strHtml12 = data.datas.list[i].order_goods[j].gia[key];
+                                }
+                            }
+
+                            totalprice = totalprice + parseFloat(data.datas.list[i].order_goods[j].price);
+                            changeprice = changeprice + parseFloat(data.datas.list[i].order_goods[j].changeprice);
+
+                            strHtml += '<div class="ub  ub-f1   bc-border-c4"   onclick="order_detail(' + data.datas.list[i].id + ')">';
+
+                            strHtml +=
+                                '<div class="ub ub-img uba bc-border-c4" style="width:72px;height:72px; background-image: url(../static/images/diamond.png);"></div>';
+                            strHtml += '<div class="ub ub-f1 ub-ver">';
+                            strHtml += '<div class="ub umar-l ">';
+                            strHtml += '<div class="ub ub-f1 size12">裸钻</div>';
+                            if (data.datas.list[i].agentid == '0') {
+                                console.log(data);
+                                console.log(data.datas.list[i].order_goods[j].price);
+                                strHtml +=
+                                    '<div class="ub  bc-text-c2"><i class="ub ub-img" style="width:1.3em; height:1.3em;background-image:url(../static/images/pprice.png)"></i>￥<span class="pricelist">' +
+                                    data.datas.list[i].order_goods[j].price + '</span></div>';
+                            } else {
+                                strHtml +=
+                                    '<div class="ub  bc-text-c2"><i class="ub ub-img" style="width:1.3em; height:1.3em;background-image:url(../static/images/iconprice.png)"></i>￥<span class="pricelist">' +
+                                    data.datas.list[i].order_goods[j].price + '</span></div>';
+                            }
+
+                            strHtml += '</div>';
+
+                            strHtml +=
+                                '<div class="ub umar-l " style="padding-bottom:.5em; border-bottom:1px #a9a9a9 dashed">';
+                            strHtml += '<div class="ub ub-f1 size12"></div>';
+                            if (data.datas.list[i].agentid != '0') {
+                                strHtml +=
+                                    '<div class="ub  bc-text-c2"><i class="ub ub-img" style="width:1.3em; height:1.3em; background-image:url(../static/images/pprice.png)"></i>￥<span class="pricelist">' +
+                                    data.datas.list[i].order_goods[j].changeprice + '</span></div>';
+                                console.log(data.datas.list[i].order_goods[j].changeprice);
+                            }
+                            strHtml += '</div>';
+
+
+                            strHtml +=
+                                '<div class="umar-l umar-t  bc-text-c2">                                        '; // 测试 ↓
+
+                            strHtml = strHtml + strHtml1 + strHtml2 + strHtml3  + strHtml4 + strHtml5 + strHtml6 +
+                                strHtml7 +
+                                strHtml8 + strHtml9 + strHtml10 + strHtml11 + strHtml13 + strHtml14;
+
+                            strHtml += '</div>';
+                            strHtml += '</div>';
+
+
+                            if ((data.datas.list[i].status == '4' || data.datas.list[i].status == '5') && data.datas.list[
+                                    i]
+                                .count > 1) {
+                                strHtml += '<div class="ub ub-pc ub-ac goodsli" style="width:3em;z-index:998 " >';
+                                strHtml +=
+                                    '<div class="ub ub-img " style="width:2em;margin:0.5em; height:2em;z-index:998;  background-image:url(../static/images/btdelete.png)" onclick="delgood(' +
+                                    page_tab_status + ',' + data.datas.list[i].id + ',' + data.datas.list[i].order_goods[
+                                        j]
+                                    .id + ')"></div>';
+                                strHtml += '</div>   ';
+                            }
+                            
+                            strHtml += '</div>';
+                            strHtml += '</div>';
+
+                        } else { // 定制
+                            
+                            if (isDefine(data.datas.list[i].order_goods[j].goods)) {
+
+                                strHtml += '<div class="ub uinn  bc-border-c4 ub-f1"   onclick="order_detail(' + data.datas
+                                    .list[i].id + ')">';
+
+                                //console.log(data.datas.list[i].order_goods[j].customization);
+                                if(data.datas.list[i].order_goods[j].customization == 1){   // 定制
+                                    strHtml +=
+                                            '<div class="ub ub-img uba bc-border-c4" style="width:72px;height:72px;  background-image: url(' +
+                                            data.datas.list[i].order_goods[j].goods.thumb.url + '); ">'
+                                            + '<div style="width:72px;height:72px; background-image: url(../static/images/customization.png);background-size: cover;"></div></div>';
+                                } else {
+                                     strHtml +=
+                                        '<div class="ub ub-img uba bc-border-c4" style="width:72px;height:72px; background-image: url(' +
+                                        data.datas.list[i].order_goods[j].goods.thumb.url + '); "></div>';
+                                }
+                               
+
+                                strHtml += '<div class="ub ub-f1 ub-ver">';
+                                strHtml += '<div class="ub umar-l ">';
+                                strHtml += '<div class="ub ub-f1 size12">' + data.datas.list[i].order_goods[j].goods.title +
+                                    '</div>';
+
+                                if (data.datas.list[i].agentid == '0') {
+                                    strHtml +=
+                                        '<div class="ub  bc-text-c2"><i class="ub ub-img" style="width:1.3em; height:1.3em; background-image:url(../static/images/pprice.png)"></i>￥<span class="pricelist">' +
+                                        data.datas.list[i].order_goods[j].price + '</span></div>';
+                                } else {
+                                    strHtml +=
+                                        '<div class="ub  bc-text-c2"><i class="ub ub-img" style="width:1.3em; height:1.3em; background-image:url(../static/images/iconprice.png)"></i>￥<span class="pricelist">' +
+                                        data.datas.list[i].order_goods[j].price + '</span></div>';
+                                }
+
+                                strHtml += '</div>';
+
+                                strHtml +=
+                                    '<div class="ub umar-l  umar-b  " style="padding-bottom:.5em; border-bottom:1px #a9a9a9 dashed">';
+                                strHtml += '<div class="ub ub-f1">';
+                                strHtml += '<div class="ub  bc-text-c2">';
+                                if (isDefine(data.datas.list[i].order_goods[j].size)) {
+                                    if (data.datas.list[i].order_goods[j].size != '0') {
+                                        strHtml += '<span class="bc-text-c1 size12">手寸:</span>' + data.datas.list[i].order_goods[
+                                            j].size + '';
+                                    }
+                                    if (data.datas.list[i].order_goods[j].size == '0' || data.datas.list[i].order_goods[
+                                            j].size ==
+                                        '') {
+                                        strHtml += "";
+                                    }
+                                }
+
+                                strHtml += '<span class="bc-text-c1 size12">数量:</span>X' + data.datas.list[i].order_goods[
+                                        j]
+                                    .total + '';
+                                strHtml += '</div>';
+                                //strHtml += '<div class="ub  bc-text-c2"><i class="ub ub-img" style="width:1.2em; height:1.2em;"></i>￥<span class="pricelist">' + data.datas.list[i].order_goods[j].price + '</span></div>';
+                                strHtml += '</div>';
+
+                                if (data.datas.list[i].agentid != '0' && data.datas.list[i].order_goods[j].changeprice >
+                                    0) {
+                                    strHtml +=
+                                        '<div class="ub"><i class="ub ub-img" style="width:1.3em; height:1.3em;  background-image:url(../static/images/pprice.png)"></i>￥<span class="pricelist">' +
+                                        data.datas.list[i].order_goods[j].changeprice + '</span></div>';
+                                }
+
+
+                                strHtml += '</div>';
+                                strHtml += '<div class="umar-l  bc-text-c2">';
+
+                                var erpHtml = '';
+
+                                if (isDefine(data.datas.list[i].order_goods[j].erpdata)) {
+
+                                    if (isDefine(data.datas.list[i].order_goods[j].erpdata.erpid) & data.datas.list[i].order_goods[
+                                            j].erpdata.erpid != '') {
+                                        erpHtml +=
+                                            '<div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">货号:</div> <div class="ubi ufl size10 bc-text-c2">' +
+                                            data.datas.list[i].order_goods[j].erpdata.erpid +
+                                            '</div><div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>';
+                                    }
+
+                                    if (isDefine(data.datas.list[i].order_goods[j].erpdata.p1) & data.datas.list[i].order_goods[
+                                            j].erpdata.p1 != '') {
+                                        erpHtml +=
+                                            '<div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">金重:</div> <div class="ubi ufl size10 bc-text-c2">' +
+                                            data.datas.list[i].order_goods[j].erpdata.p1 +
+                                            '</div><div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>';
+                                    }
+
+                                    if (isDefine(data.datas.list[i].order_goods[j].erpdata.p4) & data.datas.list[i].order_goods[
+                                            j].erpdata.p4 != '') {
+                                        erpHtml +=
+                                            '<div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">材质:</div> <div class="ubi ufl size10 bc-text-c2">' +
+                                            data.datas.list[i].order_goods[j].erpdata.p4 +
+                                            '</div><div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>';
+                                    }
+
+                                    if (isDefine(data.datas.list[i].order_goods[j].erpdata.p7) & data.datas.list[i].order_goods[
+                                            j].erpdata.p7 != '') {
+                                        erpHtml +=
+                                            '<div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">副石:</div> <div class="ubi ufl size10 bc-text-c2">' +
+                                            data.datas.list[i].order_goods[j].erpdata.p7 +
+                                            '</div><div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>';
+                                    }
+
+                                    if (isDefine(data.datas.list[i].order_goods[j].erpdata.p6) & data.datas.list[i].order_goods[
+                                            j].erpdata.p6 != '') {
+                                        erpHtml +=
+                                            '<div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">主石</div> <div class="ubi ufl size10 bc-text-c2">' +
+                                            data.datas.list[i].order_goods[j].erpdata.p6 +
+                                            '</div><div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>';
+                                    }
+
+                                    if (isDefine(data.datas.list[i].order_goods[j].erpdata.p8) & data.datas.list[i].order_goods[
+                                            j].erpdata.p8 != '') {
+                                        erpHtml +=
+                                            '<div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">形状:</div> <div class="ubi ufl size10 bc-text-c2">' +
+                                            data.datas.list[i].order_goods[j].erpdata.p8 +
+                                            '</div><div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>';
+                                    }
+
+                                    if (isDefine(data.datas.list[i].order_goods[j].erpdata.p2) & data.datas.list[i].order_goods[
+                                            j].erpdata.p2 != '') {
+                                        erpHtml +=
+                                            '<div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">净度:</div> <div class="ubi ufl size10 bc-text-c2">' +
+                                            data.datas.list[i].order_goods[j].erpdata.p2 +
+                                            '</div><div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>';
+                                    }
+
+                                    if (isDefine(data.datas.list[i].order_goods[j].erpdata.p3) & data.datas.list[i].order_goods[
+                                            j].erpdata.p3 != '') {
+                                        erpHtml +=
+                                            '<div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">颜色:</div> <div class="ubi ufl size10 bc-text-c2">' +
+                                            data.datas.list[i].order_goods[j].erpdata.p3.replace('<', '&lt;') +
+                                            '</div><div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>';
+                                    }
+                                } else {
+                                    ////console.log(data.datas.list[i].order_goods[j].gia);
+
+                                    for (var key2 in data.datas.list[i].order_goods[j].gia) {
+                                        ////alert('1');
+                                        ////console.log(data.datas.list[i].order_goods[j].gia[key2]);
+
+                                        if (key2 == 'sn') {
+                                            strHtml1 =
+                                                '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">货号:' +
+                                                '</span>' + data.datas.list[i].order_goods[j].gia[key2] +
+                                                '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                                        }
+
+                                        if (key2 == 'style') {
+                                            strHtml2 =
+                                                '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">形状:' +
+                                                '</span>' + data.datas.list[i].order_goods[j].gia[key2] +
+                                                '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                                        }
+
+                                        if (key2 == 'weight') {
+                                            strHtml3 =
+                                                '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">重量:' +
+                                                '</span>' + data.datas.list[i].order_goods[j].gia[key2] +
+                                                '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                                        }
+
+                                        if (key2 == 'color') {
+                                            strHtml4 =
+                                                '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">颜色:' +
+                                                '</span>' + data.datas.list[i].order_goods[j].gia[key2] +
+                                                '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                                        }
+
+                                        if (key2 == 'clarity') {
+                                            strHtml5 =
+                                                '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">净度:' +
+                                                '</span>' + data.datas.list[i].order_goods[j].gia[key2] +
+                                                '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                                        }
+
+                                        if (key2 == 'cut') {
+                                            strHtml6 =
+                                                '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">切工:' +
+                                                '</span>' + data.datas.list[i].order_goods[j].gia[key2] +
+                                                '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                                        }
+
+                                        if (key2 == 'polish') {
+                                            strHtml7 =
+                                                '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">抛光:' +
+                                                '</span>' + data.datas.list[i].order_goods[j].gia[key2] +
+                                                '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                                        }
+
+                                        if (key2 == 'symmetry') {
+                                            strHtml8 =
+                                                '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">对称:' +
+                                                '</span>' + data.datas.list[i].order_goods[j].gia[key2] +
+                                                '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                                        }
+
+                                        if (key2 == 'fluorescence') {
+                                            strHtml9 =
+                                                '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">荧光:' +
+                                                '</span>' + data.datas.list[i].order_goods[j].gia[key2] +
+                                                '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                                        }
+
+                                        if (key2 == 'certtype') {
+                                            strHtml10 =
+                                                '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">证书:' +
+                                                '</span>' + data.datas.list[i].order_goods[j].gia[key2] +
+                                                '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                                        }
+
+                                        if (key2 == 'certno') {
+                                            strHtml11 =
+                                                '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">证书号:' +
+                                                '</span>' + data.datas.list[i].order_goods[j].gia[key2] + '</div>';
+                                        }
+                                        if (key2 == 'carematerial') {
+                                            strHtml13 =
+                                                '<div class="ubi ufl  bc-text-c2"><span class="bc-text-c2">材质:' +
+                                                '</span>' + data.datas.list[i].order_goods[j].gia[key2] +
+                                                '</div><div class="ubi ufl bc-text-c3" style="margin:0 0.2em">|</div>';
+                                        }
+                                        if (key2 == 'price') {
+                                            var strHtml12 = data.datas.list[i].order_goods[j].gia[key2];
+                                        }
+                                    }
+                                    erpHtml = '<div class="ubi">' + strHtml1 + strHtml2 + strHtml3 + strHtml13 + strHtml4 +
+                                        strHtml5 +
+                                        strHtml6 + strHtml7 + strHtml8 + strHtml9 + strHtml10 + strHtml11 + '</div>';
+                                }
+                                totalprice = totalprice + parseFloat(data.datas.list[i].order_goods[j].price);
+                                changeprice = changeprice + parseFloat(data.datas.list[i].order_goods[j].changeprice);
+                                strHtml += erpHtml;
+                                strHtml += '</div>';
+                                strHtml += '</div>';
+                                strHtml += '</div>';
+
+                                if ((data.datas.list[i].status == '4' || data.datas.list[i].status == '5') && data.datas
+                                    .list[
+                                        i].count > 1) {
+                                    strHtml += '<div class="ub ub-pc ub-ac goodsli" style="width:3em;z-index:998 " >';
+                                    strHtml +=
+                                        '<div class="ub ub-img  " style="width:2em;margin:0.5em; height:2em; background-image:url(../static/images/btdelete.png)" onclick="delgood(' +
+                                        page_tab_status + ',' + data.datas.list[i].id + ',' + data.datas.list[i].order_goods[
+                                            j].id + ')"></div>';
+                                    strHtml += '</div>   ';
+                                }
+
+                                strHtml += '</div>';
+                                //
+
+                            } else {
+                                // //////console.log((data.datas.list[i].order_goods[j]));
+                            }
+
+                            //strHtml += '</div>';
+                        }
+                        strHtml += '</div><!--结束-->';
+
+                    }
+                }
+                //加载商品结束
+
+                strHtml += '<div class="ub ubb bc-border-b1" >';
+                strHtml +=
+                    '<div class="ub  ub-f1 uinn-l  bc-text-c2" style="padding:0.2em 0.5em" onclick="order_detele(' +
+                    page_tab_status + ',' + data.datas.list[i].id +
+                    ')" ><img src="../static/images/btdelete.png" class="ub" style="height:2em; width:2em"></div>';
+                strHtml += '<div class="ub ub-f1 ub-pe uinn"> 共' + goodnum + '件商品 </div>';
+
+                if (data.datas.list[i].agentid == '0') {
+                    strHtml +=
+                        '<div class="ub  ub-pe uinn bc-text-c2"><i class="ub ub-img" style="width:1.3em; height:1.3em;  background-image:url(../static/images/pprice.png)"></i>￥' +
+                        totalprice.toFixed(2) + '</div>';
+                } else {
+                    strHtml +=
+                        '<div class="ub  ub-pe uinn bc-text-c2"><i class="ub ub-img" style="width:1.3em; height:1.3em;  background-image:url(../static/images/iconprice.png)"></i>￥' +
+                        totalprice.toFixed(2) + '</div>';
+                }
+
+
+                if (data.datas.list[i].agentid != '0' && changeprice.toFixed(2) != 0.00) {
+                    strHtml +=
+                        '<div class="ub  ub-pe uinn bc-text-c2"><i class="ub ub-img" style="width:1.3em; height:1.3em;  background-image:url(../static/images/pprice.png)"></i>￥' +
+                        changeprice.toFixed(2) + '</div>';
+                }
+
+
+                strHtml += '</div>';
+                strHtml += '<div class="ub">';
+                strHtml += '<div class="ub ub-f1 ub-pa ub-ac uinn size10">' + data.datas.list[i].createtime.substring(0,
+                        16) +
+                    '</div>';
+
+                if (data.datas.list[i].status == '1') {
+                    orderstatus = '待发货';
+
+                } else if (data.datas.list[i].status == '2') {
+                    orderstatus = '已发货';
+
+                    strHtml += '<div class="ub ub-f1 ub-pe uinn ">';
+                    strHtml +=
+                        '<div class="ub uba uinn  ub-pc bc-border-b2 bc-bg-b2 bc-text-c5 btnFinish"  onclick="op_order_status(' +
+                        data.datas.list[i].id + ',3)"  data-id="' + data.datas.list[i].id + '">确认收货</div>';
+                    strHtml += '</div>';
+
+                } else if (data.datas.list[i].status == '3') {
+                    orderstatus = '已完成';
+                } else if (data.datas.list[i].status == '4') {
+                    orderstatus = '待审核';
+
+
+
+                    strHtml += '<div class="ub  ub-pe uinn ">';
+                    strHtml += '<div class="ub uba uinn  ub-pc bc-border-b2 btnCancel"  onclick="op_order_status(' +
+                        data.datas
+                        .list[i].id + ',-1)"  data-id="' + data.datas.list[i].id + '">取消订单</div>';
+                    strHtml += '</div>';
+
+                    strHtml += '<div class="ub  ub-pe uinn ">';
+                    strHtml +=
+                        '<div class="ub uba uinn  ub-pc bc-border-b2 bc-bg-b2 bc-text-c5 btnCheck" onclick="op_order_status(' +
+                        data.datas.list[i].id + ',5)"  data-id="' + data.datas.list[i].id + '">通过审核</div>';
+                    strHtml += '</div>';
+
+                } else if (data.datas.list[i].status == '5') {
+                    orderstatus = '已审核';
+
+                    strHtml += '<div class="ub  ub-pe uinn ">';
+                    strHtml += '<div class="ub uba uinn  ub-pc bc-border-b2 btnCancel"  onclick="op_order_status(' +
+                        data.datas
+                        .list[i].id + ',-1)"  data-id="' + data.datas.list[i].id + '">取消订单</div>';
+                    strHtml += '</div>';
+
+                } else if (data.datas.list[i].status == '-1') {
+                    orderstatus = '取消';
+                } else {
+                    orderstatus = '';
+                }
+
+
+                strHtml += '</div>';
+
+
+            }
+        }
+
+        if (isDefine(data.pageInfo)) {
+
+            $('#menu_' + status).data('curpage', data.pageInfo.page);
+
+            $('#menu_' + status).data('totalpage', data.pageInfo.totalPage);
+        } else {
+            $('#menu_' + status).data('curpage', '0');
+            $('#menu_' + status).data('totalpage', '0');
+        }
+
+
+
+        var curpage = parseInt($('.tabs .active').data('curpage'));
+        var totalpage = parseInt($('.tabs .active').data('totalpage'));
+
+        if (curpage > 1) {
+
+
+            if (status == '0') {
+                $(".order_0").append(strHtml);
+                ////////console.log(strHtml);
+            } else if (status == '1') {
+                $(".order_1").append(strHtml);
+
+            } else if (status == '2') {
+                $(".order_2").append(strHtml);
+
+            } else if (status == '3') {
+                $(".order_3").append(strHtml);
+
+            } else if (status == '4') {
+                $(".order_4").append(strHtml);
+
+            } else if (status == '5') {
+                $(".order_5").append(strHtml);
+
+            } else if (status == '-1') {
+                $(".order_6").append(strHtml);
+            } else {
+
+            }
+
+        } else {
+
+            if (status == '0') {
+                $(".order_0").html(strHtml);
+                ////////console.log(strHtml);
+            } else if (status == '1') {
+                $(".order_1").html(strHtml);
+
+            } else if (status == '2') {
+                $(".order_2").html(strHtml);
+
+            } else if (status == '3') {
+                $(".order_3").html(strHtml);
+
+            } else if (status == '4') {
+                $(".order_4").html(strHtml);
+
+            } else if (status == '5') {
+                $(".order_5").html(strHtml);
+
+            } else if (status == '-1') {
+                $(".order_6").html(strHtml);
+            } else {
+
+            }
+
+
+        }
+
+
+        //if (status=='3') {
+        init_data();
+        // }
+
+        ////////console.log($('#menu_'+status).data('totalpage'));
+        dropload.resetload();
+    }
+
+    var key = getKey();
+
+    var openid = getUrlParam("id");
+
+    //var status = getUrlParam("status");
+    ////alert(openid);
+    if (!isDefine(openid)) {
+        var order_url =
+            appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_order&key=' + key +
+            '&page=1&psize=10&status=';
+    } else {
+        var order_url =
+            appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_order&openid=' +
+            openid + '&page=1&psize=10&key=' + key + '&status=';
+    }
+
+    data_ajax(order_url + page_tab_status, page_tab_status);
+
+    // data_ajax(order_url + '4', '4');
+
+    // data_ajax(order_url + '5', '5');
+
+    // data_ajax(order_url + '2', '2');
+
+    // data_ajax(order_url + '3', '3');
+
+
+
+    // 下拉刷新
+    var dropload = $('#page_1').dropload({
+        scrollArea: window,
+        domDown: {
+            domClass: 'dropload-down',
+            domRefresh: '<div class="dropload-refresh">↑上拉加载更多</div>',
+            domUpdate: '<div class="dropload-update">↓释放开始加载</div>',
+            domLoad: '<div class="dropload-load"><span class="loading"></span>加载中...</div>'
+        },
+        domUp: {
+
+            domClass: 'dropload-down',
+            domRefresh: '<div class="dropload-refresh">↑下拉刷新列表</div>',
+            domUpdate: '<div class="dropload-update">↓释放刷新列表</div>',
+            domLoad: '<div class="dropload-load"><span class="loading"></span>加载中...</div>'
+
+        },
+        loadDownFn: function (me) {
+
+            var curpage = parseInt($('.tabs .active').data('curpage'));
+            var totalpage = parseInt($('.tabs .active').data('totalpage'));
+            var status = parseInt($('.tabs .active').data('status'));
+
+            if (totalpage > curpage && totalpage > 1) {
+
+                var newpage = curpage + 1;
+
+                ////alert(openid);
+                if (!isDefine(openid)) {
+                    var order_url =
+                        appUrl +
+                        '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_order&key=' +
+                        key + '&page=' + newpage + '&psize=10&status=';
+                } else {
+                    var order_url =
+                        appUrl +
+                        '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_order&openid=' +
+                        openid + '&page=' + newpage + '&psize=10&key=' + key + '&status=';
+                }
+
+                data_ajax(order_url + status, status);
+            } else {
+                me.resetload();
+            }
+        },
+
+        loadUpFn: function (me) {
+            var curpage = parseInt($('.tabs .active').data('curpage'));
+            var totalpage = parseInt($('.tabs .active').data('totalpage'));
+            var status = parseInt($('.tabs .active').data('status'));
+            ////alert(openid);
+            if (!isDefine(openid)) {
+                var order_url =
+                    appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_order&key=' +
+                    key + '&page=1&psize=10&status=';
+            } else {
+                var order_url =
+                    appUrl +
+                    '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_order&openid=' +
+                    openid + '&page=1&psize=10&key=' + key + '&status=';
+            }
+            data_ajax(order_url + status, status);
+            me.resetload();
+        }
+    });
+
+    function op_order_status(id, flag) {
+        var key = getKey();
+        //console.log(appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_order&key=' + key + '&act=status&id=' + id + '&status=' + flag);
+        $.ajax({
+
+            url: appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_order&key=' +
+                key + '&act=status&id=' + id + '&status=' + flag,
+            type: "get",
+            dataType: 'jsonp',
+            success: function (data) {
+
+                showToast("修改成功");
+
+                data_ajax(order_url + page_tab_status, page_tab_status);
+
+                //data_ajax(order_url + '4', '4');
+
+                //data_ajax(order_url + '5', '5');
+
+                //data_ajax(order_url + '2', '2');
+
+                //data_ajax(order_url + '3', '3');
+            },
+            error: function () {
+                //showToast("error!");
+            }
+        })
+    }
+
+    $(function () {
+        function statustip() {
+            var url = order_url + '4';
+            $.ajax({
+                url: url,
+                type: "get",
+                dataType: 'jsonp',
+                success: function (data) {
+
+                    if (isDefine(data.datas.list)) {
+                        $(".statustip4").html(data.datas.list.length);
+                        $(".statustip4").removeClass('hide');
+                    } else {
+                        $(".statustip4").addClass('hide');
+                    }
+                },
+                error: function () {
+                    //showToast("error!");
+                }
+            })
+        }
+        //statustip();
+        //setInterval(statustip,10000);
+    });
+
+    window.onload = function () {
+        var swiperwrapper = $(".swiper-wrapper");
+        var scale = window.screen.height / window.screen.width;
+        $(".swiper-wrapper").height(document.body.clientWidth * scale + "px");
+    }
+</script>
+
+</html>

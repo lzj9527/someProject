@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clipChildren="false"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clipChildren="true" />
+    </FrameLayout>
+
+    <android.extend.widget.MenuBar
+        android:id="@+id/menubar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_menubar_background" >
+
+        <LinearLayout
+            android:id="@+id/menugroup"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <android.extend.widget.MenuView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_main_menuitem"
+                android:clickable="true"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/selector_main_porduct" />
+            </android.extend.widget.MenuView>
+
+            <android.extend.widget.MenuView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_main_menuitem"
+                android:clickable="true"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/selector_main_shoppingcart" />
+
+                <TextView
+                    android:id="@+id/shoppingcart_num"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="top|right"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/shape_main_menubar_badge_bg"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="99"
+                    android:textColor="@color/main_menubar_badge_font"
+                    android:textSize="7dp" />
+            </android.extend.widget.MenuView>
+
+            <android.extend.widget.MenuView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_main_menuitem"
+                android:clickable="true"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/selector_main_order" />
+            </android.extend.widget.MenuView>
+
+            <android.extend.widget.MenuView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_main_menuitem"
+                android:clickable="true"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/selector_main_my" />
+            </android.extend.widget.MenuView>
+        </LinearLayout>
+    </android.extend.widget.MenuBar>
+
+</LinearLayout>

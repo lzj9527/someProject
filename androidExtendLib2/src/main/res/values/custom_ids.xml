@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- default define ids -->
+    <item name="frame_layout" type="id"></item>
+    <item name="content_container" type="id"></item>
+    <item name="content" type="id"></item>
+    <item name="loading_indicator" type="id"></item>
+    <item name="nextpage_loading" type="id"></item>
+    <item name="titlebar" type="id"></item>
+    <item name="sub_titlebar" type="id"></item>
+    <item name="bottombar" type="id"></item>
+    <item name="left_verticalbar" type="id"></item>
+    <item name="right_verticalbar" type="id"></item>
+    <item name="menubar" type="id"></item>
+    <item name="menugroup" type="id"></item>
+    <item name="menucursor" type="id"></item>
+    <item name="text" type="id"></item>
+    <item name="message" type="id"></item>
+    <item name="title" type="id"></item>
+    <item name="checkbox" type="id"></item>
+    <item name="name" type="id"></item>
+    <item name="position" type="id"></item>
+    <item name="type" type="id"></item>
+    <item name="divider" type="id"></item>
+    <item name="data" type="id"></item>
+    <item name="item" type="id"></item>
+    <item name="image" type="id"></item>
+    <item name="progress" type="id"></item>
+    <item name="progressBar" type="id"></item>
+    <item name="background" type="id"></item>
+    <item name="slider" type="id"></item>
+    <item name="loading" type="id"></item>
+    <item name="list" type="id"></item>
+    <item name="grid" type="id"></item>
+    <item name="flipper" type="id"></item>
+    <item name="waterfall" type="id"></item>
+    <item name="pull" type="id"></item>
+    <item name="left_button" type="id"></item>
+    <item name="right_button" type="id"></item>
+    <item name="back_button" type="id"></item>
+    <item name="camera" type="id"></item>
+    <item name="fragment_container" type="id"></item>
+    <item name="visible" type="id"></item>
+    <item name="recycle" type="id"></item>
+    <item name="load" type="id"></item>
+    <item name="drag_handle" type="id"></item>
+    <item name="fling_handle" type="id"></item>
+    <item name="click_remove" type="id"></item>
+    <item name="webview" type="id"></item>
+    <item name="swipe_refresh" type="id"></item>
+
+</resources>

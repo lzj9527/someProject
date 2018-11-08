@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>搜索</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/>
+    <!-- bootstrap start -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/bootstrap-theme.min.css">
+    <script src="../static/js/jquery-3.0.0.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!-- bootstrap end -->
+    <script type="text/javascript" src="../static/js/config.js"></script>
+    <script type="text/javascript" src="../static/js/function.js"></script>
+    <script type="text/javascript" src="../static/js/androidJSInterface.js"></script>
+    <script src="../static/js/touch.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-box.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-base.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-color.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-control.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-icon.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-my.css">
+
+    <style>
+        .xs_box {
+            position: relative;
+        }
+
+        .giaXS {
+            color: deepskyblue;
+        }
+
+        .giaXS_ClassificationBox {
+            display: none;
+            text-align: center;
+            overflow: hidden;
+            background-color: #F0EFEF;
+            margin: 0 0.4em;
+            margin-bottom: 0.5rem;
+        }
+
+        .giaRangeItem {
+            margin-bottom: 0.2rem;
+        }
+
+        .giaRange {
+            display: inline-block;
+            width: 25%;
+        }
+
+        .setGiaRange {
+            width: 25%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="um-vp" ontouchstart>
+<div id="page_1" class="ub ub-fh" tabindex="0">
+    <div class="ub ub-f1 ub-ver ">
+        <div class="ub ubb bc-border-c3 umar-a">
+            <div class="ub ub-f1 ub-pc uinn size12"><b>门店</b></div>
+            <div class="ub ub-f1 ub-pc uinn size12"><b>系数(零售价)</b></div>
+            <div class="ub ub-f1 ub-pc uinn size12"><b>GIA系数</b></div>
+            <div class="ub ub-f1 ub-pc uinn size12"><b>尾数设置</b></div>
+
+        </div>
+        <div id="shoplist">
+            <!--
+        <div class="ub  bc-border-c3 umar-l umar-r uinn bc-bg-c4">
+            <div class="ub ub-f1 ub-pc uinn">门店A</div>
+            <div class="ub ub-f1 ub-pc uinn">
+                <input type="text" value="" size="4" class="ubi uba bc-border-d1 bc-text-b1 text-center">
+            </div>
+            <div class="ub ub-f1 ub-pc uinn">
+               <input type="text" value="99" size="4" class="ubi uba bc-border-d1 bc-text-b1 text-center" data-toggle="tooltip" data-placement="bottom" title="该门店的尾数数则被屏蔽，零售价将设置为厂家来货价X系数得出的价格。如不填写，则不起作用." >
+            </div>
+        </div>
+        -->
+        </div>
+    </div>
+</div>
+
+<!-- 测试系数修改的保存按钮 -->
+<!--<div class="giaXsSaveTest">点我保存系数</div>-->
+
+</body>
+<script>
+
+    var key = getKey(),
+        strInput = '',
+        inputchange = false,
+        openidArray = [];
+//    key = '17d375be1a87810c5d6f0176c167e84c'; // 测试
+    $.ajax({
+        url: appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=priceset&key=' + key,
+//        url: appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=priceset&key=' + '17d375be1a87810c5d6f0176c167e84c', // 测试
+        type: "get",
+        dataType: 'jsonp',
+        success: function (data) {
+            console.log(data);
+            if (data.resultCode == "0") {
+                var strHtml = "";
+                for (var i = 0; i < data.datas.list.length; i++) {
+                    var openid = data.datas.list[i].id;
+                    openidArray.push(openid);
+                    strHtml += '   <div class="xs_box ub  bc-border-c3 umar-l umar-r uinn bc-bg-c4 inputvalue" data-openid="' + data.datas.list[i].id + '"  data-index="' + i + '" data-shopid="' + data.datas.list[i].id + '">' +
+                        '                <div class="ub  ub-pc uinn size12" style="width:25%">' + data.datas.list[i].nickname + '</div>' + // 门店名字
+
+                        '                <div class="ub  ub-pc uinn size12" style="width:25%">' +
+                        '                    <input type="text" value="' + data.datas.list[i].xs + '" size="4" class="ubi uba bc-border-d1 bc-text-b1 text-center inputvalue1 size12" id="xs" onclick="FixedSomeThing(this)" >' + // 系数(零售价)
+                        '                </div>' +
+
+                        '                <div class="ub  ub-pc uinn size12" style="width:25%">' +
+//                            '                    <input type="text" value="' + data.datas.list[i].xs_gia + '" size="4" class="ubi uba bc-border-d1 bc-text-b1 text-center inputvalue3 size12">' + // GIA系数 旧代码
+                        '                       <text class="giaXS">详情 ▼</text>' +
+                        '                </div>' +
+
+                        '                <div class="ub  ub-pc uinn size12" style="width:25%">' +
+                        '                   <input type="text"  value="' + data.datas.list[i].ws + '" size="4" id="ws" class="ubi uba bc-border-d1 bc-text-b1 text-center inputvalue2 size12" data-toggle="tooltip" data-placement="bottom" onclick="FixedSomeThing(this)" title="该门店的尾数数则被屏蔽，零售价将设置为厂家来货价X系数得出的价格。如不填写，则不起作用." >' + // 尾数设置
+                        '                </div>' +
+                        '            </div>';
+
+                    strHtml += // 分级系数的盒子
+                        '<div data-index="' + i + '  " data-shopid = "' + openid + '" class="giaXS_ClassificationBox">' +
+                        '' +
+                        '</div>'
+
+                }
+                $('#shoplist').html(strHtml);
+
+                $(".inputvalue").each(function () {
+                    strInput += $(this).find('.inputvalue1').val();
+                    strInput += $(this).find('.inputvalue2').val();
+                });
+
+                var curInput = '';
+                $(".inputvalue").bind('input propertychange', function () { // 绑定所有输入框,时刻监听输入发生的变化
+
+                    curInput = '';
+
+                    $(".inputvalue").each(function () {
+                        curInput += $(this).find('.inputvalue1').val();
+                        curInput += $(this).find('.inputvalue2').val();
+//                        curInput += $(this).find('.inputvalue3').val();
+                    });
+
+//                    console.log(strInput);
+//                    console.log(curInput);
+
+                    if (strInput == curInput) { // 当前修改的跟原来的数值一样
+                        inputchange = false;
+                        onPriceSetSucceed();
+                        console.log("值相等")
+                    } else { // 当前修改的跟原来的数值不一样
+                        inputchange = true;
+                        onPriceSetChanged(); // 告诉原生更新值
+                        console.log("值不相等")
+                    }
+
+                });
+
+                $('[data-toggle="tooltip"]').tooltip();
+
+            } else {
+                showToast(data.error);
+            }
+        },
+        error: function () {
+            showToast("error!");
+        }
+    });
+
+    //    onPriceSetSucceed();
+
+    window.onload = function () { // 获取分数段
+
+        console.log(openidArray);
+        var openidStr = "";
+        $.each(openidArray, function (i, item) { // 获得 各门店的 分数系数
+            openidStr += item + "-";
+        });
+        openidStr = openidStr.substr(0, openidStr.length - 1); // 删掉最后的一个 " - "
+        console.log(openidStr);
+
+        /*
+         根据 openid 请求门店的系数
+         */
+        $.ajax({
+            url: appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_xs&key=' + key + "&act=list" + "&openid=" + openidStr,
+            type: "get",
+            dataType: 'jsonp',
+            success: function (data) {
+                console.log(data);
+
+                var strHtml = ""; // 测试
+                var inputvalue,inputId, giaRangeItem, xsArrayId, xsValue;
+
+                for (var i = 0, length = data.datas.length; i < length; i++) { // 可以知道门店数量
+                    var xsArray = data.datas[i].xsArray;
+                    if (xsArray.length > 0) {
+
+                        for (var j = 0, len = data.datas[i].xsArray.length; j < len; j++) {
+                            inputvalue = "inputvalue" + (3 + j);
+                            inputId = "inputId"+(""+i+"" + ""+j+"");
+                            giaRangeItem = "giaRangeItem" + (1 + j);
+                            xsArrayId = data.datas[i].xsArray[j].id;
+                            xsValue = data.datas[i].xsArray[j].xs;
+                            strHtml +=
+                                '<div class="giaRangeItem ' + giaRangeItem + '" data-index="' + j + '" data-xsId' + parseInt(j + 1) + ' = ' + xsArrayId + '>' +
+                                '<text class="giaRange">' + data.datas[i].xsArray[j].range + ' </text>' +
+                                '<input class="setGiaRange ' + inputvalue + '" id="'+ inputId +'" value="' + xsValue + '"  type="number" onclick="FixedSomeThing(this)">' +
+                                '</div>';
+                            $(".giaXS_ClassificationBox").eq(i).html(strHtml);
+                        }
+                        strHtml = "";
+                        $(".giaXS_ClassificationBox").eq(i).attr("data-xsArrayLength", "" + 1 + "");
+                    } else {
+                        showToast("裸石系数可以分段设置啦");
+                        console.log(i);
+                        console.log(data); // 没有进行创建的时候没有分数段的数据
+                        var rangArray = [{"range":"0.3-0.5ct"},{"range":"0.5-1.0ct"},{"range":"1.0-1.5ct"},{"range":"1.5以上"}];
+                        for (var j = 0, len = 4; j < len; j++) {
+                            inputvalue = "inputvalue" + (3 + j);
+                            giaRangeItem = "giaRangeItem" + (1 + j);
+                            console.log(rangArray);
+
+                            strHtml +=
+                                '<div class="giaRangeItem ' + giaRangeItem + '" data-index="' + j + '" data-xsId' + parseInt(j + 1) + ' = ' + xsArrayId + '>' +
+                                '<text class="giaRange">' + rangArray[j].range + ' </text>' +
+                                '<input class="setGiaRange ' + inputvalue + '" value="3"  type="number">' +
+                                '</div>';
+                            $(".giaXS_ClassificationBox").eq(i).html(strHtml);
+                        }
+                        strHtml = "";
+
+                        $(".giaXS_ClassificationBox").eq(i).attr("data-xsArrayLength", "" + 0 + "");
+                    }
+                }
+
+            }
+        });
+
+        var strInputGiaXS = '';
+        $(".giaXS").click(function () {
+            strInputGiaXS = "";
+            $(".giaXS_ClassificationBox").each(function () {
+                strInputGiaXS += $(this).find('.inputvalue3').val(); // 系数
+                strInputGiaXS += $(this).find('.inputvalue4').val(); // 系数
+                strInputGiaXS += $(this).find('.inputvalue5').val(); // 系数
+                strInputGiaXS += $(this).find('.inputvalue6').val(); // 系数
+            });
+        });
+
+        var curInput = "";
+        $(".giaXS_ClassificationBox").bind('input propertychange', function () {
+            curInput = "";
+            $(".giaXS_ClassificationBox").each(function () {
+                curInput += $(this).find('.inputvalue3').val(); // 系数
+                curInput += $(this).find('.inputvalue4').val(); // 系数
+                curInput += $(this).find('.inputvalue5').val(); // 系数
+                curInput += $(this).find('.inputvalue6').val(); // 系数
+            });
+
+            console.log(strInputGiaXS);
+            console.log(curInput);
+
+            if (strInputGiaXS == curInput) { // 当前修改的跟原来的数值一样
+                inputchange = false;
+                onPriceSetSucceed();
+                console.log("值相等");
+            } else { // 当前修改的跟原来的数值不一样
+                inputchange = true;
+                onPriceSetChanged(); // 告诉原生更新值 // 查到有做修改的那个 input 所在 门店 以及 分数段的索引,分别存一个数组，遍历请求 ajax,最终使用 post 
+                console.log("值不相等");
+            }
+        });
+
+        // 裸石系数的分级传值
+        $(".giaXS").click(function () {
+            var index = $(this).parent().parent(".xs_box").attr("data-index");
+            console.log(index);
+
+            if ($(".giaXS_ClassificationBox").eq(index).hasClass("isShow")) {
+                $(".giaXS_ClassificationBox").eq(index).removeClass("isShow");
+                $(".giaXS_ClassificationBox").eq(index).stop().slideUp();
+            } else {
+                $(".giaXS_ClassificationBox").eq(index).addClass("isShow");
+                $(".giaXS_ClassificationBox").eq(index).stop().slideDown();
+            }
+        });
+
+//        $(".giaXsSaveTest").click(function () { // 测试 系数的保存
+//            saveShopGiaPriceFromNative();
+////            saveShopPriceFromNative();
+//        })
+    };
+
+
+    function FixedSomeThing(data) {
+        console.log(data.id);
+        var id = data.id;
+        console.log(document.getElementById(""+ id +""));
+        setTimeout(function(){
+            document.getElementById(""+ id +"").scrollIntoView();
+
+        }, 100);
+    }
+
+</script>
+
+</html>

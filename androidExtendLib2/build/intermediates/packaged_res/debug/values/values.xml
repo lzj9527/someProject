@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DragSortListView">
+    <attr format="dimension" name="collapsed_height"/>
+    <attr format="float" name="drag_scroll_start"/>
+    <attr format="float" name="max_drag_scroll_speed"/>
+    <attr format="color" name="float_background_color"/>
+    <attr name="remove_mode">
+      <enum name="clickRemove" value="0"/>
+      <enum name="flingRemove" value="1"/>
+    </attr>
+    <attr format="boolean" name="track_drag_sort"/>
+    <attr format="float" name="float_alpha"/>
+    <attr format="float" name="slide_shuffle_speed"/>
+    <attr format="integer" name="remove_animation_duration"/>
+    <attr format="integer" name="drop_animation_duration"/>
+    <attr format="boolean" name="drag_enabled"/>
+    <attr format="boolean" name="sort_enabled"/>
+    <attr format="boolean" name="remove_enabled"/>
+    <attr name="drag_start_mode">
+      <enum name="onDown" value="0"/>
+      <enum name="onMove" value="1"/>
+      <enum name="onLongPress" value="2"/>
+    </attr>
+    <attr format="integer" name="drag_handle_id"/>
+    <attr format="integer" name="fling_handle_id"/>
+    <attr format="integer" name="click_remove_id"/>
+    <attr format="boolean" name="use_default_controller"/>
+  </declare-styleable>
+    <declare-styleable name="ProgressBar">
+        <attr name="orientation">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="changeProgressMode">
+            <enum name="none" value="0"/>
+            <enum name="touch" value="1"/>
+            <enum name="slide" value="2"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="RecyclerView">
+        <!-- Class name of the Layout Manager to be used.
+        <p/>
+        The class must extend android.support.v7.widget.RecyclerView$LayoutManager
+        and have either a default constructor or constructor with the signature
+        (android.content.Context, android.util.AttributeSet, int, int).
+         <p/>
+         If the name starts with a '.', application package is prefixed.
+         Else, if the name contains a '.', the classname is assumed to be a full class name.
+         Else, the recycler view package name (android.support.v7.widget) is prefixed. -->
+        <attr format="string" name="layoutManager"/>
+
+        <!-- ============================= -->
+        <!-- Attributes for Layout Manager -->
+        <!-- ============================= -->
+        <eat-comment/>
+
+        <attr name="android:orientation"/>
+        <attr format="integer" name="spanCount"/>
+        <attr format="boolean" name="reverseLayout"/>
+        <attr format="boolean" name="stackFromEnd"/>
+    </declare-styleable>
+    <declare-styleable name="ShapeImageView">
+        <attr name="imageShape">
+            <enum name="circle" value="0"/>
+            <enum name="oval" value="1"/>
+            <enum name="roundRect" value="2"/>
+        </attr>
+        <attr name="clipType">
+            <enum name="start" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="end" value="2"/>
+        </attr>
+        <attr format="dimension" name="radiusX"/>
+        <attr format="dimension" name="radiusY"/>
+    </declare-styleable>
+    <declare-styleable name="SwipeLayout">
+        <attr name="drag_edge">
+            <flag name="left" value="1"/>
+            <flag name="right" value="2"/>
+            <flag name="top" value="4"/>
+            <flag name="bottom" value="8"/>
+        </attr>
+        <attr format="dimension" name="leftEdgeSwipeOffset"/>
+        <attr format="dimension" name="rightEdgeSwipeOffset"/>
+        <attr format="dimension" name="topEdgeSwipeOffset"/>
+        <attr format="dimension" name="bottomEdgeSwipeOffset"/>
+        <attr format="enum" name="show_mode">
+            <enum name="lay_down" value="0"/>
+            <enum name="pull_out" value="1"/>
+        </attr>
+        <attr format="boolean" name="clickToClose"/>
+    </declare-styleable>
+    <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
+    <dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen>
+    <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
+    <item name="back_button" type="id"/>
+    <item name="background" type="id"/>
+    <item name="bottombar" type="id"/>
+    <item name="camera" type="id"/>
+    <item name="checkbox" type="id"/>
+    <item name="click_remove" type="id"/>
+    <item name="content" type="id"/>
+    <item name="content_container" type="id"/>
+    <item name="data" type="id"/>
+    <item name="divider" type="id"/>
+    <item name="drag_handle" type="id"/>
+    <item name="fling_handle" type="id"/>
+    <item name="flipper" type="id"/>
+    <item name="fragment_container" type="id"/>
+    <item name="frame_layout" type="id"/>
+    <item name="grid" type="id"/>
+    <item name="image" type="id"/>
+    <item name="item" type="id"/>
+    <item name="item_touch_helper_previous_elevation" type="id"/>
+    <item name="left_button" type="id"/>
+    <item name="left_verticalbar" type="id"/>
+    <item name="list" type="id"/>
+    <item name="load" type="id"/>
+    <item name="loading" type="id"/>
+    <item name="loading_indicator" type="id"/>
+    <item name="menubar" type="id"/>
+    <item name="menucursor" type="id"/>
+    <item name="menugroup" type="id"/>
+    <item name="message" type="id"/>
+    <item name="name" type="id"/>
+    <item name="nextpage_loading" type="id"/>
+    <item name="position" type="id"/>
+    <item name="progress" type="id"/>
+    <item name="progressBar" type="id"/>
+    <item name="pull" type="id"/>
+    <item name="recycle" type="id"/>
+    <item name="right_button" type="id"/>
+    <item name="right_verticalbar" type="id"/>
+    <item name="slider" type="id"/>
+    <item name="sub_titlebar" type="id"/>
+    <item name="swipe_refresh" type="id"/>
+    <item name="text" type="id"/>
+    <item name="title" type="id"/>
+    <item name="titlebar" type="id"/>
+    <item name="type" type="id"/>
+    <item name="visible" type="id"/>
+    <item name="waterfall" type="id"/>
+    <item name="webview" type="id"/>
+    <string name="default_downloading_text">涓嬭浇涓�...</string>
+    <string name="default_handling_text">澶勭悊涓�...</string>
+    <string name="default_loading_text">鍔犺浇涓�...</string>
+    <string name="pull_to_load_hint_loading">姝ｅ湪鍔犺浇涓�</string>
+    <string name="pull_to_load_hint_normal">涓婃媺鍙互鍔犺浇鏇村</string>
+    <string name="pull_to_load_hint_ready">鏉惧紑鍚庡紑濮嬪姞杞�</string>
+    <string name="pull_to_load_horizontal_hint_normal">宸︽媺鍙互鍔犺浇鏇村</string>
+    <string name="pull_to_load_no_more_data">宸茬粡鍒板簳鍟�</string>
+    <string name="pull_to_refresh_hint_loading">姝ｅ湪鍒锋柊涓�</string>
+    <string name="pull_to_refresh_hint_normal">涓嬫媺鍙互鍒锋柊</string>
+    <string name="pull_to_refresh_hint_ready">鏉惧紑鍚庡埛鏂�</string>
+    <string name="pull_to_refresh_horizontal_hint_normal">鍙虫媺鍙互鍒锋柊</string>
+    <string name="pull_to_refresh_last_time">鏈�鍚庢洿鏂版椂闂� : </string>
+    <style name="NoFrameDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+    <style name="TransparentDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+    <style name="TransparentTheme" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

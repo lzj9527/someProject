@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 娌℃湁鐒︾偣鏃跺瓧浣撻鑹� -->
+    <item android:state_selected="false" android:color="@color/detail_title_font"/>
+    <!-- 閫変腑鏃剁殑瀛椾綋棰滆壊 -->
+    <item android:state_selected="true" android:color="@color/detail_title_focus_font"/>
+    <!-- 闈炶Е鎽告ā寮忎笅鑾峰緱鐒︾偣骞跺崟鍑绘椂鐨勫瓧浣撻鑹� -->
+    <item android:state_focused="true" android:state_pressed="true" android:color="@color/detail_title_font"/>
+
+</selector>

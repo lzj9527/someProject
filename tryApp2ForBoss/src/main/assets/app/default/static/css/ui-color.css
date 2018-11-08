@@ -1,0 +1,348 @@
+/*****************************************/
+
+
+/*基础header颜色*/
+
+.bc-head {
+    background-color: #00A1EA;
+}
+
+
+/*****************************************/
+
+
+/*基础body背景颜色*/
+
+.bc-bg {
+    background-color: #f7F7F7;
+}
+
+
+/*基础背景白颜色*/
+
+.bc-wihte {
+    background-color: #ffffff;
+}
+.bc-range {
+    background-color: #b1001d;
+}
+
+
+/*辅助控件背景颜色*/
+
+.sc-bg {
+    background-color: #efefef;
+}
+
+
+/*辅助控件背景颜色*/
+
+.sc-bg-active {
+    background-color: #BD9C69;
+}
+
+
+/*警告背景色*/
+
+.sc-bg-alert {
+    background-color: #F16412;
+}
+
+
+/*背景配色*/
+
+.bc-bg-a1 {
+    background-color: #ce1d36;
+}
+
+.bc-bg-a2 {
+    background-color: #f65959;
+}
+
+.bc-bg-a3 {
+    background-color: #ff8977;
+}
+
+.bc-bg-b1 {
+    background-color: #D0AC84;
+}
+
+.bc-bg-b2 {
+    background-color: #CDB590;
+}
+
+.bc-bg-b3 {
+    background-color: #E1CBB2;
+}
+
+.bc-bg-c1 {
+    background-color: #3E3E3E;
+}
+
+.bc-bg-c2 {
+    background-color: #737373;
+}
+
+.bc-bg-c3 {
+    background-color: #A9A9A9;
+}
+
+.bc-bg-c4 {
+    background-color: #F0EFEF;
+}
+
+.bc-bg-d1 {
+    background-color: #7F7271;
+}
+
+.bc-bg-d2 {
+    background-color: #E7E3DA;
+}
+.bc-bg-d3 {
+    background-color: #b1001d;
+}
+.bc-bg-e1 {
+    background-color: #f65959;
+}
+
+
+/*****************************************/
+
+
+/*基础字体颜色*/
+
+.bc-text {
+    color: #2b2b2b;
+}
+
+
+/*基础标题字体颜色*/
+
+.bc-text-head {
+    color: white;
+}
+
+
+
+/*辅助字体颜色*/
+
+.sc-text {
+    color: #898989;
+}
+
+
+/*辅助字体颜色*/
+
+.sc-text-active {
+    color: #FFFFFF !important;
+}
+
+
+/*辅助字体颜色*/
+
+.sc-text-hint {
+    color: #E3E3E3;
+}
+
+
+/*辅助字体颜色*/
+
+.sc-text-warn {
+    color: #FC7800;
+}
+
+
+/*辅助字体颜色*/
+
+.sc-text-tab {
+    color: #636363;
+}
+
+.sc-text-visted {
+    color: #be9d6a;
+}
+.activee{
+    background-color: #b1001d;
+    color:#fff;
+}
+.activ{
+    background-color: #fff;
+    color:#fd4106;
+}
+
+
+/*字体配色*/
+.bc-text-a11{
+    color:#b1001d;
+}
+
+.bc-text-a1 {
+    color: #EC3A49;
+}
+
+.bc-text-a2 {
+    color: #b1001d;
+}
+
+.bc-text-a3 {
+    color: #ff8977;
+}
+
+.bc-text-b1 {
+    color: #957958;
+}
+
+.bc-text-b2 {
+    color: #CDB590;
+}
+
+.bc-text-b3 {
+    color: #E1CBB2;
+}
+
+.bc-text-c1 {
+    color: #737373;
+}
+
+.bc-text-c2 {
+    color: #737373;
+}
+
+.bc-text-c3 {
+    color: #A9A9A9;
+}
+
+.bc-text-c4 {
+    color: #F0EFEF;
+}
+
+.bc-text-c5 {
+    color: white;
+} 
+
+.bc-text-c6 {
+    color: #aaaaaa;
+} 
+
+
+.bc-text-c7 {
+    color: #747474;
+} 
+
+
+.bc-text-d1 {
+    color: #7F7271;
+}
+
+.bc-text-d2 {
+    color: #E7E3DA;
+}
+
+.bc-text-e1 {
+    color: #f65959;
+}
+
+
+/*****************************************/
+
+
+/*基础边框颜色*/
+
+.bc-border {
+    border-color: #f3f3f3;
+}
+
+
+/*辅助边框颜色*/
+
+.sc-border {
+    border-color: #bd9c69;
+}
+
+
+/*辅助边框颜色*/
+
+.sc-border2 {
+    border-color: #888888;
+}
+
+
+/*辅助边框颜色*/
+
+.sc-border3 {
+    border-color: #be9d6a;
+}
+
+.sc-border-tab {
+    border-color: #00A1EA;
+}
+
+
+/*边框配色*/
+
+.bc-border-a1 {
+    border-color: #EC3A49;
+}
+
+.bc-border-a2 {
+    border-color: #b1001d;
+}
+
+.bc-border-a3 {
+    border-color: #ff8977;
+}
+
+.bc-border-b1 {
+    border-color: #D0AC84;
+}
+
+.bc-border-b2 {
+    border-color: #CDB590;
+}
+
+.bc-border-b3 {
+    border-color: #E1CBB2;
+}
+
+.bc-border-c1 {
+    border-color: #3E3E3E;
+}
+
+.bc-border-c2 {
+    border-color: #737373;
+}
+
+.bc-border-c3 {
+    border-color: #A9A9A9;
+}
+
+.bc-border-c4 {
+    border-color: #F0EFEF;
+}
+
+.bc-border-d1 {
+    border-color: #7F7271;
+}
+
+.bc-border-d2 {
+    border-color: #E7E3DA;
+}
+.bc-border-e1 {
+    border-color: #f65959;
+}
+
+/*****************************************/
+
+
+/*基础按钮颜色*/
+
+.bc-btn {
+    background-color: #bd9c69;
+}
+
+
+/*辅助按钮颜色*/
+
+.sc-btn {
+    background-color: #ceb692;
+}

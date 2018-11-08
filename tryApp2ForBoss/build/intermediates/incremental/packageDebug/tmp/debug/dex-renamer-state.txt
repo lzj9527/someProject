@@ -1,0 +1,4 @@
+#Thu Nov 08 15:50:11 CST 2018
+base.0=D\:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

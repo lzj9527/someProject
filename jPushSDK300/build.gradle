@@ -1,0 +1,25 @@
+apply plugin: 'com.android.library'
+
+android {
+
+
+    defaultConfig {
+        compileSdkVersion 28
+        buildToolsVersion '28.0.2'
+        minSdkVersion 9
+        targetSdkVersion 28
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    buildToolsVersion = '28.0.3'
+}
+
+dependencies {
+    api files('libs/jcore-android_v1.0.0.jar')
+    api files('libs/jpush-android_v3.0.0.jar')
+}

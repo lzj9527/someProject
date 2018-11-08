@@ -1,0 +1,1419 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>购物车</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/>
+    <!-- bootstrap start -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/bootstrap-theme.min.css">
+    <script src="../static/js/jquery-3.0.0.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!-- bootstrap end -->
+    <script type="text/javascript" src="../static/js/config.js"></script>
+    <script type="text/javascript" src="../static/js/function.js"></script>
+    <script type="text/javascript" src="../static/js/androidJSInterface.js"></script>
+    <script src="../static/js/touch.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-box.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-base.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-color.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-control.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-icon.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-my.css">
+</head>
+
+<body class="um-vp" ontouchstart>
+
+
+<div id="page_1" class="up ub ub-ver" tabindex="0">
+
+    <!-- <div class="ub ub-ver ">
+        <div class="ub ub-pc ub-ac uinn  bc-bg-d3 bc-text-c5 pa-header" style="height:2.8em;" id='cart-header' >购物车</div>
+    </div> -->
+
+    <div class="ub  ub-ver ub-fh ub-f1 " style="overflow:auto" id="cartBox">
+
+        <!-- 购物车订单 -->
+
+        <div class="show" id="cart-page">
+
+
+        </div>
+
+
+        <!-- 收货页面 -->
+        <div class="hide" id="address-page">
+            <!-- 收货地址列表 -->
+            <div class="ub ub-fh"
+                 style="background:url(../static/images/line-95.png) left top repeat-x; height:0.2em; margin:0.5em 0em"></div>
+            <!-- 地址栏一 -->
+            <div class="pluadd">
+                <!-- 默认地址-->
+                <!--<div class="ub  ub-ver umar-l umar-r umar-b ubb  bc-border-c4 bc-bg-c4 address_item" onclick="addressClick(this)">
+                    <div class="ub  ub-f1 uinn" style="font-size: 1.2em;">
+                        <div class="ub ub-f1 "><span class="consignee bc-text-c1">上门自提</span></div>
+                        <div class="ub ub-f1 ub-pe bc-text-c7"><span class="tel  bc-text-c1">4009-005-388</span></div>
+                    </div>
+                    <div class="ub  ub-f1 uinn">
+                        <div class="ub bc-text-c7"><span class="caddress">广东钻生爱珠宝有限公司-广州市番禺区桥兴大道585号大罗国际珠宝城银建大厦3楼</span></div>
+                    </div>
+
+                    <div class="ub ub-ver uinn ubt">
+                        <div class="ub umar-t">
+                            <label class="ub-f1 btradio" onclick="setDefaultAddress()">
+                                <input type="radio" name="addlist" checked value="0" style="vertical-align: middle; margin:0;">
+                                <span style="font-weight:normal;">设为默认</span>
+                            </label>
+                            <div class="ub ub-f1 ub-pe">
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+
+
+                <div id="add-address" class="ub umar-l umar-r" onclick="addbox()">
+                    <div class="ub ub-f1 ub-pc  bc-bg-c4">
+                        <!--<div class="ub-pc" style="width: 4em; height:4em; background: red;"></div>-->
+                        <img src="../static/images/add.jpg" alt="点击添加地址"
+                             style="width: 4em; height:4em; border-radius:2em; opacity: 0.7;">
+                    </div>
+                </div>
+            </div>
+            <div class="ub ub-fh"
+                 style="background:url(../static/images/line-95.png) left top repeat-x; height:0.2em; margin:0.5em 0em"></div>
+        </div>
+
+        <!-- 确认订单页面 -->
+        <div class="hide" id="orlist">
+            <div class="ub umar-l umar-r bc-border-c4">
+                <div class="ub ub-ver ub-f1 uinn">
+                    <div class="ub bc-text-c7">
+                        <span class="bc-text-c6 ubi umw5" style="color:#737373;">订单信息</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ub ub-fh"
+                 style="background:url(../static/images/line-95.png) left top repeat-x; height:0.2em; margin:0.5em 0em">
+
+            </div>
+            <div class="ub  umar-l umar-r ubb bc-border-c4">
+                <div id="listAdd" class="ub ub-ver ub-f1 uinn">
+                    <div class="ub bc-text-c7">
+                        <span class="bc-text-c6 ubi umw5">收货人:</span>
+                        <span class="consignee">罗小姐</span>
+                    </div>
+                    <div class="ub bc-text-c7">
+                        <span class="bc-text-c6 ubi umw5">联系电话:</span>
+                        <span class="tel">13133335555</span>
+                    </div>
+                    <div class="ub bc-text-c7">
+                        <span class="bc-text-c6 ubi umw5">联系地址:</span>
+                        <span class="caddress">北京市测试</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 订单total -->
+            <div class="lisTotal">
+                <!-- 订单详情 -->
+            </div>
+            <div id='chimg' class="ub ub-fh "
+                 style="background:url(../static/images/line-95.png) left top repeat-x; height:0.2em; margin:0.5em 0em">
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- cart footer -->
+    <!-- 购物车 -->
+    <div id="cart-footer" class="show">
+        <div class="ub ">
+            <div class="ub ub-f1 uinn  bc-bg-c4 ">
+                <div class="ub   ub-ac ub-pc umar-t umar-b" style="width:20%;">
+                    <label for="selectAll"><input type="checkbox" name="" id="selectAll"> 全选</label>
+                </div>
+                <div class="ub ub-f1  ub-ac ub-pc umar-t umar-b totalmoney size12">合计:￥0.00</div>
+            </div>
+            <div class="ub  uinn bc-bg-a3 ub-ac ub-pc bc-text-c5 btPostOrder" style="width:35%;">
+                <div class="ub ub-f1  ub-ac ub-pc umar-t umar-b  sc-text-active"> 提交订单
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 收货地址脚部-->
+    <div id="address-footer" class="hide">
+        <div class="ub">
+            <!--<div class="ub ub-f1 uinn  bc-bg-c4 " onclick="addbox()">
+                <div class="ub ub-f1  ub-ac ub-pc umar-t umar-b  size12">新建收货地址</div>
+            </div>-->
+            <div class="ub ub-f1 uinn bc-bg-a3 ub-ac ub-pc bc-text-c5 ">
+                <div class="ub ub-f1  ub-ac ub-pc umar-t umar-b btPostOrderadd sc-text-active"> 确认收货地址</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--订单脚部-->
+    <div id="orFooter" class="hide">
+        <div class="ub">
+            <div class="ub ub-f1 uinn  bc-bg-c4 ">
+                <div class="ub ub-f1  ub-ac ub-pc umar-t umar-b">
+                    <label for="checkAll"><input type="checkbox" name="" id="checkAll">全选</label>
+                </div>
+                <div class="ub ub-f1  ub-ac ub-pc umar-t umar-b priceTotal size12">
+                    合计:￥0.00
+                </div>
+            </div>
+            <div class="ub ub-f1 uinn bc-bg-a3 ub-ac ub-pc bc-text-c5 ">
+                <div class="ub ub-f1  ub-ac ub-pc umar-t umar-b btPostOrderlist sc-text-active">提交订单
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 编辑cart弹框 -->
+    <div class="modal fade" id="cart-mymodal" style="top:-10%">
+        <div class="ub ub-con ub-pc ub-ac">
+            <div class="ub uc-a1 bc-bg ub-ver" style="width: 90%; height:auto">
+                <div class="ub ub-pe uinn umar">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                            style="color:#ec3a49;width: 0.8em; height: 0.8em">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div style=" margin:  2em 2em">
+                    <div class="container-fluid ub ub-pc ">
+                        <div class="ub  bc-text-c2 size14 ">手寸:
+                            <span class="op_num1_left text-center umar-l">-</span>
+                            <span class="op_num1 text-center" data-cartid="" data-size="">11</span>
+                            <span class="op_num1_right text-center">+</span>
+                        </div>
+                    </div>
+                    <div style=" margin:2em 2em 1em 2em" class="ub ub-pc">
+                        <div class="ub uc-a1 bc-bg-d3 ub-ac ub-pc ulev1 uinn bc-text-head ub-f1 umar-a"
+                             data-dismiss="modal" onclick="load_cart()">确定
+                        </div>
+                        <div class="ub uc-a1 bc-bg-d3  ub-ac ub-pc ulev1 uinn bc-text-head ub-f1 umar-a"
+                             data-dismiss="modal">关闭
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 新建地址弹框 -->
+    <div class="modal fade" id="ad-box" style="top:-10%">
+        <div class="ub ub-con ub-pc ub-ac">
+            <div class="ub uc-a1 bc-bg ub-ver" style="width: 90%; height:auto">
+                <div class="ub ub-ver ubb bc-border-c4 ">
+                    <div class="ub  uinn ub-f1 umar-t umar-b">
+                        <div class="ub bc-text-c1 umar-l uinn  tx-c"> 收 货 人:
+                        </div>
+                        <div class="ub ub-f1 bc-text-b1 uinn">
+                            <input type="text" value="" class="ub ub-f1 noborder uinn bc-text-c1" id="txtRealname">
+                        </div>
+                    </div>
+                </div>
+                <div class="ub ub-ver ubb bc-border-c4 ">
+                    <div class="ub  uinn ub-f1 umar-t umar-b">
+                        <div class="ub bc-text-c1 umar-l uinn tx-c">联系电话:</div>
+                        <div class="ub ub-f1 bc-text-b1 uinn">
+                            <input type="text" value="" class="ub ub-f1 noborder uinn bc-text-c1" id="txtMobile">
+                        </div>
+                    </div>
+                </div>
+                <div class="ub ub-ver ubb bc-border-c4 ">
+                    <div class="ub  uinn ub-f1 umar-t umar-b">
+                        <div class="ub bc-text-c1 umar-l uinn  tx-c">详细地址:</div>
+                        <div class="ub ub-f1 bc-text-b1 uinn">
+                            <input type="text" value="" class="ub ub-f1 noborder uinn bc-text-c1" id="txtAddress">
+                        </div>
+                    </div>
+                </div>
+                <!--                 <div class="ub ub-ver ubb bc-border-c4 ">
+                <div class="ub  uinn ub-f1 umar-t umar-b">
+                    <div class="ub bc-text-c1 umar-l uinn  tx-c">默认地址:</div>
+                    <div class="ub ub-f1 bc-text-b1 uinn ">
+                        <input type="checkbox" value="1"  id="isdefault" class="uinn bc-text-c1">
+                    </div>
+                </div>
+            </div> -->
+                <div class="ub ub-ver umar-a ">
+                    <div style=" margin:2em 2em 1em 2em" class="ub ub-pc">
+                        <div class="ub uc-a1 bc-bg-d3  ub-ac ub-pc ulev1 uinn bc-text-head ub-f1 umar-a"
+                             data-dismiss="modal" onclick="plus_address()">确定
+                        </div>
+                        <div class="ub uc-a1 bc-bg-d3  ub-ac ub-pc ulev1 uinn bc-text-head ub-f1 umar-a"
+                             data-dismiss="modal">取消
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--提交订单确认框-->
+    <div class="modal fade" id="btlist2" style="top:-10%">
+        <div class="ub ub-con ub-pc ub-ac">
+            <div class="ub uc-a1 bc-bg ub-ver" style="width: 90%; height:auto">
+                <div class="ub ub-pe uinn umar">
+                    <button type="button" class="close" aria-label="Close"
+                            style="color:#ec3a49;width: 0.8em; height: 0.8em">
+
+                    </button>
+                </div>
+                <h3 class="bc-text-c7" style="text-align:center;">成功提交订单!</h3>
+                <div style=" margin:  1em 4em 1em 4em">
+                    <div style="margin-bottom:2em;" class="ub ub-pc" onclick="cartFinish()">
+                        <div class="ub uc-a1 bc-bg-d3  ub-ac ub-pc ulev1 uinn bc-text-head ub-f1 umar-a size14"
+                             style="width:9em;">朕知道
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    var key = getKey(); // 测试其他账号临时注释
+//    key = "17d375be1a87810c5d6f0176c167e84c"; // 测试
+    console.log(key);
+
+    var orderparam = '';
+    var orderid = '';
+    var selectAddressId = '';
+
+    var totalmoney = 0;
+    // 购物车商品的id
+    var cartids = '';
+
+    var whichPage = 0; // 当前显示的场景 0  购物车 1 地址列表 2 订单确认
+
+    //点击图片查看商品详情
+    function product_onclick(id) {
+        //console.log(id);
+        $.ajax({
+            url: appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods&id=' + id +
+            '&key=' + key,
+            type: "get",
+            dataType: 'jsonp',
+            success: function (data) {
+                if (data.resultCode == "0") {
+                    var tag = data.datas.tag;
+                    if (tag == 'two') {
+                        openDetailWindowInCoupleRing(id, '');
+                    } else {
+                        openDetailWindow(id, '');
+                    }
+                } else {
+                    showToast(data.error);
+                }
+            },
+            error: function () {
+                //showToast("error!");
+            }
+        })
+    }
+
+    function cartFinish() {
+        $('#btlist2').modal('hide');
+        document.location.reload();
+        openWindow(17, '订单列表', appUrl + '/addons/ewei_shop/template/app/default/shop/order.html', 'shop,order.html');
+    }
+
+    // 新建地址
+    function addbox() {
+        // console.log('新建地址了');
+        $('#ad-box').modal();
+    }
+
+    touch.on('.btPostOrderlist', 'touchstart', function () {
+        jion();
+    });
+
+    // 提交订单
+    function jion() {
+        //console.log('提交订单');
+        orderparam = "";
+        orderid = "";
+
+        $(".lisTotal input[type='checkbox']:checked").each(function () {
+            if (orderparam == "") {
+                orderparam = $(this).data("cartid") + "|1";
+                orderid = $(this).data("cartid");
+            } else {
+                orderparam = orderparam + ',' + $(this).data("cartid") + "|1";
+                orderid = orderid + ',' + $(this).data("cartid");
+            }
+            selectAddressId = $('#listAdd').attr('data-addid');
+        });
+        //console.log(appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_order&key=' +
+        //    key + '&act=add&cart_id=' + orderparam + '&addressid=' + selectAddressId);
+        if (orderparam != "") {
+
+            $.ajax({
+                url: appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_order&key=' +
+                key + '&act=add&cart_id=' + orderparam + '&addressid=' + selectAddressId,
+                type: "get",
+                dataType: 'jsonp',
+                success: function (data) {
+                    if (data.resultCode == "0") {
+                        // //console.log(json.stringify(data))
+                        var key = getKey();
+                        date_ajax(
+                            appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_cart&key=' +
+                            key);
+                        onDeleteShoppingCartSucceed();
+                        $('#btlist2').modal().show(500); // 测试
+
+                        // openWindow(17, '订单列表', appUrl + '/addons/ewei_shop/template/app/default/shop/order.html','shop,order.html');
+
+                    } else {
+                        console.log('不能提交不存在的商品' + data.error); // 提交了不存在的商品
+                        showToast(data.error); // 测试
+                    }
+                },
+                error: function () {
+                    showToast("error!");
+                }
+            })
+
+        } else {
+            showToast('请选择商品！');
+        }
+    }
+
+    // 确认订单的价格
+    function ch_prince() {
+        var priceTotal = 0;
+        cartids = '';
+        $('.lisTotal .selects').each(function () {
+            if ($(this).is(":checked")) {
+                // alert($(this).data("price"));
+                if (cartids == '') {
+                    cartids = $(this).data("cartid");
+                } else {
+                    cartids += ',' + $(this).data("cartid");
+                }
+                priceTotal = parseFloat(priceTotal) + parseFloat($(this).data("price"));
+                //alert(totalmoney);
+            }
+        });
+        $(".priceTotal").html('合计:￥' + priceTotal.toFixed(2));
+        // console.log(cartids);
+    }
+
+    function op_goods(op, type, cartid) { // 测试
+        /*
+         op:加减号
+         type:size
+         */
+        var cur_size = $('.op_num1').data("size");
+        // var cur_num = $("#tr_" + cartid).data("goodnum");
+        var cur_num = 1;
+        if (op == 'sub') {
+            if (type == 'size') {
+                if (parseInt(cur_size) > 7) {
+                    cur_size = parseInt(cur_size) - 1;
+                    good_ajax(cartid, cur_size, cur_num)
+                }
+            } else {
+                cur_num = parseInt(cur_num) - 1;
+                good_ajax(cartid, cur_size, cur_num)
+
+            }
+        } else {
+            if (type == 'size') {
+                if (parseInt(cur_size) < 25) {
+                    cur_size = parseInt(cur_size) + 1;
+                    good_ajax(cartid, cur_size, cur_num)
+                }
+
+            } else {
+                cur_num = parseInt(cur_num) + 1;
+                good_ajax(cartid, cur_size, cur_num)
+
+            }
+        }
+    }
+
+    function good_ajax(cartid, cur_size, cur_num) {
+        //console.log(appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_cart&act=edit&icz=' + cartid + '|' + cur_num + '|' + cur_size + '&key=' + key);
+        $.ajax({
+            url: appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_cart&act=edit&icz=' +
+            cartid + '|' + cur_num + '|' + cur_size + '&key=' + key,
+            type: "get",
+            dataType: 'jsonp',
+            success: function (data) {
+
+                if (data.resultCode == "0") {
+                    $('.op_num1').data("size", cur_size);
+                    $('.op_num1').html(cur_size);
+                } else {
+                    showToast(data.error);
+                }
+            },
+            error: function () {
+                //showToast("error!");
+            }
+        })
+    }
+
+    function add_price() { // 测试
+        var totalmoney = 0;
+        cartids = '';
+        $('.selects').each(function () {
+            if ($(this).is(":checked")) {
+//                 alert($(this).data("price"));
+                var stock = $(this).parent(".checkBox_check").siblings(".checkBoxLabel").children(".bc-text-c2").text();
+//                console.log(stock);
+                if (!isDefine(stock)) {   // 判断是否还有库存
+                    $(this).parent('.checkBox_check').parent(".forChoose").css('border', '3px solid red');
+//            $(this).siblings('.checkBox_check').children('#checkBox_Gia').attr('disabled','disabled');
+//            $(this).siblings('.checkBox_check').children('#checkBox_otherRing').attr('disabled','disabled');
+                    console.log('商品没库存,请重新选购标红的商品');
+                    showToast('标红商品没库存,请删除并重新选购'); // 测试
+//            return false;
+                }
+                if (cartids == '') {
+                    cartids = $(this).data("cartid");
+                } else {
+                    cartids += ',' + $(this).data("cartid");
+                }
+
+                totalmoney = parseFloat(totalmoney) + parseFloat($(this).data("price"));
+                //alert(totalmoney);
+            }
+
+        });
+        //console.log(cartids);
+        $(".totalmoney").html('合计:￥' + totalmoney.toFixed(2));
+        //console.log(cartids);
+    }
+
+
+    // 删除购物车 选中的内容
+    function deleteShoppingCart() {
+        // console.log('here');
+        var key = getKey();
+        $.ajax({
+            url: appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_cart&key=' +
+            key + '&act=del&id=' + cartids + '&js=' + Math.random(),
+            type: "post",
+            timeout: 10000,
+            dataType: 'jsonp',
+            beforeSend: function () {
+            },
+            success: function (data) {
+                // 通知原生 购物车删除成功
+                onDeleteShoppingCartSucceed();
+                // 刷新当前页面
+                refresh();
+                // 加载购物车列表
+                date_ajax(
+                    appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_cart&key=' +
+                    key);
+            },
+            error: function (data2) {
+                date_ajax(
+                    appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_cart&key=' +
+                    key);
+            }
+        });
+    }
+
+    // 删除地址栏选中的内容
+    function deleteAddress() {
+        consoel.log('deleteAddress');
+        var key = getKey();
+    }
+
+    function date_ajax(url) {
+        ////console.log(url);
+        $.ajax({
+            url: url,
+            type: "get",
+            dataType: 'jsonp',
+            success: function (data) {
+                if (data.resultCode == "0") {
+                    show_list(data);
+                    console.log(data);
+
+                } else {
+                    //showToast(data.error);
+                    $("#cart-page").html(
+                        '<div class="ub ub-pc ub-ac" style="text-align:center; margin-top:40%;"><img src="../static/images/empty.jpg" style="display:block;width:90%"></div>'
+                    );
+                    $(".totalmoney").html('合计:￥0.00');
+                }
+            },
+            error: function () {
+                ////showToast("error!");
+            }
+        });
+    }
+
+    // 加载商品列表
+    function show_list(data) {
+        ////console.log(JSON.stringify(data));
+        var strHtml = "",
+            i = 0,
+            max = data.datas.list.length;
+        ////console.log(data.datas.list.length);
+        for (; i < max; i++) {
+            ////console.log(data.datas.list[i].gia);
+//            console.log(data.datas);
+
+            var strHtml1, strHtml2, strHtml3, strHtml4, strHtml5, strHtml6, strHtml7, strHtml8,
+                strHtml9, strHtml10, strHtml11, strHtml12, strHtml13, strHtml14;
+            //GIA
+            if (isDefine(data.datas.list[i].gia)) {
+                console.log(data.datas.list[i].gia.sn);
+                for (var key in data.datas.list[i].gia) {
+                    if (key == 'sn') {
+                        strHtml1 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">货号:' + '</span>' +
+                            data.datas.list[i].gia[key] +
+                            '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                    }
+
+                    if (key == 'style') {
+                        strHtml2 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">形状:' + '</span>' +
+                            data.datas.list[i].gia[key] +
+                            '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                    }
+
+                    if (key == 'weight') {
+                        strHtml3 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">重量:' + '</span>' +
+                            data.datas.list[i].gia[key] +
+                            '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                    }
+
+                    if (key == 'color') {
+                        strHtml4 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">颜色:' + '</span>' +
+                            data.datas.list[i].gia[key] +
+                            '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                    }
+
+                    if (key == 'clarity') {
+                        strHtml5 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">净度:' + '</span>' +
+                            data.datas.list[i].gia[key] +
+                            '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                    }
+
+                    if (key == 'cut') {
+                        strHtml6 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">切工:' + '</span>' +
+                            data.datas.list[i].gia[key] +
+                            '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                    }
+
+                    if (key == 'polish') {
+                        strHtml7 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">抛光:' + '</span>' +
+                            data.datas.list[i].gia[key] +
+                            '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                    }
+
+                    if (key == 'symmetry') {
+                        strHtml8 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">对称:' + '</span>' +
+                            data.datas.list[i].gia[key] +
+                            '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                    }
+
+                    if (key == 'fluorescence') {
+                        strHtml9 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">荧光:' + '</span>' +
+                            data.datas.list[i].gia[key] +
+                            '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                    }
+
+                    if (key == 'certtype') {
+                        strHtml10 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">证书:' + '</span>' +
+                            data.datas.list[i].gia[key] +
+                            '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                    }
+
+                    if (key == 'certno') { // 在购物车里,需要做跳转
+                        strHtml11 = '<div class="ub ufl size10 bc-text-c2 certno"><span class="bc-text-c2">证书号:' + '</span>' +
+                            '<span class="certno" style=" color:#d9b611; position: relative; z-index:3;">' + data.datas.list[i].gia[key] + '</span>' +
+                            '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                    }
+                    if (key == 'caffeine') {
+                        strHtml13 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">奶咖:' + '</span>' +
+                            data.datas.list[i].gia[key] +
+                            '</div><div class="ub ufl size10 bc-text-c2" style="margin:0 0.4em">|</div>';
+                    }
+                    if (key == 'diameter') {
+                        if (data.datas.list[i].gia[key] != "") {
+                            strHtml14 = '<div class="ub ufl size10 bc-text-c2"><span class="bc-text-c2">尺寸:' + '</span>' +
+                                data.datas.list[i].gia[key] + '</div>';
+                        } else {
+                            strHtml14 = '';
+                        }
+                    }
+                    if (key == 'price') {
+                        strHtml12 = data.datas.list[i].gia[key];
+
+                    }
+                    console.log(data.datas.list[i].gia[key]);
+                }
+                if (data.datas.list[i].gia.sn == "001") { // 判断是否为特价裸石
+                    console.log("这是特价裸石");
+                    strHtml13 = "";
+                    strHtml14 = "";
+                }
+
+                // 裸钻
+                strHtml += '<div class="ub uinn ubb bc-border-c4 forChoose">'; // 裸钻
+                strHtml += '<div class="ub ub-pc ub-ac checkBox_check" style="width:1.5em; ">';
+                strHtml += '<input type="checkbox" id="checkBox_Gia" name="checkBox" class="selects" data-cartid="' + data.datas.list[i].id +
+                    '" data-price="' + strHtml12 + '"  >';
+                strHtml += '</div>';
+                strHtml +=
+                    '<div class="ub ub-ac ub-pc" ><div class="ub ub-img uba bc-border-c4" style="width:4em;height:4em; background-image: url(../static/images/diamond.png);"></div></div>';
+                strHtml += '<div class="ub ub-f1 ub-ver checkBoxLabel">';
+                <!-- 测试 -->
+                strHtml += '<div class="ub umar-l " style="padding-bottom:.5em; border-bottom:1px #a9a9a9 dashed">';
+                strHtml += '<div class="ubi ub-f1  size12">裸钻</div>';
+                strHtml +=
+                    '<div class="ub  bc-text-c2"><i class="ub ub-img" style="width:1.2em; height:1.2em;"></i>￥<span class="pricelist">' +
+                    strHtml12 + '</span></div>';
+                strHtml += '</div>';
+                strHtml += '<div class="umar-l umar-t  bc-text-c2">  <!-- 裸钻 测试 checkBoxLabel-->                                ';
+                strHtml = strHtml + strHtml1 + strHtml2 + strHtml3 + strHtml4 + strHtml5 + strHtml6 + strHtml7 +
+                    strHtml8 + strHtml9 + strHtml10 + strHtml11 + strHtml13 + strHtml14;
+                strHtml += '</div>';
+                strHtml += '</div>';
+                strHtml += '</div>';
+            } else {
+
+                strHtml += '<div class="ub uinn ubb bc-border-c4 forChoose">'; // 其他商品
+                strHtml += '<div class="ub ub-pc ub-ac  checkBox_check" style="width:1.5em; ">';
+                strHtml += '<input type="checkbox" id="checkBox_otherRing" name=""  class="selects" data-cartid="' + data.datas.list[i].id +
+                    '" data-price="' + data.datas.list[i].marketprice + '" >';
+                strHtml += '</div>   ';
+
+                // 这个
+                //  需要放到background-image中
+                if (data.datas.list[i].goods.thumb) {
+                    strHtml +=
+                        '<div class="ub ub-ac ub-pc" ><div class="ub ub-img uba bc-border-c4" onclick="product_onclick(' +
+                        data.datas.list[i].goodsid + ')" style="width:4em;height:4em; background-image: url(' + data.datas
+                            .list[i].goods.thumb.url + '); "></div></div>';
+
+                } else {
+                    strHtml +=
+                        '<div class="ub ub-ac ub-pc" ><div class="ub ub-img uba bc-border-c4" onclick="product_onclick(' +
+                        data.datas.list[i].goodsid + ')" style="width:4em;height:4em; background-image: url(' + ' ' +
+                        '); "></div></div>';
+                }
+
+                strHtml += '<div class="ub ub-f1 ub-ver checkBoxLabel">';
+                <!-- 测试 -->
+                strHtml += '<div class="ub umar-l ">';
+                strHtml += '<div class="ub ub-f1 size12">' + data.datas.list[i].goods.title + '</div>';
+                strHtml +=
+                    '<div class="ub  bc-text-c2"><i class="ub ub-img" style="width:1.2em; height:1.2em;"></i>￥<span class="pricelist">' +
+                    data.datas.list[i].marketprice + '</span></div>';
+                strHtml += '</div>';
+                strHtml +=
+                    '<div class="ub umar-l  umar-b  " style="padding-bottom:.5em; border-bottom:1px #a9a9a9 dashed">';
+                strHtml += '<div class="ub ub-f1">';
+                strHtml += '<div class="ub bc-text-c2">';
+                //手寸判断
+                if (isDefine(data.datas.list[i].size)) {
+                    if (data.datas.list[i].size != '0') {
+                        strHtml += '<span class="bc-text-c1 size12">手寸:</span><span class="size12">' + data.datas.list[
+                                i].size + '</span> ';
+                    }
+                    if (data.datas.list[i].size == '0' || data.datas.list[i].size == '') {
+                        strHtml += "";
+                    }
+                }
+
+                strHtml += '<span class="bc-text-c1 size12">数量:</span><span class="size12">X' + data.datas.list[i].total +
+                    '</span>';
+                strHtml += '</div>';
+                strHtml += '</div>';
+                if (isDefine(data.datas.list[i].size)) {
+                    if (data.datas.list[i].size == '0' || data.datas.list[i].size == '') {
+                        strHtml += "";
+                    }
+                    if (data.datas.list[i].size != '0') {
+                        strHtml += '<div class="ub bc-text-a2 btEdit "   data-cartid="' + data.datas.list[i].id +
+                            '" data-size="' + data.datas.list[i].size + '" data-total="' + data.datas.list[i].total +
+                            '"><i class="ub ub-img" style="position: relative;z-index:2;width:1.2em; height:1.2em; "></i>编辑</div>';// 测试
+                    }
+                }
+
+                strHtml += '</div>';
+                strHtml += '<div class="umar-l  bc-text-c2">';
+                <!-- 其他商品 测试  checkBoxLabel-->
+                //strHtml +='<div class="ub ufl">HDC554587</div>';
+                //strHtml +='<div class="ub ufl" style="margin:0 0.4em">|</div>';
+                var erpHtml = '';
+                if (isDefine(data.datas.list[i].erp)) {
+
+                    if (isDefine(data.datas.list[i].erp.erpid) & data.datas.list[i].erp.erpid != '') {
+                        erpHtml +=
+                            '<div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">货号:</div> <div class="ubi ufl size10 bc-text-c2">' +
+                            data.datas.list[i].erp.erpid +
+                            '</div><div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>';
+                    }
+
+                    if (isDefine(data.datas.list[i].erp.p1) & data.datas.list[i].erp.p1 != '') {
+                        erpHtml +=
+                            '<div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">金重:</div> <div class="ubi ufl size10 bc-text-c2">' +
+                            data.datas.list[i].erp.p1 +
+                            '</div><div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>';
+                    }
+
+                    if (isDefine(data.datas.list[i].erp.p4) & data.datas.list[i].erp.p4 != '') {
+                        erpHtml +=
+                            '<div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">材质:</div> <div class="ubi ufl size10 bc-text-c2">' +
+                            data.datas.list[i].erp.p4 +
+                            '</div><div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>';
+                    }
+
+                    if (isDefine(data.datas.list[i].erp.p7) & data.datas.list[i].erp.p7 != '') {
+                        erpHtml +=
+                            '<div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">副石:</div> <div class="ubi ufl size10 bc-text-c2">' +
+                            data.datas.list[i].erp.p7 +
+                            '</div><div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>';
+                    }
+
+                    if (isDefine(data.datas.list[i].erp.p6) & data.datas.list[i].erp.p6 != '') {
+                        erpHtml +=
+                            '<div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">主石</div> <div class="ubi ufl size10 bc-text-c2">' +
+                            data.datas.list[i].erp.p6 +
+                            '</div><div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>';
+                    }
+
+                    if (isDefine(data.datas.list[i].erp.p8) & data.datas.list[i].erp.p8 != '') {
+                        erpHtml +=
+                            '<div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">形状:</div> <div class="ubi ufl size10 bc-text-c2">' +
+                            data.datas.list[i].erp.p8 +
+                            '</div><div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>';
+                    }
+
+                    if (isDefine(data.datas.list[i].erp.p2) & data.datas.list[i].erp.p2 != '') {
+                        erpHtml +=
+                            '<div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">净度:</div> <div class="ubi ufl size10 bc-text-c2">' +
+                            data.datas.list[i].erp.p2 +
+                            '</div><div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>';
+                    }
+
+                    if (isDefine(data.datas.list[i].erp.p3) & data.datas.list[i].erp.p3 != '') {
+                        erpHtml +=
+                            '<div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">颜色:</div> <div class="ubi ufl size10 bc-text-c2">' +
+                            data.datas.list[i].erp.p3.replace('<', '&lt;') +
+                            '</div><div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>';
+                    }
+                }
+                strHtml += erpHtml;
+                strHtml += '</div>';
+                strHtml += '</div>';
+                strHtml += '</div>';
+                strHtml += '</div>';
+            }
+        }
+
+        ////////console.log(strHtml);
+        $("#cart-page").html(strHtml);
+        init_data();
+
+        // 下载证书 测试
+        touch.on('.certno', 'tap', function (ev) {
+            ev.stopPropagation();
+            var cert_num = $(this).text();
+            console.log(cert_num);
+            var url = appUrl + '/addons/ewei_shop/api/pdf.php?gia=' + cert_num + '&key=' + key;
+            downloadGIACer(cert_num, url); // 测试
+//            console.log(url);
+        });
+
+//        console.log(data.datas.list.length);
+//        console.log($("input[type='checkbox']").length);
+    }
+
+    function load_cart() { // 测试
+        //console.log(appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_cart&key='+key);
+        date_ajax(
+            appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_cart&psize=9999&key=' +
+            key);
+    }
+
+    function init_data() {
+        add_price();
+        $('.selects').each(function () {
+
+            $(this).on('change', function (evt) {
+                add_price();
+            })
+        });
+        touch.on('.btEdit', 'tap', function (ev) {
+            var size = $(this).data("size");
+            var cartid = $(this).data("cartid");
+
+            //alert(goodssize);
+            $('.op_num1').html(size);
+            $('.op_num1').data("size", size);
+            $('.op_num1').data("cartid", cartid);
+            $('#cart-mymodal').modal();
+        });
+        touch.on('.btcartdel', 'click', function (ev) { // 测试
+            deleteShoppingCart();
+        });
+    }
+
+    // 添加新地址
+    function plus_address() {
+        var $Realname = $('#txtRealname').val(),
+            $Mobile = $('#txtMobile').val(),
+            $Address = $('#txtAddress').val(),
+            $isdefault = $('#isdefault').val(),
+            $plhtml = "";
+        //console.log('添加了新地址');
+        if (isDefine($Realname) && isDefine($Mobile) && isDefine($Address)) {
+            $.ajax({
+                url: appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_address&key=' +
+                key + '&act=add&realname=' + $Realname + '&mobile=' + $Mobile +
+                '&province=&city=&area=&address=' + $Address + '&isdefault=0',
+                type: 'get',
+                dataType: 'jsonp',
+                success: function (data) {
+                    //console.log(data);
+                    if (data.resultCode == '0') {
+                        //console.log('已添加新地址');
+                        //console.log('地址填写完整');
+                        $plhtml +=
+                            '<div class="ub  ub-ver umar-l umar-r umar-b ubb  bc-border-c4 bc-bg-c4 address_item" onclick="addressClick(this)">' +
+                            '<div class="ub  ub-f1 uinn" style="font-size: 1.2em;">' +
+                            '<div class="ub ub-f1 "><span class="consignee bc-text-c1">' + $Realname + '</span></div>' +
+                            '<div class="ub ub-f1 ub-pe bc-text-c7"><span class="tel  bc-text-c1">' + $Mobile + '</span></div>' +
+                            '</div>' +
+                            '<div class="ub  ub-f1 uinn">' +
+                            '<div class="ub bc-text-c7"><span class="caddress">' + $Address + '</span></div>' +
+                            '</div>' +
+                            '<div class="ub ub-ver uinn ubt revise">' +
+                            '<div class="ub umar-t">' +
+                            '<label class="uhide ub-f1 btradio " onclick="setDefaultAddress()">' +
+                            //  '<input type="radio" name="addlist" value="' +  + '" style="vertical-align: middle; margin:0;">' +
+                            '<input type="radio" name="addlist" value="' + data.datas + '" style="vertical-align: middle; margin:0;">' +
+                            '<span style="font-weight:normal;">设为默认</span>' +
+                            '</label>' +
+                            '<div class="ub ub-f1 ub-pe">' +
+                            '<div class="ub umar-r btEditimg " data-addressid="' + data.datas + '">' +
+                            '<span class="ub-img" style="vertical-align: top; display: inline-block; background-image:url(../static/images/btedit.png); width:1.2em;height:1.2em;"></span>' +
+                            '<span>编辑</span>' +
+                            '</div>' +
+                            '<div class="ub btDelimg" data-addressid="' + data.datas + '">' +
+                            '<span class="ub-img" style="vertical-align: top; display: inline-block; background-image:url(../static/images/btdelete.png); width:1.2em;height:1.2em;"></span>' +
+                            '<span>删除</span>' +
+                            '</div>' +
+                            '</div>' +
+                            '</div>' +
+                            '</div>' +
+                            '</div>';
+                        // console.log($plhtml);
+                        //$(".pluadd").append($plhtml);
+                        $('#add-address').before($($plhtml));
+                    } else {
+                        showToast(data.error);
+                    }
+                },
+                error: function () {
+
+                }
+            });
+        }
+    }
+
+
+    //加载购物车
+    //    var key = getKey();
+    // 测试账号
+    //    var key = '60b26df2f76ce5775fbf949b6497e065'; // 绵斯的账号
+
+    date_ajax(
+        appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_cart&psize=9999&key=' +
+        key);
+    //全选
+    $('#selectAll').on('change', function (evt) {
+//        // 检验商品是否都有货
+//        $(".checkBoxLabel").click();
+
+        // 全选
+        if (this.checked) {
+            //alert('1');
+            $('.selects').each(function () {
+
+                if (!$(this).is(":checked")) {
+                    $(this).prop('checked', true);
+                }
+            })
+        } else {
+
+            $('.selects').each(function () {
+                if ($(this).is(":checked")) {
+                    $(this).prop('checked', false);
+                }
+            })
+        }
+        add_price(); // 合计价钱
+    });
+
+
+    $('.op_num1_left').each(function () { // 测试 减号
+        $(this).on('click', function (evt) {
+            var cartid = $('.op_num1').data("cartid");
+
+            op_goods('sub', 'size', cartid);
+        });
+    });
+
+    $('.op_num1_right').each(function () { // 测试 加号
+        $(this).on('click', function (evt) {
+            var cartid = $('.op_num1').data("cartid");
+
+            op_goods('add', 'size', cartid);
+        });
+    });
+
+
+    // 提交选中的商品
+    var $charOrderHtml = '';
+    touch.on('.btPostOrder', 'tap', function (ev) {
+        // location.href='ackaddress.html';
+
+        // 判断是否有选中项
+        $('.lisTotal').html(" ");
+        if ($('#cart-page .selects').is(':checked')) {
+            $('#cart-page .selects:checked').addClass('btnOr').attr('checked', "checked");
+            // //console.log($('.selects:checked').parent().parent());
+            //console.log($('#cart-page .selects:checked').closest('.bc-border-c4'));
+            // 遍历每个选取的订单栏
+            $('#cart-page .selects:checked').closest('.bc-border-c4').each(function () {
+                $charOrderHtml = '<div class="ub uinn ubb bc-border-c4">' + $(this).html() + '</div>';
+                $('.lisTotal').append($charOrderHtml);
+//                console.log($charOrderHtml);
+            });
+            $('.lisTotal .btEdit').addClass('uhide');
+            ch_prince();
+        } else {
+            showToast('请选择商品！');
+            return false;
+        }
+
+        // 查找更换页面
+        // $('.pa-header').text('请选择收货地址');
+        whichPage = 1;
+        $('#address-page,#address-footer,#address-footer').removeClass('hide').addClass('show');
+        $('#cart-page,#cart-footer,#cart-footer').removeClass('show').addClass('hide');
+        jumpShoppingCartSelectAddress();
+    });
+
+    // 提交修改的地址
+    $(document).on("click", ".join", function (ev) {
+
+        var usName = $(this).closest('.bc-border-c4').find('span').filter(".consignee"),
+            usTel = $(this).closest('.bc-border-c4').find('span').filter(".tel"),
+            usAdd = $(this).closest('.bc-border-c4').find('span').filter(".caddress"),
+            editName = $(this).closest('.edit-box').find('input').filter('.consigtx').val(),
+            editTel = $(this).closest('.edit-box').find('input').filter('.teltx').val(),
+            editAdd = $(this).closest('.edit-box').find('input').filter('.caddresstx').val();
+        addressid = $(this).closest('.edit-box').find('input').filter('.addressid').val();
+
+
+        var postdate = {
+            id: addressid,
+            realname: editName,
+            mobile: editTel,
+            address: editAdd
+        };
+
+        //console.log(postdate);
+
+        $.ajax({
+            url: appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_address&key=' +
+            key + '&act=addressedit',
+            type: "post",
+            data: postdate,
+            dataType: 'jsonp',
+            success: function (data) {
+                //console.log(data);
+                if (data.resultCode == "0") {
+                    usName.html(editName);
+                    usTel.html(editTel);
+                    usAdd.html(editAdd);
+
+                } else {
+                    showToast(data.error);
+                }
+
+            },
+            error: function (err) {
+
+                //showToast("error!");
+            }
+        })
+    })
+
+    // 删除地址
+    $(document).on("click", ".btDelimg", function (ev) {
+        ev.stopPropagation();
+        var $box = $(this).closest('.bc-border-c4');
+        var $addressid = $(this).data('addressid');
+        //console.log($addressid);
+        var postdate = {
+            id: $addressid
+        };
+
+        $.ajax({
+            url: appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_address&act=del&key=' +
+            key,
+            type: "post",
+            data: postdate,
+            dataType: 'jsonp',
+            success: function (data) {
+                //console.log(data);
+                if (data.resultCode == "0") {
+                    $box.remove();
+                } else {
+                    showToast(data.error);
+                }
+
+            },
+            error: function (err) {
+
+                //showToast("error!");
+            }
+        })
+    });
+
+    // 编辑地址
+    $(document).on("click", ".btEditimg", function (ev) {
+
+        //获取当前编辑的收货地址信息
+        var $box = $(this).closest('.bc-border-c4').find('span').filter(".consignee").text(), //收货人
+            $box1 = $(this).closest('.bc-border-c4').find('span').filter(".tel").text(), //联系方式
+            $box2 = $(this).closest('.bc-border-c4').find('span').filter(".caddress").text(); //联系地址
+        var addressid = $(this).data("addressid");
+        //alert(addressid);
+        //console.log($box);
+        // 判断有无编辑框
+        if (!$(this).closest('.revise').next().is('.edit-box')) {
+            // 创建编辑框
+            var editHtml = '<div class="modal fade edit-box" id="" style="top:-10%">' +
+                '<div class="ub ub-con ub-pc ub-ac">' +
+                '<div class="ub uc-a1 bc-bg ub-ver" style="width: 90%; height:auto">' +
+                '<div class="ub ub-ver ubb bc-border-c4 ">' +
+                '<div class="ub  uinn ub-f1 umar-t umar-b">' +
+                '<div class="ub bc-text-c1 umar-l uinn  tx-c">收  货  人:</div>' +
+                '<div class="ub ub-f1 bc-text-b1 uinn"><input type="text" placeholder="&nbsp;&nbsp;收货人" class="input-rename consigtx bc-text-c1  noborder ub ub-f1 uinn"  value=" ' +
+                $box + '" style="padding-left:0.9em;" required="required" ><input type="hidden" value="' +
+                addressid + '" class="addressid">' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '<div class="ub ub-ver ubb bc-border-c4 phone">' +
+                '<div class="ub  uinn ub-f1 umar-t umar-b">' +
+                '<div class="ub bc-text-c1 umar-l uinn tx-c">联系电话:</div>' +
+                '<div class="ub ub-f1 bc-text-b1 uinn"><input type="text" placeholder="&nbsp;&nbsp;联系电话" class="input-num teltx bc-text-c1  noborder ub ub-f1 uinn"  value=" ' +
+                $box1 + ' " style="padding-left:0.8em;" required="required" >' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '<div class="ub ub-ver ubb bc-border-c4 ">' +
+                '<div class="ub  uinn ub-f1 umar-t umar-b">' +
+                '<div class="ub bc-text-c1 umar-l uinn  tx-c">详细地址:</div>' +
+                '<div class="ub ub-f1 bc-text-b1 uinn"><input type="text" placeholder="&nbsp;&nbsp;联系地址" class="input-num caddresstx bc-text-c1  noborder ub ub-f1 uinn" value=" ' +
+                $box2 + '" style="padding-left:0.8em;" required="required" >' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                // '<div class="ub ub-ver ubb bc-border-c4 ">'+
+                //   '<div class="ub  uinn ub-f1 umar-t umar-b">'+
+                //    '<div class="ub bc-text-c1 umar-l uinn  tx-c">默认地址:</div>'+
+                //    '<div class="ub ub-f1 bc-text-b1 uinn "><input type="checkbox" value="1"  id="isdefault" class="uinn bc-text-c1  noborder "></div>'+
+                //  '</div>'+
+                // '</div>'+
+                '<div class="ub ub-ver umar-a " style="margin-top:0em">' +
+                '<div style=" margin:2em 2em 1em 2em;text-align:center;" class="ub ub-pc ">' +
+                '<div class="ub uc-a1 bc-bg-d3  ub-ac ub-pc ulev1 uinn bc-text-head ub-f1 umar-a join" data-dismiss="modal"  style="border:none;text-align:center;">' +
+                '<input type="submit" class="bc-bg-d3 "  value="提交" style="border:none;" />' +
+                '</div>' +
+                '<div class="ub uc-a1 bc-bg-d3  ub-ac ub-pc ulev1 uinn bc-text-head ub-f1 umar-a" data-dismiss="modal"  style="border:none;text-align:center;" >取消' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '</div>';
+            // 插入当前编辑下
+            // //console.log($(this).parent().parent().parent());
+            $(this).closest('.bc-border-c4').append(editHtml);
+            $(this).closest('.revise').next().modal();
+        } else {
+            $(this).closest('.revise').next().modal();
+        }
+        return false;
+    })
+
+    // 确认收货地址
+    touch.on('.btPostOrderadd', 'touchstart', function (ev) {
+        //console.log('确认收货地址');
+        // 收货人 电话 地址 地址id
+        var userName = $('#address-page .selected-address .consignee').html(),
+            userTel = $('#address-page .selected-address .tel').html(),
+            userAddress = $('#address-page .selected-address .caddress').html(),
+            selectAddressId = $('#address-page .selected-address .btradio input').val(),
+            $checkedHtml = '';
+
+        if (userName !== undefined) {
+
+            $checkedHtml = '<div class="ub bc-text-c7">' +
+                '<span class="bc-text-c6 ubi umw5">收货人:</span>' +
+                '<span class="consignee">' + userName + '</span>' +
+                '</div>' +
+                '<div class="ub bc-text-c7">' +
+                '<span class="bc-text-c6 ubi umw5">联系电话:</span>' +
+                '<span class="tel">' + userTel + '</span>' +
+                '</div>' +
+                '<div class="ub bc-text-c7">' +
+                '<span class="bc-text-c6 ubi umw5">联系地址:</span>' +
+                '<span class="caddress">' + userAddress + '</span>' +
+                '</div>';
+            //console.log(userName + 　'  ' + userTel + '  ' + userAddress + ' ' + selectAddressId);
+            $('#listAdd').html($checkedHtml).attr('data-addid', selectAddressId);
+
+            whichPage = 2;
+            $('#orlist,#orFooter,#orFooter').removeClass('hide').addClass('show');
+            $('#address-page,#address-footer').removeClass('show').addClass('hide');
+        } else {
+            showToast('请选择收货地址');
+        }
+    })
+
+    // 确认订单全选
+    $('#checkAll').on('change', function (evt) {
+        // 获取已选订单栏
+        // $(".lisTotal input[type='checkbox']").addClass('active');
+        if (this.checked) {
+            $('.lisTotal .selects').each(function () {
+                if (!$(this).is(":checked")) {
+                    $(this).prop('checked', true);
+                }
+            });
+        } else {
+            $('.lisTotal .selects').each(function () {
+                if ($(this).is(":checked")) {
+                    $(this).prop('checked', false);
+                }
+            });
+        }
+        ch_prince();
+    });
+
+    // 单选计价
+    $('.lisTotal .selects').addClass('btnOr');
+    $(document).on("click", ".btnOr", function (ev) {
+        $(this).addClass('active');
+        ch_prince();
+    });
+
+    // 加载地址列表
+    $.ajax({
+        url: appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_address&key=' +
+        key,
+        type: "get",
+        dataType: 'jsonp',
+        success: function (data) {
+            if (data.resultCode == "0") {
+                var strHtml = '',
+                    strdefault = '',
+                    checkStr = '',
+                    i = 0,
+                    max = data.datas.list.length;
+                for (; i < max; i++) {
+                    //console.log('地址条数 ' + i);
+                    // 默认功能
+                    // if (data.datas.list[i].isdefault == '1') {
+                    //     checkStr = ' checked ';
+                    //     console.log(data.datas.list[i]);
+                    // } else {
+                    //     checkStr = ' ';
+                    // }
+
+                    strHtml =
+                        '<div class="ub  ub-ver umar-l umar-r umar-b ubb  bc-border-c4 bc-bg-c4 address_item" style="border: 2px solid transparent" onclick="addressClick(this)">' +
+                        '<div class="ub  ub-f1 uinn" style="font-size: 1.2em;">' +
+                        '<div class="ub ub-f1 "><span class="consignee bc-text-c1">' + data.datas.list[i].realname +
+                        '</span></div>' +
+                        '<div class="ub ub-f1 ub-pe bc-text-c7"><span class="tel  bc-text-c1">' + data.datas
+                            .list[i].mobile + '</span></div>' +
+                        '</div>' +
+                        '<div class="ub  ub-f1 uinn">' +
+                        '<div class="ub bc-text-c7"><span class="caddress">' + data.datas.list[i].address +
+                        '</span></div>' +
+                        '</div>' +
+                        '<div class="ub ub-ver uinn ubt revise">' +
+                        '<div class="ub umar-t">' +
+                        '<label class="uhide ub-f1 btradio"  onclick="setDefaultAddress()">' +
+                        '<input type="radio" name="addlist" ' + checkStr + ' value="' + data.datas.list[i].id +
+                        '" style="vertical-align: middle; margin:0;">' +
+                        '<span style="font-weight:normal;">设为默认</span>' +
+                        '</label>' +
+                        '<div class="ub ub-f1 ub-pe' + ( (data.datas.list[i].id == 1) ? ' uhide ' : '') + '">' +
+                        '<div class="ub umar-r btEditimg " data-addressid="' + data.datas.list[i].id + '">' +
+                        '<span class="ub-img" style="vertical-align: top; display: inline-block; background-image:url(../static/images/btedit.png); width:1.2em;height:1.2em;"></span>' +
+                        '<span>编辑</span>' +
+                        '</div>' +
+                        '<div class="ub btDelimg" data-addressid="' + data.datas.list[i].id + '">' +
+                        '<span class="ub-img" style="vertical-align: top; display: inline-block; background-image:url(../static/images/btdelete.png); width:1.2em;height:1.2em;"></span>' +
+                        '<span>删除</span>' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>';
+                    // console.log($plhtml);
+                    if (data.datas.list[i].isdefault == '1') {
+                        $('.pluadd').prepend(strHtml);
+                    } else {
+                        $('#add-address').before(strHtml);
+                    }
+                }
+                //$(".pluadd").append($plhtml);
+                // if (strHtml == '') {
+                //     // $('.pluadd').html('<div class="ub ub-pc">暂无地址，请新建收货地址</div>');
+                // } else {
+                //     
+                // } 
+            }
+        },
+        error: function () {
+            //showToast("error!");
+        }
+    });
+
+    function setDefaultAddress() {
+
+        var addressid = $('.btradio input[type="radio"]:checked').val(),
+            editAdd = $('.btradio input[type="radio"]:checked').parent().parent().parent()
+                .prev().children('div').children('span').html(),
+            editName = $('.btradio input[type="radio"]:checked').parent().parent().parent()
+                .prev().prev().children('div').children('.consignee').html(),
+            editTel = $('.btradio input[type="radio"]:checked').parent().parent().parent()
+                .prev().prev().children('div').children('.tel').html();
+        //console.log(addressid + editName + editTel + editAdd);
+        var postdate = {
+            id: addressid,
+            realname: editName,
+            mobile: editTel,
+            address: editAdd,
+            isdefault: '1'
+        };
+        $.ajax({
+            url: appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_address&key=' +
+            key + '&act=addressedit',
+            type: "post",
+            data: postdate,
+            dataType: 'jsonp',
+            success: function (data) {
+                //console.log(data);
+                if (data.resultCode == "0") {
+                    // usName.html(editName);
+                    // usTel.html(editTel);
+                    // usAdd.html(editAdd);
+                    //console.log('设置默认成功');
+                } else {
+                    //console.log(data.error);
+                    //.showToast(data.error);
+                }
+            },
+            error: function (err) {
+
+                //showToast("error!");
+            }
+        })
+    }
+
+    // 返回页面
+    function back2prevPageInCartPage() {
+        if (whichPage == 2) {
+            back2selectAddress();
+        } else if (whichPage == 1) {
+            back2cart();
+        }
+    }
+
+    // 返回选择地址界面
+    function back2selectAddress() {
+        whichPage = 1;
+        $('#orlist,#orFooter,#orFooter').removeClass('show').addClass('hide');
+        $('#address-page,#address-footer').removeClass('hide').addClass('show');
+
+    }
+
+    // 返回购物车页面
+    function back2cart() {
+        whichPage = 0;
+        backShoppingCartShopListView();
+        $('#address-page,#address-footer,#address-footer').removeClass('show').addClass('hide');
+        $('#cart-page,#cart-footer,#cart-footer').removeClass('hide').addClass('show');
+    }
+
+    // // 选中地址
+    // var ADDRESSITEMNODE = 9; // 地址item的节点
+    // touch.on('.pluadd', 'touchstart', '.address_item', function (e) {
+    //     //console.log('dianji le 阿道夫');
+    //     //console.log(e);
+    //     //console.log(e.path[e.path.length - ADDRESSITEMNODE]);
+    //     var target = e.path[e.path.length - ADDRESSITEMNODE];
+    //     $(target).parent().children('div').removeClass('selected-address');
+    //     $(target).addClass('selected-address');
+    // });
+
+
+    function addressClick(obj) {
+        //console.log(obj);
+        $(obj).parent().children('div').removeClass('selected-address');
+        $(obj).addClass('selected-address');
+    }
+
+    window.onload = function () {
+
+        $(".checkBoxLabel").click(function () { // 测试
+            // console.log($(this).children('.bc-text-c2').html());
+            var stock = $(this).children('.bc-text-c2').html();
+            if (!isDefine(stock)) {   // 判断是否还有库存
+                $(this).parent('.bc-border-c4').css('border', '5px solid red');
+//            $(this).siblings('.checkBox_check').children('#checkBox_Gia').attr('disabled','disabled');
+//            $(this).siblings('.checkBox_check').children('#checkBox_otherRing').attr('disabled','disabled');
+                console.log('商品没库存,请重新选购标红的商品');
+                showToast('标红商品没库存,请删除并重新选购');
+//            return false;
+            }
+//        console.log(this);
+//        $(this).parent().siblings('.checkBox_check').children().click(); // 只点击参数的时候
+            $(this).siblings('.checkBox_check').children().click();
+
+        })
+    };
+
+
+    // // 初次加载选中默认地址
+    // function selectDefaultAddress() {
+    //     //     console.log( $('.pluadd .btradio input[type="radio"]:checked').parent().parent().parent().parent().html());
+    //     $('.pluadd .btradio input[type="radio"]:checked').parent().parent().parent().parent().addClass(
+    //         'selected-address');
+    // }
+    // selectDefaultAddress();
+</script>
+
+</html>

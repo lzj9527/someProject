@@ -1,0 +1,475 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>店铺地址</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <!-- bootstrap start -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/bootstrap-theme.min.css">
+    <script src="../static/js/jquery-3.0.0.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!-- bootstrap end -->
+    <script type="text/javascript" src="../static/js/config.js"></script>
+    <script type="text/javascript" src="../static/js/function.js"></script>
+    <script type="text/javascript" src="../static/js/androidJSInterface.js"></script>
+    <script src="../static/js/touch.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-box.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-base.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-color.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-control.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-icon.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-my.css">
+</head>
+
+<body class="um-vp" ontouchstart>
+    <div id="page_1" class="ub ub-fh ub-ver" tabindex="0">
+        <div id="addresslist"></div>
+    </div>
+
+    <!--弹出修改表单 -->
+    <div class="modal fade" id="mymodal" style="top:-10%;">
+
+    </div>
+
+    <!--弹出申请表单 -->
+    <div class="modal fade" id="mymodal_add" style="top:-10%;">
+
+    </div>
+
+     <div class="modal fade" id="err-pass" style="top:-10%;">
+            <div>密码设置不正确!</div>
+     </div>
+
+</body>
+<script>
+
+var key = getKey();
+
+function load_data(){
+    //console.log(appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_address&key='+key+'&act=shop');
+    $.ajax({
+        url: appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_address&key='+key+'&act=shop',
+        type: "get",
+        dataType: 'jsonp',
+        success: function(data) {
+            if (data.resultCode == "0") {
+                var strHtml = '';
+                var strdefault ='';
+                for (var i = 0; i < data.datas.list.length; i++) {
+                    // if (data.datas.list[i].isdefault=='1'){
+                    //      strdefault ='默认地址';
+                    // }else{
+                    //      strdefault ='';
+                    // }
+                    strHtml +=
+                        '<div class="ub  umar-l umar-r ubb  bc-border-c4" data-dataid="'+data.datas.list[i].id+'">'+
+                            '<div class="ub ub-ver ub-pc ub-ac " style="min-width:0.1em">'+
+                               //  '<input type="checkbox" name="">'+
+                            '</div>'+
+                            '<div class="ub ub-ver ub-f1 uinn">'+
+                                '<div class="ub bc-text-c7">'+
+                                    '<span class="bc-text-c6 ubi umw5">门店名称: </span>'+data.datas.list[i].nickname+
+                                '</div>'+
+                                '<div class="ub bc-text-c7">'+
+                                    '<span class="bc-text-c6 ubi umw5">收 货 人: </span>'+data.datas.list[i].realname+
+                                '</div>'+
+                                '<div class="ub bc-text-c7">'+
+                                     '<span class="bc-text-c6 ubi umw5">联系电话: </span>'+data.datas.list[i].mobile+
+                                '</div>'+'<div class="ub ut-s bc-text-c7">'+
+                                     '<span class="bc-text-c6 ubi umw5">门店地址: </span>'+data.datas.list[i].address+
+                                '</div>'+
+                            '</div>'+
+                            '<div class="ub ub-ver uinn" style="min-width:3em">'+
+                                '<div class="ub bc-text-a3 ub-pc btDefault" data-dataid="'+data.datas.list[i].id+'">'+strdefault+
+                                '</div>'+
+                                '<div class="ub umar-t">'+
+                                    '<div class="ub ub-img btEdit" data-dataid="'+data.datas.list[i].id+'" style="background-image:url(../static/images/btedit.png); width:2.5em;height:2.5em; ">'+
+                                    '</div>'+
+                                  //  '<div class="ub ub-img btDel" data-dataid="'+data.datas.list[i].id+'" style="background-image:url(../static/images/btdelete.png); width:2.5em;height:2.5em; ">'+
+                                  //  '</div>'+
+
+                                '</div>';
+                                if (data.datas.list[i].status=='0'){
+                                    strHtml +=       '<div class="ub ub-img ub-ac " style=" width:3em;height:2.5em; ">申请中</div>';
+                                  }
+                      strHtml +=      '</div>'+
+                        '</div>';
+                }
+
+                $('#addresslist').html(strHtml);
+
+
+                //  // 编辑
+                touch.on('.btEdit', 'tap', function(ev) {
+                    var addressid=$(this).data("dataid");
+
+                     $.ajax({
+                        url: appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_address&key='+key+'&act=shop',
+                        type: "get",
+                        dataType: 'jsonp',
+                        success: function(data) {
+                        if (data.resultCode == "0") {
+
+                            for (var i = 0; i < data.datas.list.length; i++) {
+
+
+
+                  if (addressid==data.datas.list[i].id){
+                    var strHtml = '         <div class="ub ub-con ub-pc ub-ac">'+
+                                  '                      <div class="ub uc-a1 bc-bg ub-ver" style="width: 90%; height:auto">'+
+                                  '                              <div class="ub bc-text-c1 umar-l uinn  tx-c ub-pc">基本信息</div>'+
+                                  '                           '+
+                                  '                           <div class="ub ub-ver ubb bc-border-c4 " style="height:4em;">        '+
+                                  '                              <div class="ub  ub-f1 umar-t umar-b">'+
+                                  '                              <div class="ub bc-text-c1 umar-l uinn  tx-c"> 门店名称: </div>'+
+                                  '                              <div class="ub ub-f1 bc-text-b1 uinn"><input type="text" value="'+data.datas.list[i].nickname+'" class="ub ub-f1 noborder uinn bc-text-c1 txtRealname" id="txtNickname"></div>'+
+                                  '                              </div>'+
+                                  '                           </div> '+
+                                  '                           <div class="ub ub-ver ubb bc-border-c4 " style="height:4em;">        '+
+                                  '                              <div class="ub  ub-f1 umar-t umar-b">'+
+                                  '                              <div class="ub bc-text-c1 umar-l uinn  tx-c"> 收 货 人: &nbsp;</div>'+
+                                  '                              <div class="ub ub-f1 bc-text-b1 uinn"><input type="text" value="'+data.datas.list[i].realname+'" class="ub ub-f1 noborder uinn bc-text-c1 txtRealname" id="txtRealname"></div>'+
+                                  '                              </div>'+
+                                  '                           </div>'+
+                                  '                           <div class="ub ub-ver ubb bc-border-c4 " style="height:4em;">        '+
+                                  '                              <div class="ub  ub-f1 umar-t umar-b">'+
+                                  '                              <div class="ub bc-text-c1 umar-l uinn tx-c">联系电话:</div>'+
+                                  '                              <div class="ub ub-f1 bc-text-b1 uinn"><input type="text" value="'+data.datas.list[i].mobile+'" class="ub ub-f1 noborder uinn bc-text-c1 txtMobile" id="txtMobile"></div>'+
+                                  '                              </div>'+
+                                  '                           </div>'+
+                                  '                           <div class="ub ub-ver ubb bc-border-c4 " style="height:4em;">        '+
+                                  '                              <div class="ub  ub-f1 umar-t umar-b">'+
+                                  '                              <div class="ub bc-text-c1 umar-l uinn  tx-c">门店地址:</div>'+
+                                  '                              <div class="ub ub-f1 bc-text-b1 uinn"><input type="text" value="'+data.datas.list[i].address+'" class="ub ub-f1 noborder uinn bc-text-c1 txtAddress" id="txtAddress"></div>'+
+                                  '                              </div>'+
+                                  '                           </div>'+
+                                  '                              <div class="ub bc-text-c1 umar-l uinn  tx-c ub-pc" >门店登录密码(不修改，请留空)</div>'+
+                                  '                           <!-- ===== -->'+
+                                  '                            <div class="ub ub-ver ubb bc-border-c4 ">        '+
+                                  '                              <div class="ub ub-f1 umar-t umar-b">'+
+                                  '                              <div class="ub bc-text-c1 umar-l uinn  tx-c">密码:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>'+
+                                  '                              <div class="ub ub-f1 bc-text-b1 uinn"><input type="password" value="" class="ub ub-f1 noborder uinn bc-text-c1 " id="re-password"></div>'+
+                                  '                              </div>'+
+                                  '                           </div>'+
+                                  '                            <div class="ub ub-ver ubb bc-border-c4 " style="height:4em;">        '+
+                                  '                              <div class="ub  ub-f1 umar-t umar-b">'+
+                                  '                              <div class="ub bc-text-c1 umar-l uinn  tx-c">确认密码:</div>'+
+                                  '                              <div class="ub ub-f1 bc-text-b1 uinn"><input type="password" value="" class="ub ub-f1 noborder uinn bc-text-c1 " id="check-password"></div>'+
+                                  '                              </div>'+
+                                  '                           </div>'+
+                                  '                        <!-- ===== -->'+
+                                  '                           <div class="ub ub-ver umar-a " style="height:4em;">'+
+                                  '                                <div style=" margin:0em 2em 1em 2em" class="ub ub-pc">'+
+                                  '                                  <div class="ub uc-a1 bc-bg-d3  ub-ac ub-pc ulev1 uinn bc-text-head ub-f1 umar-a btok" data-dataid="'+data.datas.list[i].id+'" >确定</div>'+
+                                  '                                  <div class="ub uc-a1 bc-bg-d3  ub-ac ub-pc ulev1 uinn bc-text-head ub-f1 umar-a" data-dismiss="modal" >取消</div>'+
+                                  '                              </div>  '+
+                                  '                           </div>'+
+                                  '                      </div>'+
+                                  '                  </div>';
+
+
+
+                    $('#mymodal').html(strHtml);
+                    $('#mymodal').modal();
+
+
+
+                touch.on('.btok', 'tap', function(ev) {
+                 var id=$(this).data("dataid");
+                 var nickname=$('#txtNickname').val();
+                 var realname=$('#txtRealname').val();
+                 var mobile=$('#txtMobile').val();
+                 var address=$('#txtAddress').val();
+                  if($('#re-password').val()!=$('#check-password').val()){
+                     showToast('两次输入密码不一致，请重新输入');
+                  }else{
+                    if ($('#re-password').val()!=''){
+                      var password=$('#re-password').val();
+                    }else{
+                      var password=''
+                    }
+
+                  }
+
+                 var password=$('#re-password').val();
+
+                 var postdate={
+                      id:id,
+                      nickname:nickname,
+                      realname:realname,
+                      mobile:mobile,
+                      address:address,
+                      password:password
+                 }
+                 $.ajax({
+                        url: appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_address&key='+key+'&act=edit',
+                        type: "post",
+                        data:postdate,
+                        dataType: 'jsonp',
+                        success: function(data) {
+                          console.log(data);
+                          if (data.resultCode == "0") {
+                              showToast('门店修改成功');
+                              load_data();
+                              $('#mymodal').modal('hide');
+                          }else{
+                            showToast(data.error);
+                          }
+
+                        },error:function(err){
+
+                          //showToast("error!");
+                        }
+                  })
+
+
+                });
+
+                    }
+
+                              }
+
+                             }
+
+
+                         },error: function() {
+            //showToast("error!");
+        }
+
+                       });
+
+                });
+
+
+            }else{
+                showToast(data.error); //
+            }
+        },
+
+        error: function() {
+            //showToast("error!");
+        }
+    });
+
+}
+
+
+$(document).ready(function(){
+     load_data();
+});
+
+
+//申请添加门店
+function applyForAddShopFromNative() {
+
+
+    var strHtml = '         <div class="ub ub-con ub-pc ub-ac">' +
+        '                      <div class="ub uc-a1 bc-bg ub-ver" style="width: 90%;height:auto;">' +
+        '                              <div class="ub bc-text-c1 umar-l uinn  tx-c ub-pc " style="font-weight:bolder">申请添加门店</div>' +
+        '                           ' +
+        '                           <div class="ub ub-ver ubb bc-border-c4 " style="height:4em;">        ' +
+        '                              <div class="ub  ub-f1 umar-t umar-b">' +
+        '                              <div class="ub bc-text-c1 umar-l uinn  tx-c"> 门店名称: </div>' +
+        '                              <div class="ub ub-f1 bc-text-b1 uinn"><input type="text" value="" class="ub ub-f1 noborder uinn bc-text-c1 txtRealname" id="txtNickname_add" onclick="FixedSomeThing(this)"></div>' +
+        '                              </div>' +
+        '                           </div> ' +
+        '                           <div class="ub ub-ver ubb bc-border-c4 " style="height:4em;">        ' +
+        '                              <div class="ub  ub-f1 umar-t umar-b">' +
+        '                              <div class="ub bc-text-c1 umar-l uinn  tx-c"> 收 货 人: &nbsp;</div>' +
+        '                              <div class="ub ub-f1 bc-text-b1 uinn"><input type="text" value="" class="ub ub-f1 noborder uinn bc-text-c1 txtRealname" id="txtRealname_add" onclick="FixedSomeThing(this)"></div>' +
+        '                              </div>' +
+        '                           </div>' +
+        '                           <div class="ub ub-ver ubb bc-border-c4 " style="height:4em;">        ' +
+        '                              <div class="ub  ub-f1 umar-t umar-b">' +
+        '                              <div class="ub bc-text-c1 umar-l uinn tx-c">联系电话:</div>' +
+        '                              <div class="ub ub-f1 bc-text-b1 uinn"><input type="text" value="" class="ub ub-f1 noborder uinn bc-text-c1 txtMobile" id="txtMobile_add" onclick="FixedSomeThing(this)"></div>' +
+        '                              </div>' +
+        '                           </div>' +
+        '                           <div class="ub ub-ver ubb bc-border-c4 " style="height:4em;">        ' +
+        '                              <div class="ub  ub-f1 umar-t umar-b">' +
+        '                              <div class="ub bc-text-c1 umar-l uinn  tx-c">门店地址:</div>' +
+        '                              <div class="ub ub-f1 bc-text-b1 uinn"><input type="text" value="" class="ub ub-f1 noborder uinn bc-text-c1 txtAddress" id="txtAddress_add" onclick="FixedSomeThing(this)"></div>' +
+        '                              </div>' +
+        '                           </div>' +
+        '                           <div class="ub ub-ver ubb bc-border-c4 " style="height:4em;">        ' + // 测试 需求:增加填写信息 登录账号 和 登陆密码
+        '                              <div class="ub  ub-f1 umar-t umar-b">' +
+        '                              <div class="ub bc-text-c1 umar-l uinn  tx-c" style="line-height:2.5rem;">* 登陆账号:</div>' +
+        '                              <div class="ub ub-f1 bc-text-b1 uinn"><input type="text" value="" placeholder="不能为中文" class="ub ub-f1 noborder uinn bc-text-c1 txtLoginId" id="txtAddress_add" onclick="FixedSomeThing(this)"></div>' +
+        '                              </div>' +
+        '                           </div>' +
+        '                           <div class="ub ub-ver ubb bc-border-c4 " style="height:4em;">        ' + // 测试
+        '                              <div class="ub  ub-f1 umar-t umar-b">' +
+        '                              <div class="ub bc-text-c1 umar-l uinn  tx-c" style="line-height:2.5rem;">* 登陆密码:</div>' +
+        '                              <div class="ub ub-f1 bc-text-b1 uinn"><input type="password" value="" placeholder="不能为中文" class="ub ub-f1 noborder uinn bc-text-c1 txtPaw" id="txtAddress_add" onclick="FixedSomeThing(this)"></div>' +
+        '                              </div>' +
+        '                           </div>' +
+        '                           <div class="ub ub-ver ubb bc-border-c4 " style="height:4em;">        ' + // 测试
+        '                              <div class="ub  ub-f1 umar-t umar-b">' +
+        '                              <div class="ub bc-text-c1 umar-l uinn  tx-c" style="line-height:2.5rem;">* 确认密码:</div>' +
+        '                              <div class="ub ub-f1 bc-text-b1 uinn"><input type="password" value="" placeholder="不能为中文" class="ub ub-f1 noborder uinn bc-text-c1 txtPawRecheck" id="txtAddress_add" onclick="FixedSomeThing(this)"></div>' +
+        '                              </div>' +
+        '                           </div>' +
+
+        '                        <!-- ===== -->' +
+        '                           <div class="ub ub-ver umar-a " style="height:4em;">' +
+        '                                <div style=" margin:0em 2em 1em 2em" class="ub ub-pc">' +
+        '                                  <div class="ub uc-a1 bc-bg-d3  ub-ac ub-pc ulev1 uinn bc-text-head ub-f1 umar-a btAddok" data-dataid="" >申请</div>' +
+        '                                  <div class="ub uc-a1 bc-bg-d3  ub-ac ub-pc ulev1 uinn bc-text-head ub-f1 umar-a" data-dismiss="modal" >取消</div>' +
+        '                              </div>  ' +
+        '                           </div>' +
+        '                      </div>' +
+        '                  </div>';
+
+
+    $('#mymodal_add').html(strHtml);
+    $('#mymodal_add').modal();
+
+
+    var reg = /^[^\u4e00-\u9fa5]{0,}$/;
+    var loginId_add,
+        getFirstPaw,
+        getRecheckPaw,
+        paw_add;
+
+    function CantEnterCh(value) {
+        // 判断输入是否为中文
+        if (!(reg).test(value)) {
+            showToast("不能为中文");
+            return false;
+        }
+    }
+    var storesArray = [];
+
+    $(".txtLoginId").blur(function () {
+        console.log(storesArray);
+        loginId_add = $('.txtLoginId').val();
+        CantEnterCh(loginId_add);
+        var storesIndex = $.inArray(loginId_add, storesArray);
+        if (storesIndex >= 0) {
+            $('.txtLoginId').val("");
+            showToast("账号已存在");
+            return false;
+        } else {
+            console.log(loginId_add);
+            return loginId_add;
+        }
+    });
+    $(".txtPaw").blur(function () {
+        getFirstPaw = $(".txtPaw").val();
+        CantEnterCh(getFirstPaw);
+        return getFirstPaw;
+    });
+    $(".txtPawRecheck").blur(function () {
+        getRecheckPaw = $(".txtPawRecheck").val();
+        CantEnterCh(getRecheckPaw);
+        console.log(getFirstPaw);
+        console.log(getRecheckPaw);
+        if (getRecheckPaw !== getFirstPaw) {
+            showToast("密码不一致");
+            return false;
+        } else {
+            paw_add = getFirstPaw;
+            return paw_add, getRecheckPaw;
+        }
+    });
+
+
+    touch.on('.btAddok', 'tap', function (ev) {
+        var storesIndex = $.inArray(loginId_add, storesArray);
+        for (var i = 0, len = $("input").length; i < len; i++) {
+            console.log($("input").eq(i).val());
+            if ($("input").eq(i).val() == "") {
+                console.log("信息不完全");
+                showToast("信息不完善");
+                return false;
+            }
+        }
+        if (getRecheckPaw !== getFirstPaw) {
+            showToast("密码不一致");
+            return false;
+        } else if (storesIndex >= 0) {
+            showToast("账号已存在");
+            return false;
+        } else {
+            var nickname_add = $('#txtNickname_add').val(),
+                realname_add = $('#txtRealname_add').val(),
+                mobile_add = $('#txtMobile_add').val(),
+                address_add = $('#txtAddress_add').val();
+
+            console.log(nickname_add);
+            console.log(realname_add);
+            console.log(mobile_add);
+            console.log(address_add);
+            console.log(loginId_add);
+            console.log(paw_add);
+
+            var postdate = {
+                nickname: nickname_add,
+                realname: realname_add,
+                mobile: mobile_add,
+                address: address_add,
+                loginname: loginId_add, // 登录账号 这是新增加的 测试
+                pwd: paw_add // 登录密码 这是新增加的 测试
+
+            };
+            $.ajax({
+                url: appUrl + '/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_addstore&act=addstore&key=' + key + '',
+                type: "post",
+                data: postdate,
+                dataType: 'jsonp',
+                success: function (data) {
+                    if (data.resultCode == "0") {
+                        //showToast('门店申请成功');
+                        load_data();
+                        $('#mymodal_add').modal('hide');
+                    } else {
+                        showToast(data.error);
+                    }
+
+                }, error: function (err) {
+                    //showToast("error!");
+                }
+            })
+        }
+    });
+
+    // 老板账号下面的门店
+    $.ajax({
+        url: appUrl + "/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=checkstore&key=" + key,
+        type: "get",
+        dataType: 'jsonp',
+        success:function (data) {
+            console.log(data);
+            for(var i=0,len=data.datas.length; i<len; i++){
+                console.log(data.datas[i].mobile);
+                storesArray.push(data.datas[i].mobile);
+            }
+            console.log(storesArray);
+            return storesArray;
+        }
+
+    });
+}
+
+function FixedSomeThing(data) {
+    console.log(data.id);
+    var id = data.id;
+    console.log(document.getElementById(""+ id +""));
+    setTimeout(function(){
+        document.getElementById(""+ id +"").scrollIntoView();
+
+    }, 100);
+}
+
+
+// 申请添加门店的蒙版
+applyForAddShopFromNative();
+
+
+</script>
+
+
+</html>

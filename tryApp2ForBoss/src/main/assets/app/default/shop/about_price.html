@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width,height=device-height,initau08l-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/liMarquee.css">
+    <script src="../static/js/jquery-3.0.0.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-3.0.0.js"><\/script>')</script>
+    <script src="../static/js/jquery.liMarquee.js"></script>
+    <title>报价表</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            font-size:0.5rem;
+        }
+        a{
+            display: inline-block;
+            margin:0.3rem 0;
+            list-style: none;
+            text-decoration: none;
+            color:#2b2b2b;
+            font-size:0.5rem;
+            font-weight:bold;
+        }
+        .main{
+            display: none;
+        }
+        .active{
+            color:#b1001d;
+        }
+        #price_box img{
+            width: 100%;
+        }
+        #affiche{
+            text-indent:10rem;
+        }
+
+    </style>
+</head>
+<body>
+<p style="margin: 50% auto; text-align: center; font-size: 1.2rem;">此功能正在开发中,敬请期待...</p>
+<!--<header style="width: 100%;">-->
+    <!--<div  style="color:#f6f6f6; font-size:0.8rem;">-->
+         <!--<div class="str_wrap" id="affiche" style="font-size:14px; height: 1.2rem !important; line-height: 1.2rem; background: darkred;">-->
+             <!--专业批发钻石成品、彩宝成品、裸钻、彩宝裸石、GIA裸石、可接受个性定制、来图加工、本公司自设工厂，3-10天快速出货。-->
+               <!--此表有效期 : <span id="start_time"> 获取中... </span>&nbsp; &#45;&#45; &nbsp;<span id="end_time"> 获取中...</span>-->
+         <!--</div>-->
+    <!--</div>-->
+<!--</header>-->
+
+<!--<div style="width: 100%; margin: 0 auto;">-->
+    <!--<p style="text-align: center; border-bottom:1px dashed #2b2b2b; border-top:1px dashed #2b2b2b; color:red;">-->
+        <!--<strong>18K金耗(女戒)：10%，厘石：2900元/CT,副石工费：3元/粒</strong>-->
+    <!--</p>-->
+    <!--<nav style="width:100%; text-align: center;" id="p_nav">-->
+        <!--<a href="javascript:;" id="p_3_7">分石</a> |-->
+        <!--<a href="javascript:;" id ="p_8_22" class="active">8-22份</a> |-->
+        <!--<a href="javascript:;" id ="p_23_40">23-40份</a> |-->
+        <!--<a href="javascript:;" id="p_50_70">50-70份</a> |-->
+        <!--<a href="javascript:;" id="p_80_90">80份以上</a> | &lt;!&ndash; 包含 1 克拉以上的 &ndash;&gt;-->
+        <!--<a href="javascript:;" id="other_p">工费</a>-->
+    <!--</nav>-->
+
+    <!--<div style="border-bottom: 1px solid #2b2b2b; width:90%;margin: 0 auto;margin-bottom: 0.2rem;"></div>-->
+
+<!--<div style="width:95%; margin: 0 auto;" id="price_box">-->
+
+        <!--<img src="" alt="3-7份"  id="jpg_3_7" class="main">-->
+        <!--<img src="" alt="8-22份" id="jpg_8_22" class="main">-->
+        <!--<img src="" alt="23-40份" id="jpg_23_40" class="main">-->
+        <!--<img src="" alt="50-70份" id="jpg_50_70" class="main">-->
+
+    <!--<div class="main">-->
+        <!--<img src="" alt="80-90份" id="jpg_80_90" >-->
+        <!--<p style="text-align: center; font-size:1rem; margin: 1rem auto; color:#b1001d;">-->
+            <!--克拉钻请与业务员联系-->
+        <!--</p>-->
+    <!--</div>-->
+    <!--<div class="main">-->
+        <!--<img src="" alt="工费"  id="jpg_other1">-->
+        <!--<img src="" alt="工费"  id="jpg_other2">-->
+    <!--</div>-->
+
+<!--</div>-->
+
+<!--</div>-->
+
+<!--<footer style="text-align: center;">-->
+
+    <!--<p style="margin-top: 0.2rem;">-->
+        <!--<strong>每张证书费15元 以南京国检为准 8分以下不分级以上报价。<br>-->
+            <!--本公司拥有最终解释权。-->
+            <!--本报价单一个月内有效!-->
+        <!--</strong>-->
+    <!--</p>-->
+    <!--<address style="font-size: 0.5rem; margin-top:0.2rem;">-->
+        <!--地址：广东省深圳市罗湖区翠竹街道田贝四路水田二街20号<br>（翠竹酒店旁）-->
+    <!--</address>-->
+    <!--<p style="margin-top: 0.2rem;">-->
+        <!--联系电话 : 0755 - 8 2 3 3 2 4 0 3-->
+    <!--</p>-->
+<!--</footer>-->
+
+
+
+<!--<script>-->
+<!--// 滚动字体-->
+<!--window.onload = function () {-->
+<!--$('#affiche').liMarquee({-->
+    <!--scrollamount: 70-->
+<!--});-->
+<!--var p_nav = $('#p_nav a');-->
+<!--//        var p_3_7 = $('#p_3_7'); // 分石-->
+<!--//        var p_8_22 = $('#p_8_22');-->
+<!--//        var p_23_40 = $('#p_23_40');-->
+<!--//        var p_50_70 = $('#p_50_70');-->
+<!--//        var p_80_90 = $('#p_80_90');-->
+<!--//        var other_p = $('#other_p');// 工费-->
+
+
+<!--//var appurl = "http://www.zsa888.com";-->
+<!--var appurl = "http://www.zsmtvip.com";-->
+<!--var startTime,endTime;-->
+
+<!--$.ajax({-->
+    <!--url: appurl+"/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=goods&p=goods_quote&callback=jQuery110107714375318949229_1506749935127&_=1506749935128%20HTTP/1.1", // 获取图片的地址-->
+    <!--type: 'GET',-->
+    <!--dataType: 'jsonp',-->
+    <!--success:function (data) {-->
+        <!--console.log(data);-->
+<!--//        console.log(data.datas.list.start_time);// 起始时间-->
+<!--//        console.log(data.datas.list.end_time);// 结束时间-->
+<!--//        console.log(data.datas.list[0].url);// 获取地址-->
+        <!--$('#jpg_3_7').attr('src',data.datas.list[0].url);-->
+        <!--$('#jpg_8_22').attr('src',data.datas.list[2].url);-->
+        <!--$('#jpg_23_40').attr('src',data.datas.list[4].url);-->
+        <!--$('#jpg_50_70').attr('src',data.datas.list[5].url);-->
+        <!--$('#jpg_80_90').attr('src',data.datas.list[3].url);-->
+        <!--$('#jpg_other1').attr('src',data.datas.list[6].url);-->
+        <!--$('#jpg_other2').attr('src',data.datas.list[1].url);-->
+<!--//         $('#start_time').text(data.datas.list.start_time);-->
+<!--//         $('#end_time').text(data.datas.list.end_time);-->
+        <!--startTime = data.datas.list.start_time;-->
+        <!--endTime = data.datas.list.end_time;-->
+        <!--$('#start_time').text(startTime);-->
+        <!--$('#end_time').text(endTime);-->
+    <!--}-->
+<!--});-->
+
+<!--// Tab-->
+    <!--$(".main").eq(1).show();-->
+    <!--$("#p_nav a").click(function(){-->
+        <!--var num =$("#p_nav a").index(this);-->
+        <!--$(".main").hide();-->
+        <!--$(".main").eq(num).show().siblings().hide();-->
+        <!--$('#p_nav a').eq(num).addClass('active').siblings().removeClass('active');-->
+    <!--})-->
+
+<!--};-->
+
+<!--//监听浏览器文字大小代码-->
+<!--(function (doc, win) {-->
+    <!--var docEl = doc.documentElement,-->
+        <!--resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',-->
+        <!--recalc = function () {-->
+            <!--var clientWidth = docEl.clientWidth;-->
+            <!--if (!clientWidth) return;-->
+            <!--docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';-->
+        <!--};-->
+
+    <!--if (!doc.addEventListener) return;-->
+    <!--win.addEventListener(resizeEvt, recalc, false);-->
+    <!--doc.addEventListener('DOMContentLoaded', recalc, false);-->
+<!--})(document, window);-->
+<!--</script>-->
+</body>
+<script>
+    window.onload = function () {
+        //监听浏览器文字大小代码
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    }
+</script>
+</html>

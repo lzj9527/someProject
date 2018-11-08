@@ -1,0 +1,3 @@
+include ':androidExtendLib2'
+include ':jPushSDK300'
+include ':tryApp2ForBoss'

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.extend.widget.FragmentContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clipChildren="false" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/navigationbar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/navigationbar_background" >
+
+            <ImageView
+                android:id="@+id/boss_details_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:src="@drawable/back_button"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/boss_details_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="永恒之约"
+                android:textColor="@color/navigationbar_title_font" />
+
+            <FrameLayout
+                android:id="@+id/shopping_and_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:id="@+id/boss_details_shopping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@drawable/boss_details_shoppingcart" />
+                <TextView
+                    android:id="@+id/shoppingcart_num"
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:layout_gravity="top|right"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_main_menubar_badge_bg"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="99"
+                    android:textColor="@color/main_menubar_badge_font"
+                    android:textSize="20px" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/boss_detail_download"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:padding="10dp"
+                android:background="@color/rect_button_background"
+                android:text="打开证书"
+                android:textColor="#fff"
+                android:visibility="gone"
+                android:textSize="10sp"
+                tools:ignore="HardcodedText" />
+                <!--android:src="@drawable/boss_detail_download"-->
+                android:visibility="gone"/>
+            <!--<ImageView-->
+                <!--android:id="@+id/boss_main_shareGia"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="right|center_vertical"-->
+                <!--android:padding="10dp"-->
+                <!--android:visibility="gone"-->
+                <!--android:src="@drawable/share_icon" />-->
+
+            <ImageView
+                android:id="@+id/boss_main_seach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:padding="10dp"
+                android:src="@drawable/boss_main_seach" />
+
+            <ImageView
+                android:id="@+id/boss_main_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:padding="10dp"
+                android:src="@drawable/boss_main_del" />
+
+
+
+            <LinearLayout
+                android:id="@+id/save_and_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/boss_pricre_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@drawable/boss_pricre_help" />
+
+                <ImageView
+                    android:id="@+id/boss_pricre_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:src="@drawable/boss_pricre_save" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/store_address_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left|center_vertical"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="订单列表"
+                    android:textColor="@color/navigationbar_title_font" />
+
+                <TextView
+                    android:id="@+id/store_address"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_detail2_color"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:text="全部门店"
+                    android:textColor="@color/navigationbar_spiner_font"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="订单列表"
+                    android:visibility="invisible"
+                    android:textColor="@color/navigationbar_title_font" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/boss_main_sx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:padding="10dp"
+                android:text="刷新"
+                android:textColor="@color/navigationbar_title_font" />
+
+            <ImageView
+                android:id="@+id/boss_main_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:padding="10dp"
+                android:src="@drawable/boss_main_add" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/show_wait"
+            >
+
+            <android.extend.widget.ExtendWebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:clipChildren="false"
+                android:scrollbars="none" />
+            <!--<TextView-->
+                <!--android:id="@+id/show_error"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:visibility="gone"-->
+                <!--android:textSize="15sp"-->
+                <!--/>-->
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/boss_save_help"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="42dp"
+        android:src="@drawable/boss_save_help" />
+
+</android.extend.widget.FragmentContainer>

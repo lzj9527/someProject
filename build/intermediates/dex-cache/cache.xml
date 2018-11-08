@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.4\a60a5e993c98c864010053cb901b7eab25306568\gson-2.2.4.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.2"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="G:\project\android\as_project\as\TryApp2ForBoss\tryApp2ForBoss\build\intermediates\transforms\preDex\release\11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\project\android\as_project\as\TryApp2ForBoss\tryApp2ForBoss\libs\unity-classes.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.2"
+        sha1="a40dde89fdef6e8bd3087f4e47dfe73a769bbde2">
+        <dex dex="G:\project\android\as_project\as\TryApp2ForBoss\tryApp2ForBoss\build\intermediates\transforms\preDex\release\16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\project\android\as_project\as\TryApp2ForBoss\androidExtendLib2\libs\httpmime-4.2.1.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.2"
+        sha1="c7349b04e5d76895fdfc0f38bdc0699e5f6fef5a">
+        <dex dex="G:\project\android\as_project\as\TryApp2ForBoss\tryApp2ForBoss\build\intermediates\transforms\preDex\release\19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\project\android\as_project\as\TryApp2ForBoss\jPushSDK300\libs\jpush-android_v3.0.0.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.2"
+        sha1="80269b2947385e1e32eaab580a47d96a1e5a315c">
+        <dex dex="G:\project\android\as_project\as\TryApp2ForBoss\tryApp2ForBoss\build\intermediates\transforms\preDex\release\24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\project\android\as_project\as\TryApp2ForBoss\tryApp2ForBoss\libs\glide-full-4.4.0.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.2"
+        sha1="5b5df588133424dadd668ab7090b517494ffbbc5">
+        <dex dex="G:\project\android\as_project\as\TryApp2ForBoss\tryApp2ForBoss\build\intermediates\transforms\preDex\release\15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\project\android\as_project\as\TryApp2ForBoss\androidExtendLib2\libs\android-support-v7-recyclerview.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.2"
+        sha1="1820c8a0b92b910fc7f03f85e91435a991f07704">
+        <dex dex="G:\project\android\as_project\as\TryApp2ForBoss\tryApp2ForBoss\build\intermediates\transforms\preDex\release\17.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\project\android\as_project\as\TryApp2ForBoss\jPushSDK300\build\intermediates\intermediate-jars\release\classes.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.2"
+        sha1="3dcf3792db76a9b0e6febd24e37ac20d5b4c8817">
+        <dex dex="G:\project\android\as_project\as\TryApp2ForBoss\tryApp2ForBoss\build\intermediates\transforms\preDex\release\13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\project\android\as_project\as\TryApp2ForBoss\androidExtendLib2\libs\commons-compress-1.10.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.2"
+        sha1="5eeb27c57eece1faf2d837868aeccc94d84dcc9a">
+        <dex dex="G:\project\android\as_project\as\TryApp2ForBoss\tryApp2ForBoss\build\intermediates\transforms\preDex\release\18.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\project\android\as_project\as\TryApp2ForBoss\androidExtendLib2\libs\umeng-analytics-v6.0.1.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.2"
+        sha1="aab9085bca0c26dcb9cb11837a5f5e22cc102a5e">
+        <dex dex="G:\project\android\as_project\as\TryApp2ForBoss\tryApp2ForBoss\build\intermediates\transforms\preDex\release\20.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\project\android\as_project\as\TryApp2ForBoss\androidExtendLib2\build\intermediates\intermediate-jars\release\classes.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.2"
+        sha1="172315d0bcc2becde812a23bed642aeebd5e22a3">
+        <dex dex="G:\project\android\as_project\as\TryApp2ForBoss\tryApp2ForBoss\build\intermediates\transforms\preDex\release\12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\project\android\as_project\as\TryApp2ForBoss\androidExtendLib2\libs\android-support-v4.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.2"
+        sha1="1dc1f63cee098b27db60b9a2833fd7ca58f89636">
+        <dex dex="G:\project\android\as_project\as\TryApp2ForBoss\tryApp2ForBoss\build\intermediates\transforms\preDex\release\22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\project\android\as_project\as\TryApp2ForBoss\jPushSDK300\libs\jcore-android_v1.0.0.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.2"
+        sha1="106b4280f8f932065d75075b65bc7754411abc73">
+        <dex dex="G:\project\android\as_project\as\TryApp2ForBoss\tryApp2ForBoss\build\intermediates\transforms\preDex\release\23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\project\android\as_project\as\TryApp2ForBoss\androidExtendLib2\libs\utdid4all-1.0.4.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.2"
+        sha1="4345fa0a5a7768f2f9c86aaab7db9e2906765193">
+        <dex dex="G:\project\android\as_project\as\TryApp2ForBoss\tryApp2ForBoss\build\intermediates\transforms\preDex\release\21.jar" />
+    </item>
+
+</items>

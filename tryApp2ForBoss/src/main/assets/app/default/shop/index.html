@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>登录</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="../static/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-box.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-base.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-color.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-control.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-icon.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-my.css">
+
+    <script type="text/javascript" src="../static/js/config.js"></script>
+    <script type="text/javascript" src="../static/js/androidJSInterface.js"></script>
+    <script type="text/javascript" src="../static/js/function.js"></script>
+    <script src="../static/js/jquery-3.0.0.js"></script>
+    <script type="text/javascript" src="../static/js/touch.js"></script>
+    <style>
+        *{
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+    </style>
+
+    <script>
+        var pushRegId = getUrlParam("pushRegId");
+
+        $(document).ready(function () {
+            // 读取 localStage 本地存储，填充用户名密码；
+            var storage = window.localStorage;
+            var getUid = storage["uid"];
+            var getPwd = storage["upwd"];
+            var getisstroepwd = storage["isstorePwd"];
+            if ("yes" == getisstroepwd) {
+                $("#uid").val(getUid);
+                $("#upwd").val(getPwd);
+                document.getElementById("isRemberPwdId").checked = true;
+            }
+            // 登录事件
+            touch.on('#login', 'touchstart', function (ev) {
+                $("#login").removeClass("bc-bg-a1");
+                $("#login").addClass("bc-bg-a2");
+                login();
+            });
+
+            touch.on('#login', 'touchend', function (ev) {
+                $("#login").removeClass("bc-bg-a2");
+                $("#login").addClass("bc-bg-a1");
+            });
+        });
+
+        function login() {
+            var uid = $("#uid").val();
+            var upwd = $("#upwd").val();
+
+            if (!isDefine(uid)) {
+                showToast("请输入用户名");
+                return;
+            }
+            if (!isDefine(upwd)) {
+                showToast("请输入密码");
+                return;
+            }
+            var storage = window.localStorage;
+            //记住密码
+            if (document.getElementById("isRemberPwdId").checked) {
+                //存储到loaclStage
+                storage["uid"] = uid;
+                storage["upwd"] = upwd;
+                storage["isstorePwd"] = "yes";
+            } else {
+                storage["isstorePwd"] = "no";
+            }
+
+            showLoadingIndicator(); // 测试
+
+            $.ajax({
+                url: appUrl+'/app/index.php?i=2&c=entry&m=ewei_shop&v=pad&do=member&p=member_login&uname=' +
+                uid + '&pwd=' + upwd + '&pushRegId=' + pushRegId,
+                type: "get",
+                dataType: 'jsonp',
+                success: function (data) {
+                    if (data.resultCode == "0") {
+                        storage["use_key"] = data.datas.key;
+                        storage["realname"] = data.datas.realname;
+                        hideLoadingIndicator(); // 测试
+                        onLoginFinished(data.datas.realname, data.datas.key,data.datas.isEmployee);
+                    } else {
+                        hideLoadingIndicator();
+                        showToast(data.error);
+                    }
+                },
+                error: function () {
+                    hideLoadingIndicator();
+                    showToast("连接服务器失败，请重试");
+                }
+            })
+
+        }
+
+    </script>
+
+</head>
+
+<body class="um-vp" ontouchstart>
+<div id="page_0" class="up ub" tabindex="0">
+    <div class="ub ub-con ub-img1 ub-pc ub-ac " style="background-image:url(../static/images/loginbg2.jpg)">
+        <form class="ub ">
+            <div class="ub ub-ac  ub-pc  frmLogin ub-ver  " style="width:16em;  background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,0)), to(rgba(255,255,255,0.5)));">
+                <div class="ub ub-fh ub-pc "><img src="../static/images/logo.png" style="margin: 0 -20%;"></div>
+                <div class="ub ub-ver" style="margin:1em 0;">
+                    <div class="ub  bc-bg  ub-ac ub-pc  uinn " style="width: 12em">
+                        <div class="ub ub-img5" style="width:2em; height:1.5em;background-image: url(../static/images/cut_user.png)"></div>
+                        <input placeholder="用户名" type="text" value="" class="ub ub-f1 umar-r bc-bg  ulev0  bc-text-c1" style="border:none; text-indent:0.5em; height: 1.5em; line-height:1.5em;outline:none; "
+                               id="uid" onclick="FixedSomeThing(this)">
+                    </div>
+                    <div class="ub  bc-bg  ub-ac ub-pc uinn " style=" margin-top: 1.6em;width: 12em">
+                        <div class="ub ub-img5" style="width:2em; height:1.5em; background-image: url(../static/images/cut_password.png)"></div>
+                        <input placeholder="密码" type="password" value="" class="ub ub-f1 umar-r bc-bg ulev0 bc-text-c1" style="border:none; text-indent:0.5em; height: 1.5em; line-height:1.5em;outline:none "
+                               id="upwd" onclick="FixedSomeThing(this)">
+                    </div>
+
+                    <div id="listview" style="margin-top:0.5em; margin-bottom:0.5em">
+                        <ul class="ub ub-pe">
+                            <li class=" ub  bc-text ub-ac  lis" data-index="0">
+                                <div class="checkbox umar-r">
+                                    <input type="checkbox" value="yes" class="uabs ub-con uba" id="isRemberPwdId">
+                                </div>
+                                <label for="isRemberPwdId"><div class="lv_title ub-f1 marg-l ub ub-ver ut-m line1 bc-text-c3">记住密码</div></label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="margin-bottom:2em" class="ub ">
+                        <div id="login" class="ub bc-bg-a1 ub-ac ub-pc ub-f1 bc-text-head btn-height">登 录</div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+</body>
+
+<script>
+
+function FixedSomeThing(data) {
+    console.log(data.id);
+    var id = data.id;
+    console.log(document.getElementById(""+ id +""));
+    setTimeout(function(){
+        document.getElementById(""+ id +"").scrollIntoView();
+
+    }, 100);
+}
+
+</script>
+
+</html>

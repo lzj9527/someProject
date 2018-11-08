@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- saved from url=(0119)http://www.zsmtvip.com/addons/ewei_shop/template/app/default/api/share.html?id=780&key=be9298627ea446fa74fb74127c8f6bbd -->
+<html lang="en" style="font-size: 84.3125px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>这是标题</title>
+    <script src="./GIA_files/jquery-3.0.0.js"></script>
+    <script src="../static/js/config.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border: none;
+        }
+        h1{
+            font-size:0.8rem;
+        }
+        body{
+            background:url(./images/share/bg.jpg)no-repeat;
+            -webkit-background-size:100%;
+            background-size:100%;
+        }
+        #head_icon{
+            text-align: center;
+            font-size:0.6rem;
+            width: 40%;
+            margin: 0 auto;
+            margin-top:5%;
+        }
+        #head_icon img{
+            width: 100%;
+            box-shadow: 0.2rem 0.2rem 1rem #b04b59;
+            border-radius:50%;
+        }
+        .main{
+            margin-top:32%;
+        }
+        #goods_name{
+            text-align: center;
+            margin-bottom:3%;
+            color:crimson;
+        }
+        #show_goods{
+            width: 80%;
+            margin:0 auto;
+        }
+        #show_goods img{
+            width: 100%;
+            border-radius:3%;
+        }
+        #goods_type{
+            width: 80%;
+            font-size:0.7rem;
+            text-align: center;
+            background: crimson;
+            color:#f5f5f5;
+            border-radius:1rem;
+            padding:2%;
+            margin:0 auto;
+            margin-top:10%;
+            margin-bottom:18%;
+        }
+    </style>
+</head>
+<body style="">
+<div id="head_icon" style="width: 40%; margin: 0 auto; margin-top: 5%;">
+    <img src="" style="width: 100%;border-radius:50%;" alt="数据正在加载...">
+</div>
+
+<div class="main">
+    <h1 id="goods_name" style="text-align: center;margin-bottom: 3%;color:crimson;">名称</h1>
+    <div id="show_goods" style="width: 80%; margin: 0 auto;">
+        <img src="" alt="商品展示" style="text-align: center; width: 100%; border-radius:3%;">
+    </div>
+
+    <div id="goods_type" style="width:80%;font-size: 0.6rem; text-align: center; background: crimson;color: #f5f5f5;border-radius: 1rem; padding: 1%;margin: 0 auto;margin-top: 10%;margin-bottom: 18%;">款&nbsp;号 : A1-010</div>
+</div>
+
+
+<script>
+    window.onload =function () {
+        var key = GetQueryString("key");
+        var goodsId = GetQueryString("id");
+        if(!isDefine(key)){
+            alert('获取key失败');
+        }
+
+        var title = $('title');
+        var head_icon = $("#head_icon img"); // 头像 改变图片路径完成更换图片
+        var goods_name = $("#goods_name"); // 商品名称 改变里面的内容
+        var show_goods = $('#show_goods img');// 商品展示  改变图片路径完成更换图片
+        var goods_type = $('#goods_type');// 商品款号 改变里面的内容
+
+        /*
+         http://www.zsmtvip.com/addons/ewei_shop/template/app/default/api/share.html?id=780&key=be9298627ea446fa74fb74127c8f6bbd
+         */
+        var url = appUrl+'/app/index.php?i=2&c=entry&do=goods_detail&m=test&'+'id='+goodsId+'&key='+key+"&";
+        $.ajax({
+            url:url, //请求数据的地址
+            type:"post",
+//            dataType:"jsonp",
+
+            success:function (data) {
+                var data = $.parseJSON(data);
+//                console.log(url);
+                console.log(data);
+                if(data.code === 200 && data.resultCode === 0){
+//                    console.log();
+//                    console.log(data.datas.thumb_url[0].url);
+//                    console.log(data.datas.title);
+//                    console.log(goods_name);
+//                    console.log(data.datas.thumb_url[1].url);
+
+                    title.html(data.datas.tagname);// title 名称
+                    head_icon.attr('src',data.datas.thumb_url[0].url); // 头像
+                    goods_name.html(data.datas.title); // 商品名称
+                    if(!isDefine(data.datas.thumb_url[1].url)){
+                        show_goods.attr('src',data.datas.thumb_url[0].url);
+                        $('#show_goods').css('width','50%');
+                    }else{
+                        show_goods.attr('src',data.datas.thumb_url[1].url); // 商品展示
+                    }
+                    goods_type.html('款&nbsp;号 : '+data.datas.sku); // 商品款号
+                }
+            },
+        })
+
+    };
+
+    // 获取浏览地址
+    var myurl=GetQueryString("url");
+    if(myurl !=null && myurl.toString().length>1)
+    {
+        alert(GetQueryString("url"));
+    }
+    function GetQueryString(name)
+    {
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null)return  unescape(r[2]); return null;
+    }
+
+    // 判断有没有数据
+    function isDefine(para) {
+        if ( typeof para === 'undefined' || para === "" || para === null || para === undefined || para === 'undefined')
+            return false;
+        else
+            return true;
+    }
+
+    var xmlHttpRequest;
+
+    $(function(){
+
+        if(window.XMLHttpRequest){
+
+            xmlHttpRequest=new XMLHttpRequest();
+
+        }else{
+
+            xmlHttpRequest=new ActiveXObject("Microsoft.XMLHTTP");
+
+        }
+
+        xmlHttpRequest.open("GET","AjaxServlet",true);
+
+    });
+</script>
+<script>
+    //监听浏览器文字大小代码
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</body></html>

@@ -1,0 +1,486 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>确认地址</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <!-- bootstrap start -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/bootstrap-theme.min.css">
+    <script src="../static/js/jquery-3.0.0.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!-- bootstrap end -->
+    <script type="text/javascript" src="../static/js/config.js"></script>
+    <script type="text/javascript" src="../static/js/function.js"></script>
+    <script type="text/javascript" src="../static/js/androidJSInterface.js"></script>
+    <script src="../static/js/touch.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-box.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-base.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-color.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-control.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-icon.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/ui-my.css">
+</head>
+
+<body class="um-vp" ontouchstart>
+    <!-- 第一页面 -->
+    <div id="page_1" class="up ub ub-ver hide" tabindex="0">
+
+        <div class="ub ub-ver ">
+            <div class="ub ub-pc ub-ac uinn  bc-bg-d3 bc-text-c5 pa-header" style="height:2.8em;" id='pa-header'>请选择收货地址</div>
+        </div>
+
+
+        <div class="ub  ub-ver ub-fh ub-f1 " style="overflow:auto" id="cartBox">
+            <div id="addorder" class="show">
+                <!-- 收货地址列表 -->
+                <div class="ub ub-fh " style="background:url(../static/images/line-95.png) left top repeat-x; height:0.2em; margin:0.5em 0em"></div>
+                <!-- 地址栏一 -->
+                <div class="pluadd">
+
+
+                    <div class="ub  ub-ver umar-l umar-r umar-b ubb  bc-border-c4 bc-bg-c4">
+
+                        <div class="ub  ub-f1 uinn" style="font-size: 1.2em;">
+                            <div class="ub ub-f1 "><span class="consignee bc-text-c1"> 罗小姐</span></div>
+                            <div class="ub ub-f1 ub-pe bc-text-c7"><span class="tel  bc-text-c1"> 13133335555</span></div>
+                        </div>
+
+                        <div class="ub  ub-f1 uinn">
+                            <div class="ub bc-text-c7"><span class="caddress"> 北京市测试北京市测试北京市测试北京市测试</span></div>
+                        </div>
+
+                        <div class="ub ub-ver uinn ubt">
+                            <div class="ub umar-t">
+                                <label class="ub-f1 btradio">
+                                    <input type="radio" name="addlist" value="" style="vertical-align: middle; margin:0;">
+                                    <span style="font-weight:normal;">设为默认</span>
+                                </label>
+                                <div class="ub ub-f1 ub-pe">
+                                    <div class="ub umar-r btEditimg ">
+                                        <span class="ub-img" style="vertical-align: top; display: inline-block; background-image:url(../static/images/btedit.png); width:1.2em;height:1.2em;"></span>
+                                        <span>编辑</span>
+                                    </div>
+                                    <div class="ub btDelimg">
+                                        <span class="ub-img" style="vertical-align: top; display: inline-block; background-image:url(../static/images/btdelete.png); width:1.2em;height:1.2em;"></span>
+                                        <span>删除</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ==== -->
+                <div class="ub ub-fh " style="background:url(../static/images/line-95.png) left top repeat-x; height:0.2em; margin:0.5em 0em"></div>
+                <!-- 收货地址列表 -->
+            </div>
+
+            <!-- 确认订单 -->
+            <div class="hide" id="orlist">
+                <div class="ub  umar-l umar-r bc-border-c4">
+                    <div class="ub ub-ver ub-f1 uinn">
+                        <div class="ub bc-text-c7"><span class="bc-text-c6 ubi umw5" style="color:#737373;">订单信息</div>      
+                      </div>
+                  </div>
+                 <div class="ub ub-fh " style="background:url(../static/images/line-95.png) left top repeat-x; height:0.2em; margin:0.5em 0em"></div>
+                 <div class="ub  umar-l umar-r ubb bc-border-c4">
+                      
+                      <div id="listAdd" class="ub ub-ver ub-f1 uinn">
+                            <div class="ub bc-text-c7"><span class="bc-text-c6 ubi umw5">收货人:</span><span class="consignee">罗小姐</span></div>
+                        <div class="ub bc-text-c7"><span class="bc-text-c6 ubi umw5">联系电话:</span><span class="tel">13133335555</span></div>
+                        <div class="ub bc-text-c7"><span class="bc-text-c6 ubi umw5">联系地址:</span><span class="caddress">北京市测试</span></div>
+                    </div>
+                </div>
+
+
+                <div class="ub uinn ubb bc-border-c4">
+                    <div class="ub ub-pc ub-ac " style="width:1.5em; ">
+                        <input type="checkbox" name="" class="selects" data-cartid="3512" data-price="3168.00">
+                    </div>
+                    <div class="ub ub-ac ub-pc">
+                        <div class="ub ub-img uba bc-border-c4" style="width:4em;height:4em; background-image: url(http://www.zsmtvip.com/attachment/images/2/2016/12/zc4K8k0MJ5v7vIjJp7Mj5ViGJjjuuL.jpg);">
+                        </div>
+                    </div>
+                    <div class="ub ub-f1 ub-ver">
+                        <div class="ub umar-l ">
+                            <div class="ub ub-f1 size12">
+                                <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">货号:</div>
+                                <div class="ubi ufl size10 bc-text-c2">00280792</div>
+                            </div>
+                            <div class="ub  bc-text-c2">
+                                <i class="ub ub-img" style="width:1.2em; height:1.2em;"></i>￥<span class="pricelist">3168.00</span>
+                            </div>
+                        </div>
+                        <div class="ub umar-l  umar-b  " style="padding-bottom:.5em; border-bottom:1px #a9a9a9 dashed">
+                        </div>
+                        <div class="umar-l  bc-text-c2">
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">形状:</div>
+                            <div class="ubi ufl size10 bc-text-c2">圆形</div>
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">金重:</div>
+                            <div class="ubi ufl size10 bc-text-c2">2.41g</div>
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">材质:</div>
+                            <div class="ubi ufl size10 bc-text-c2">Pt950</div>
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">主石</div>
+                            <div class="ubi ufl size10 bc-text-c2">0.115ct/1</div>
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">净度:</div>
+                            <div class="ubi ufl size10 bc-text-c2">SI</div>
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">颜色:</div>
+                            <div class="ubi ufl size10 bc-text-c2">F-G</div>
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ub uinn ubb bc-border-c4">
+                    <div class="ub ub-pc ub-ac " style="width:1.5em; ">
+                        <input type="checkbox" name="" class="selects" data-cartid="3512" data-price="3168.00">
+                    </div>
+                    <div class="ub ub-ac ub-pc">
+                        <div class="ub ub-img uba bc-border-c4" style="width:4em;height:4em; background-image: url(http://www.zsmtvip.com/attachment/images/2/2016/12/zc4K8k0MJ5v7vIjJp7Mj5ViGJjjuuL.jpg);">
+                        </div>
+                    </div>
+                    <div class="ub ub-f1 ub-ver">
+                        <div class="ub umar-l ">
+                            <div class="ub ub-f1 size12">
+                                <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">货号:</div>
+                                <div class="ubi ufl size10 bc-text-c2">00280792</div>
+                            </div>
+                            <div class="ub  bc-text-c2">
+                                <i class="ub ub-img" style="width:1.2em; height:1.2em;"></i>￥<span class="pricelist">3168.00</span>
+                            </div>
+                        </div>
+                        <div class="ub umar-l  umar-b  " style="padding-bottom:.5em; border-bottom:1px #a9a9a9 dashed">
+                        </div>
+                        <div class="umar-l  bc-text-c2">
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">形状:</div>
+                            <div class="ubi ufl size10 bc-text-c2">圆形</div>
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">金重:</div>
+                            <div class="ubi ufl size10 bc-text-c2">2.41g</div>
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">材质:</div>
+                            <div class="ubi ufl size10 bc-text-c2">Pt950</div>
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">主石</div>
+                            <div class="ubi ufl size10 bc-text-c2">0.115ct/1</div>
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">净度:</div>
+                            <div class="ubi ufl size10 bc-text-c2">SI</div>
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.1em">颜色:</div>
+                            <div class="ubi ufl size10 bc-text-c2">F-G</div>
+                            <div class="ubi ufl size10 bc-text-c2" style="margin:0 0.4em"> | </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ub ub-fh " style="background:url(../static/images/line-95.png) left top repeat-x; height:0.2em; margin:0.5em 0em"></div>
+            </div>
+
+        </div>
+        <!-- 新建收货地址列表 -->
+        <div id="footer" class="show">
+            <div class="ub">
+
+                <div class="ub ub-f1 uinn  bc-bg-c4 ">
+                    <div class="ub ub-f1  ub-ac ub-pc umar-t umar-b totalmoney size12" onclick="addbox()">新建收货地址</div>
+                </div>
+                <div class="ub ub-f1 uinn bc-bg-d3 ub-ac ub-pc bc-text-c5 ">
+                    <div class="ub ub-f1  ub-ac ub-pc umar-t umar-b btPostOrder sc-text-active">
+                        确认收货地址
+                    </div>
+                </div>
+
+                <!-- ======= -->
+            </div>
+        </div>
+
+
+        <!-- ========== -->
+        <div id="orFooter" class="hide">
+            <div class="ub">
+                <div class="ub ub-f1 uinn  bc-bg-c4 ">
+                    <div class="ub ub-f1  ub-ac ub-pc umar-t umar-b">
+                        <input type="checkbox" name="" id="selectAll">全选
+                    </div>
+                    <div class="ub ub-f1  ub-ac ub-pc umar-t umar-b totalmoney size12">合计:￥0.00</div>
+                </div>
+                <div class="ub ub-f1 uinn bc-bg-d3 ub-ac ub-pc bc-text-c5 ">
+                    <div class="ub ub-f1  ub-ac ub-pc umar-t umar-b  sc-text-active" onclick="jion()">
+                        提交订单
+                    </div>
+                    <div class="ub ub-f1  ub-ac ub-pc umar-t umar-b  btcartdel  sc-text-active uhide">
+                        删除商品
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ==== -->
+        <!-- 新建地址弹框 -->
+        <div class="modal fade" id="ad-box" style="top:-10%">
+            <div class="ub ub-con ub-pc ub-ac">
+                <div class="ub uc-a1 bc-bg ub-ver" style="width: 90%; height:auto">
+                    <div class="ub ub-ver ubb bc-border-c4 ">
+                        <div class="ub  uinn ub-f1 umar-t umar-b">
+                            <div class="ub bc-text-c1 umar-l uinn  tx-c"> 收 货 人:</div>
+                            <div class="ub ub-f1 bc-text-b1 uinn"><input type="text" value="" class="ub ub-f1 noborder uinn bc-text-c1" id="txtRealname"></div>
+                        </div>
+                    </div>
+                    <div class="ub ub-ver ubb bc-border-c4 ">
+                        <div class="ub  uinn ub-f1 umar-t umar-b">
+                            <div class="ub bc-text-c1 umar-l uinn tx-c">联系电话:</div>
+                            <div class="ub ub-f1 bc-text-b1 uinn"><input type="text" value="" class="ub ub-f1 noborder uinn bc-text-c1" id="txtMobile"></div>
+                        </div>
+                    </div>
+                    <div class="ub ub-ver ubb bc-border-c4 ">
+                        <div class="ub  uinn ub-f1 umar-t umar-b">
+                            <div class="ub bc-text-c1 umar-l uinn  tx-c">详细地址:</div>
+                            <div class="ub ub-f1 bc-text-b1 uinn"><input type="text" value="" class="ub ub-f1 noborder uinn bc-text-c1" id="txtAddress"></div>
+                        </div>
+                    </div>
+
+                    <div class="ub ub-ver ubb bc-border-c4 ">
+                        <div class="ub  uinn ub-f1 umar-t umar-b">
+                            <div class="ub bc-text-c1 umar-l uinn  tx-c">默认地址:</div>
+                            <div class="ub ub-f1 bc-text-b1 uinn "><input type="checkbox" value="1" id="isdefault" class="uinn bc-text-c1"></div>
+                        </div>
+                    </div>
+                    <div class="ub ub-ver umar-a ">
+                        <!-- <div class="ub ub-pc ub-ac uinn  bc-bg-d3 bc-text-c5 btOk " style="height:2.8em;  " >确认</div>  -->
+                        <div style=" margin:2em 2em 1em 2em" class="ub ub-pc">
+                            <div class="ub uc-a1 bc-bg-d3  ub-ac ub-pc ulev1 uinn bc-text-head ub-f1 umar-a" data-dismiss="modal" onclick="plus_address()">确定</div>
+                            <div class="ub uc-a1 bc-bg-d3  ub-ac ub-pc ulev1 uinn bc-text-head ub-f1 umar-a" data-dismiss="modal">取消</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ===== -->
+
+        <!-- 提交弹框-->
+        <div class="modal fade" id="btlist2" style="top:-10%">
+            <div class="ub ub-con ub-pc ub-ac">
+                <div class="ub uc-a1 bc-bg ub-ver" style="width: 90%; height:auto">
+                    <div class="ub ub-pe uinn umar">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:#ec3a49;width: 0.8em; height: 0.8em"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <h3 class="bc-text-c7" style="text-align:center;">成功提交订单!</h3>
+                    <div style=" margin:  1em 4em 1em 4em">
+                        <div style="margin-bottom:2em;" class="ub ub-pc">
+                            <div class="ub uc-a1 bc-bg-d3  ub-ac ub-pc ulev1 uinn bc-text-head ub-f1 umar-a size14" data-dismiss="modal" style="width:9em;">朕知道</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+ 
+    // 新建收货地址函数
+    function addbox() {
+        $('#ad-box').modal();
+    }
+
+    // 添加新地址
+    function plus_address() {
+        var $Realname = $('#txtRealname').val(),
+            $Mobile = $('#txtMobile').val(),
+            $Address = $('#txtAddress').val(),
+            $isdefault = $('#isdefault').val(),
+            $plhtml = "";
+        if (isDefine($Realname) && isDefine($Mobile) && isDefine($Address)) {
+            //console.log('地址填写完整');
+            $plhtml += '<div class="ub  ub-ver umar-l umar-r umar-b ubb  bc-border-c4 bc-bg-c4">' +
+                        '<div class="ub  ub-f1 uinn" style="font-size: 1.2em;">' +
+                            '<div class="ub ub-f1 "><span class="consignee bc-text-c1">' + $Realname + '</span></div>' +
+                            '<div class="ub ub-f1 ub-pe bc-text-c7"><span class="tel  bc-text-c1">' + $Mobile + '</span></div>' +
+                        '</div>' +
+                        '<div class="ub  ub-f1 uinn">' +
+                            '<div class="ub bc-text-c7"><span class="caddress">' + $Address + '</span></div>' +
+                        '</div>' +
+                        '<div class="ub ub-ver uinn ubt">' +
+                            '<div class="ub umar-t">' +
+                                '<label class="ub-f1 btradio">' +
+                                   '<input type="radio" name="addlist" value="" style="vertical-align: middle; margin:0;">' +
+                                    '<span style="font-weight:normal;">设为默认</span>' +
+                                '</label>' +
+                            '<div class="ub ub-f1 ub-pe">' +
+                                '<div class="ub umar-r btEditimg " >' +
+                                    '<span class="ub-img" style="vertical-align: top; display: inline-block; background-image:url(../static/images/btedit.png); width:1.2em;height:1.2em;"></span>' +
+                                    '<span>编辑</span>' +
+                                '</div>' +
+                                '<div class="ub btDelimg">' +
+                                    '<span class="ub-img" style="vertical-align: top; display: inline-block; background-image:url(../static/images/btdelete.png); width:1.2em;height:1.2em;"></span>' +
+                                    '<span>删除</span>' +
+                                '</div>' +
+                            '</div>' +
+                        '</div>' +
+                    '</div>' +
+                '</div>';
+            // console.log($plhtml);
+            $(".pluadd").append($plhtml);
+        }
+
+    }
+
+    // // 没有用到
+    // function load_address() {
+    //     load_change();
+    // }
+    // // 没有用到
+    // function load_change() {
+    //     $('.consignee').text(($('.consigtx').val()));
+    //     $('.tel').text(($('.teltx').val()));
+    //     $('.caddress').text(($('.caddresstx').val()));
+    // }
+
+
+
+    // 单选功能设置 
+    $(document).on("click", ".btradio", function (ev) {
+        // btok类 没有写
+        $(this).addClass('btok');
+    })
+
+    // 确认收货地址
+    touch.on('.btPostOrder', 'tap', function (ev) {
+        // location.href='checkorder.html';
+        // 获取被选中的地址
+        // 判断选中是否为空
+        if ($("input[type='radio']:checked").parent().next().html() !== undefined) {
+            console.log($('#listAdd').html());
+            console.log($("input[type='radio']:checked").parent().next().html());
+            var $checkedHtml = $("input[type='radio']:checked").parent().next().html();
+            $('#listAdd').html($checkedHtml);
+            // console.log($("#pa-header").text());
+            $(".pa-header").text('确认订单');
+            // $('#page_1').hide();
+            $('#orlist').removeClass('hide').addClass('show');
+            $('#addorder').removeClass('show').addClass('hide');
+            $('#footer').removeClass('show').addClass('hide');
+            $('#orFooter').removeClass('hide').addClass('show');
+        }
+    })
+    
+    // 编辑修改地址
+    $(document).on("click", ".btEditimg", function (ev) {
+
+        // 姓名的span
+        var $box = $(this).parent().parent().parent().prev().prev().children('div').children('span').get(0);
+        // 电话的span
+        var $box1 = $(this).parent().parent().parent().prev().prev().children('div').children('span').get(1);
+        //
+        var $box2 = $(this).parent().parent().parent().prev().children('div').children('span').get(0);
+       // console.log($box2);
+        // console.log($box1.innerHTML);
+        // console.log($box2.innerHTML);
+        // $('.consigtx').val($box.innerHTML);
+        // $('.teltx').val($box1.innerHTML);
+        // $('.caddresstx').val($box2.innerHTML);
+        // 判断有无编辑框
+        // console.log($(this).parent().parent().next().is('.edit-box'));
+        if (!$(this).parent().parent().next().is('.edit-box')) {
+            // 创建编辑框
+            var editHtml = '<div class="modal fade edit-box" id="" style="top:-10%">' +
+                '<div class="ub ub-con ub-pc ub-ac">' +
+                '<div class="ub uc-a1 bc-bg ub-ver" style="width: 90%; height:auto">' +
+                '<div class="ub ub-ver ubb bc-border-c4 ">' +
+                '<div class="ub  uinn ub-f1 umar-t umar-b">' +
+                '<div class="ub bc-text-c1 umar-l uinn  tx-c">收  货  人:</div>' +
+                '<div class="ub ub-f1 bc-text-b1 uinn"><input type="text" placeholder="&nbsp;&nbsp;收货人" class="input-rename consigtx bc-text-c1  noborder ub ub-f1 uinn"  value=" ' +
+                $box.innerHTML + '" style="padding-left:0.9em;" required="required" >' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '<div class="ub ub-ver ubb bc-border-c4 phone">' +
+                '<div class="ub  uinn ub-f1 umar-t umar-b">' +
+                '<div class="ub bc-text-c1 umar-l uinn tx-c">联系电话:</div>' +
+                '<div class="ub ub-f1 bc-text-b1 uinn"><input type="text" placeholder="&nbsp;&nbsp;联系电话" class="input-num teltx bc-text-c1  noborder ub ub-f1 uinn"  value=" ' +
+                $box1.innerHTML + ' " style="padding-left:0.8em;" required="required" >' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '<div class="ub ub-ver ubb bc-border-c4 ">' +
+                '<div class="ub  uinn ub-f1 umar-t umar-b">' +
+                '<div class="ub bc-text-c1 umar-l uinn  tx-c">详细地址:</div>' +
+                '<div class="ub ub-f1 bc-text-b1 uinn"><input type="text" placeholder="&nbsp;&nbsp;联系地址" class="input-num caddresstx bc-text-c1  noborder ub ub-f1 uinn" value=" ' +
+                $box2.innerHTML + '" style="padding-left:0.8em;" required="required" >' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '<div class="ub ub-ver ubb bc-border-c4 ">' +
+                '<div class="ub  uinn ub-f1 umar-t umar-b">' +
+                '<div class="ub bc-text-c1 umar-l uinn  tx-c">默认地址:</div>' +
+                '<div class="ub ub-f1 bc-text-b1 uinn "><input type="checkbox" value="1"  id="isdefault" class="uinn bc-text-c1  noborder "></div>' +
+                '</div>' +
+                '</div>' +
+                '<div class="ub ub-ver umar-a " style="margin-top:0em">' +
+                '<div style=" margin:2em 2em 1em 2em;text-align:center;" class="ub ub-pc ">' +
+                '<div class="ub uc-a1 bc-bg-d3  ub-ac ub-pc ulev1 uinn bc-text-head ub-f1 umar-a" data-dismiss="modal"  style="border:none;text-align:center;">' +
+                '<input type="submit" class="bc-bg-d3 join" value="提交" style="border:none;" />' +
+                '</div>' +
+                '<div class="ub uc-a1 bc-bg-d3  ub-ac ub-pc ulev1 uinn bc-text-head ub-f1 umar-a" data-dismiss="modal"  style="border:none;text-align:center;" >取消' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '</div>';
+            // 插入当前编辑下
+            // console.log($(this).parent().parent().parent());
+            $(this).parent().parent().parent().append(editHtml);
+            $(this).parent().parent().next().modal();
+        } else {
+            $(this).parent().parent().next().modal();
+        }
+    })
+    // 编辑修改之后更新地址
+    $(document).on("click", ".join", function (ev) {
+        // 获取当前编辑页面的数据触发节点提交更改数据
+        var usName = $(this).parent().parent().parent().parent().parent().parent().parent().prev().prev()
+                    .children('div').children('span').eq(0),
+            usTel = $(this).parent().parent().parent().parent().parent().parent().parent().prev().prev()
+                    .children('div').children('span').eq(1),
+            usAdd = $(this).parent().parent().parent().parent().parent().parent().parent().prev()
+                    .children('div').children('span').eq(0);
+         console.log(usName.html() + "  收货人");//找到收货人
+         console.log(usTel.html() + "  找到联系电话");//找到联系电话
+         console.log(usAdd.html() + "  找到联系地址");//找到联系地址
+        // 获取当前页面的已编辑信息
+        var editName = $(this).parent().parent().parent().prev().prev().prev().prev().children('div').children()
+            .children('input').val();
+        editTel = $(this).parent().parent().parent().prev().prev().prev().children('div').children().children(
+            'input').val();
+        editAdd = $(this).parent().parent().parent().prev().prev().children('div').children().children('input')
+            .val();
+        console.log(editName);//获取收货人
+        console.log(editTel);//获取联系电话
+        console.log(editAdd);//获取联系地址
+        // 提交更换数据
+        usName.html(editName);
+        usTel.html(editTel);
+        usAdd.html(editAdd);
+    })
+    // 删除地址
+    $(document).on("click", ".btDelimg", function (ev) {
+        //console.log( $(this).parent().parent().parent().parent().remove());
+        var $box = $(this).parent().parent().parent().parent();
+        $box.remove();
+    });
+
+    function jion() {
+        $('#btlist2').modal();
+    }
+</script>
+
+</html>

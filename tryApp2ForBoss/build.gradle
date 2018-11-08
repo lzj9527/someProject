@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        compileSdkVersion 28
+        buildToolsVersion '28.0.2'
+        applicationId "com.shiyou.tryapp2.boss.zsa"
+        minSdkVersion 19
+        targetSdkVersion 28
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            aaptOptions.cruncherEnabled = false
+            aaptOptions.useNewCruncher = false
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    buildToolsVersion = '28.0.3'
+}
+
+dependencies {
+    api project(':androidExtendLib2')
+    api project(':jPushSDK300')
+    api files('libs/glide-full-4.4.0.jar')
+    api files('libs/unity-classes.jar')
+
+}

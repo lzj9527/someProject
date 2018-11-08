@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 涓嬫媺鍒锋柊鍜屼笂鎷夊姞杞芥洿澶氱殑鏂囨湰 -->
+    <string name="pull_to_refresh_hint_normal">涓嬫媺鍙互鍒锋柊</string>
+    <string name="pull_to_refresh_horizontal_hint_normal">鍙虫媺鍙互鍒锋柊</string>
+    <string name="pull_to_refresh_hint_ready">鏉惧紑鍚庡埛鏂�</string>
+    <string name="pull_to_refresh_hint_loading">姝ｅ湪鍒锋柊涓�</string>
+    <string name="pull_to_refresh_last_time">鏈�鍚庢洿鏂版椂闂� : </string>
+    <string name="pull_to_load_hint_normal">涓婃媺鍙互鍔犺浇鏇村</string>
+    <string name="pull_to_load_horizontal_hint_normal">宸︽媺鍙互鍔犺浇鏇村</string>
+    <string name="pull_to_load_hint_ready">鏉惧紑鍚庡紑濮嬪姞杞�</string>
+    <string name="pull_to_load_hint_loading">姝ｅ湪鍔犺浇涓�</string>
+    <string name="pull_to_load_no_more_data">宸茬粡鍒板簳鍟�</string>
+
+</resources>

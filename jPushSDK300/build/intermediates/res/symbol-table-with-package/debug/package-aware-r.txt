@@ -1,0 +1,17 @@
+com.example.jpushdemo
+drawable jpush_ic_richpush_actionbar_back
+drawable jpush_ic_richpush_actionbar_divider
+drawable jpush_richpush_btn_selector
+drawable jpush_richpush_progressbar
+id actionbarLayoutId
+id fullWebView
+id imgRichpushBtnBack
+id imgView
+id popLayoutId
+id pushPrograssBar
+id rlRichpushTitleBar
+id tvRichpushTitle
+id wvPopwin
+layout jpush_popwin_layout
+layout jpush_webview_layout
+style MyDialogStyle
