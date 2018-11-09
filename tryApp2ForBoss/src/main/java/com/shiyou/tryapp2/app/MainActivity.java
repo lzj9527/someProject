@@ -2,12 +2,14 @@ package com.shiyou.tryapp2.app;
 
 import java.io.File;
 
+import android.Manifest;
 import android.animation.Animator;
 import android.animation.Animator.AnimatorListener;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.extend.BasicConfig;
 import android.extend.app.BaseFragment;
@@ -18,7 +20,10 @@ import android.extend.util.ReflectHelper;
 import android.extend.util.ResourceUtil;
 import android.extend.util.ViewTools;
 import android.graphics.Point;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentManager;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
@@ -51,7 +56,15 @@ public class MainActivity extends BaseAppActivity {
 	// {
 	// NONE, Product, CoupleRing,
 	// }
+	final static String PERMISSIONS[]=new String[]{
+			Manifest.permission.CAMERA,
+			Manifest.permission.CALL_PHONE,
+			Manifest.permission.GET_ACCOUNTS,
+			Manifest.permission.ACCESS_FINE_LOCATION,
+			Manifest.permission.WRITE_EXTERNAL_STORAGE,
+			Manifest.permission.READ_EXTERNAL_STORAGE
 
+	};
 	public static final String TAG = MainActivity.class.getSimpleName();
 	public static MainActivity instance = null;
 	public static DisplayMetrics windowDisplayMetrics = null;
@@ -92,7 +105,18 @@ public class MainActivity extends BaseAppActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
+//		if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.M) {
+//			for (int i = 0; i < PERMISSIONS.length; i++) {
+//				if (PackageManager.PERMISSION_GRANTED != ActivityCompat.checkSelfPermission(this, PERMISSIONS[i])) {
+//					int permissionCode = 200;
+//					Log.d(TAG, "onResume: 权限申请不成功");
+//					ActivityCompat.requestPermissions(this, PERMISSIONS, permissionCode);
+//				} else {
+//
+//					Log.d(TAG, "onResume: 权限申请成功");
+//				}
+//			}
+//		}
 		instance = this;
 
 		/*
@@ -191,8 +215,10 @@ public class MainActivity extends BaseAppActivity {
 	@Override
 	protected void onResume() {
 		super.onResume();
+
 		mUnityPlayer.resume();
 		setSystemUiVisibility();
+
 		// updateShoppingCartNum();
 	}
 

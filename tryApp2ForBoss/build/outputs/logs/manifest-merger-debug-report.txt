@@ -91,10 +91,6 @@ uses-permission#android.permission.MANAGE_ACCOUNTS
 ADDED from D:\TryApp2ForBoss-master\tryApp2ForBoss\src\main\AndroidManifest.xml:29:5-74
 	android:name
 		ADDED from D:\TryApp2ForBoss-master\tryApp2ForBoss\src\main\AndroidManifest.xml:29:22-71
-uses-permission#android.permission.GET_ACCOUNTS
-ADDED from D:\TryApp2ForBoss-master\tryApp2ForBoss\src\main\AndroidManifest.xml:30:5-71
-	android:name
-		ADDED from D:\TryApp2ForBoss-master\tryApp2ForBoss\src\main\AndroidManifest.xml:30:22-68
 uses-permission#android.permission.VIBRATE
 ADDED from D:\TryApp2ForBoss-master\tryApp2ForBoss\src\main\AndroidManifest.xml:31:5-66
 	android:name

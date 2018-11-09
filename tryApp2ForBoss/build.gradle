@@ -1,14 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    useLibrary 'org.apache.http.legacy'
-
     defaultConfig {
-        compileSdkVersion 28
+        compileSdkVersion 22
         buildToolsVersion '28.0.2'
         applicationId "com.shiyou.tryapp2.boss.zsa"
         minSdkVersion 19
-        targetSdkVersion 28
+        targetSdkVersion 22
     }
 
     buildTypes {

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Nov 08 15:50:17 CST 2018
+#Thu Nov 08 16:29:10 CST 2018
 20.base=D\:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 143.base=D\:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 237.path=bin/Data/237211f59707f5e44b259cae7eda3d14
