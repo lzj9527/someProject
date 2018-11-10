@@ -1070,7 +1070,8 @@
         $('.product-cert-no').click(function () {
             var cert_num = $(this).text();
             console.log(cert_num);
-            var url = appUrl + '/addons/ewei_shop/api/pdf.php?gia=' + cert_num + '&key=' + key;
+            // var url = appUrl + '/addons/ewei_shop/api/pdf.php?gia=' + cert_num + '&key=' + key;
+            var url = "https://www.gia.edu/CN/report-check?reportno=" + cert_num;
             console.log(url);
             downloadGIACer(cert_num, url);
         });
