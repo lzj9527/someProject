@@ -1,754 +1,754 @@
 [
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.jpg.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\ic_launcher.jpg"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_detail_item_bg.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_detail_item_bg.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_my.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_my.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_back_button.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\back_button.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_product_detail2_color.9.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\product_detail2_color.9.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_rotate_refresh.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\drawable-hdpi-v4\\rotate_refresh.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_main_seach.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_main_seach.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_product_specification_addshopping_no.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_product_specification_addshopping_no.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_splash_image.jpg.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\splash_image.jpg"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_jpush_popwin_layout.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\jPushSDK300\\build\\intermediates\\packaged_res\\debug\\layout\\jpush_popwin_layout.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_launch_pointer_s.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\launch_pointer_s.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_pdfviewer_layout.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\pdfviewer_layout.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_shoppingcart.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_shoppingcart.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_order_s.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_order_s.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_gia_bargain_layout.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\gia_bargain_layout.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_product_details_3d_kred.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\product_details_3d_kred.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_add_shoppingcart_success_dialog.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\add_shoppingcart_success_dialog.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_selector_boss_couple_font.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\selector_boss_couple_font.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_boss_product_specification_selectprice.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\boss_product_specification_selectprice.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_product_specification_addshopping2.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_product_specification_addshopping2.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_shoppingcart.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_shoppingcart.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_grow_in_center.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\grow_in_center.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_pull_to_refresh_header.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\pull_to_refresh_header.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_details_1.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_details_1.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_default_swiperefresh_webview.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\default_swiperefresh_webview.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_launch_image_2.jpg.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\launch_image_2.jpg"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_launch_pointer.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\launch_pointer.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_shoppingcart_s.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_shoppingcart_s.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_launch_image_2.jpg.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\launch_image_2.jpg"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_right.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\slide_in_right.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_main_add.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_main_add.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_launch_image_1.jpg.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\launch_image_1.jpg"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_pricre_save.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_pricre_save.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_pull_to_refresh_header.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\pull_to_refresh_header.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_order_s.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_order_s.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_jpush_richpush_progressbar.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\jPushSDK300\\build\\intermediates\\packaged_res\\debug\\drawable-hdpi-v4\\jpush_richpush_progressbar.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_main_layout.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\main_layout.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_pricre_save.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_pricre_save.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_rotate_loading.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\drawable-hdpi-v4\\rotate_loading.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_main_seach.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_main_seach.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_shoppingcart_s.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_shoppingcart_s.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_popup_menu_dialog.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\popup_menu_dialog.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_default_tab_frame_content.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\default_tab_frame_content.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_selector_main_shoppingcart.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\selector_main_shoppingcart.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_product_specification_addshopping2.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_product_specification_addshopping2.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_jpush_richpush_btn_selector.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\jPushSDK300\\build\\intermediates\\packaged_res\\debug\\drawable-hdpi-v4\\jpush_richpush_btn_selector.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_dot_container_bg1.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\dot_container_bg1.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_tryon_layout.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\tryon_layout.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_check_negativebutton.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\check_negativebutton.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_shoppingcart.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_shoppingcart.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_pull_to_load_footer.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\pull_to_load_footer.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_product_detail_color.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\product_detail_color.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_details_1.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_details_1.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_main_del.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_main_del.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_save_help.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_save_help.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_spinner_window_layout.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\spinner_window_layout.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_pull_arrow_down.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\pull_arrow_down.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_save_help.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_save_help.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_shop_dise.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_shop_dise.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_launch_pointer_s.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\launch_pointer_s.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_default_tab_content.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\default_tab_content.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_jpush_ic_richpush_actionbar_divider.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\jPushSDK300\\build\\intermediates\\packaged_res\\debug\\drawable-hdpi-v4\\jpush_ic_richpush_actionbar_divider.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_grow_in_center.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\grow_in_center.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_up.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\slide_out_up.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_add_shopping_success.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_add_shopping_success.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_add_shopping_bg.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_add_shopping_bg.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_grow_fade_in.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\grow_fade_in.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_shop_dise.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_shop_dise.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_back_button.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\back_button.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_product_image_pw.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\product_image_pw.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_detail_download.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_detail_download.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_launch_pointer.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\launch_pointer.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_dot_container_bg.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\dot_container_bg.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_fade_out.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\fade_out.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_default_progress_bg.9.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\drawable-hdpi-v4\\default_progress_bg.9.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_anim_loading.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\anim_loading.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_rotate_loading_anim.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\rotate_loading_anim.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_launch_image_2.jpg.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\launch_image_2.jpg"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_porduct_s.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_porduct_s.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_main_webview_layout.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\main_webview_layout.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_launch_image_1.jpg.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\launch_image_1.jpg"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_launch_image_3.jpg.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\launch_image_3.jpg"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_check_negativebutton.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\check_negativebutton.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_main_seach.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_main_seach.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_search.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_search.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_launch_image_3.jpg.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\launch_image_3.jpg"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_product_details_3d_kwhite_s.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\product_details_3d_kwhite_s.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_dot_container_bg1.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\dot_container_bg1.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_default_flipper_content.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\default_flipper_content.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_shrink_fade_out.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\shrink_fade_out.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_product_details_3d_kred.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\product_details_3d_kred.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_rotate_loading_anim.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\rotate_loading_anim.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_search.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_search.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_right.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\slide_out_right.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_porduct.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_porduct.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_porduct_s.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_porduct_s.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_fade_in.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\fade_in.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_jpush_ic_richpush_actionbar_back.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\jPushSDK300\\build\\intermediates\\packaged_res\\debug\\drawable-hdpi-v4\\jpush_ic_richpush_actionbar_back.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_save_help.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_save_help.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_grow_fade_in_center.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\grow_fade_in_center.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_shrink_fade_out_center.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\shrink_fade_out_center.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_default_tab_frame_content.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\default_tab_frame_content.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_anim_loading.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\anim_loading.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_default_loading_indicator.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\default_loading_indicator.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_add_shopping_bg.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_add_shopping_bg.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_default_frame_layout.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\default_frame_layout.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_order_s.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_order_s.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_selector_main_order.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\selector_main_order.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_shoppingcart_s.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_shoppingcart_s.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_pull_to_load_horizontalfooter.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\pull_to_load_horizontalfooter.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_product_details_3d_kred_s.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\product_details_3d_kred_s.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_my_s.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_my_s.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_right.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\slide_out_right.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_jpush_webview_layout.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\jPushSDK300\\build\\intermediates\\packaged_res\\debug\\layout\\jpush_webview_layout.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_product_detail_color.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\product_detail_color.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_grow_fade_in.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\grow_fade_in.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_details_shoppingcart.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_details_shoppingcart.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_shrink_out_center.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\shrink_out_center.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_pull_arrow_up.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\pull_arrow_up.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_product_specification_3d.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_product_specification_3d.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_splash_image.jpg.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\splash_image.jpg"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_menuitem.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_menuitem.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_selector_main_menuitem.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\selector_main_menuitem.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_launch_pointer_s.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\launch_pointer_s.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_pricre_save.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_pricre_save.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_down.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\slide_in_down.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_download_progress_dialog.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\download_progress_dialog.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_shrink_fade_out_center.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\shrink_fade_out_center.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_pull_to_refresh_horizontalheader.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\pull_to_refresh_horizontalheader.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_main_add.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_main_add.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_selector_main_porduct.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\selector_main_porduct.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_couple_wmen.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_couple_wmen.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_detail_item_bg.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_detail_item_bg.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_splash_layout.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\splash_layout.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_boss_product_details_layout.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\boss_product_details_layout.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_dot_container_bg.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\dot_container_bg.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_launch_image_2.jpg.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\launch_image_2.jpg"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_product_specification_3d.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_product_specification_3d.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_my_s.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_my_s.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_default_progress_bg.9.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\drawable-hdpi-v4\\default_progress_bg.9.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_couple_men.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_couple_men.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_shoppingcart.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_shoppingcart.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_product_details_3d_kyellow_s.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\product_details_3d_kyellow_s.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_launch_image_1.jpg.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\launch_image_1.jpg"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_menuitem_s.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_menuitem_s.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_selector_main_porduct.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\selector_main_porduct.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_product_details_3d_kwhite.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\product_details_3d_kwhite.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_product_details_3d_kred.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\product_details_3d_kred.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_list_selector_bg_focus.9.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\drawable-hdpi-v4\\list_selector_bg_focus.9.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_shop_dise.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_shop_dise.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_menuitem_s.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_menuitem_s.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_add_shopping_bg_s.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_add_shopping_bg_s.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_couple_men.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_couple_men.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_rotate_loading.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\drawable-hdpi-v4\\rotate_loading.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_selector_product_details_3d_kwhite.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\selector_product_details_3d_kwhite.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_popup_menu_item.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\popup_menu_item.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_product_details_3d_kwhite_s.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\product_details_3d_kwhite_s.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_search.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_search.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_launch_pointer_s.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\launch_pointer_s.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_selector_boss_couple_bg.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\selector_boss_couple_bg.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_show_wait.jpg.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\show_wait.jpg"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_pull_arrow_down.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\drawable-hdpi-v4\\pull_arrow_down.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_selector_product_details_3d_kred.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\selector_product_details_3d_kred.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_pull_arrow_up.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\pull_arrow_up.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_product_details_3d_kyellow.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\product_details_3d_kyellow.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_search.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_search.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_fade_out.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\fade_out.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_selector_main_my.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\selector_main_my.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_jpush_popwin_layout.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\jPushSDK300\\build\\intermediates\\packaged_res\\debug\\layout\\jpush_popwin_layout.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_default_titlebar.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\default_titlebar.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_spinner_window_layout.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\spinner_window_layout.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_shape_main_menubar_badge_bg.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\shape_main_menubar_badge_bg.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_down.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\slide_in_down.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_add_shopping_bg_s.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_add_shopping_bg_s.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_dot_container_bg1.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\dot_container_bg1.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_show_wait.jpg.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\show_wait.jpg"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_pricre_help.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_pricre_help.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_product_details_3d_kyellow.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\product_details_3d_kyellow.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_add_shopping_success.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_add_shopping_success.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_my.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_my.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_left.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\slide_out_left.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_product_detail2_color.9.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\product_detail2_color.9.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_selector_main_order.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\selector_main_order.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_left.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\slide_in_left.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_main_seach.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_main_seach.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_dot_container_bg1.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\dot_container_bg1.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_jpush_ic_richpush_actionbar_back.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\jPushSDK300\\build\\intermediates\\packaged_res\\debug\\drawable-hdpi-v4\\jpush_ic_richpush_actionbar_back.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_version_update_dialog.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\version_update_dialog.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_shrink_out_center.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\shrink_out_center.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_add_shopping_success.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_add_shopping_success.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_product_specification_3d.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_product_specification_3d.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_anim_loading.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\anim_loading.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_jpush_richpush_btn_selector.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\jPushSDK300\\build\\intermediates\\packaged_res\\debug\\drawable-hdpi-v4\\jpush_richpush_btn_selector.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_search_s.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_search_s.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_product_specification_3d.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_product_specification_3d.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_product_details_3d_kred_s.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\product_details_3d_kred_s.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_menuitem.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_menuitem.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_product_details_3d_kwhite_s.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\product_details_3d_kwhite_s.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_anim_loading.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\anim_loading.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_selector_product_details_3d_kyellow.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\selector_product_details_3d_kyellow.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_menuitem.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_menuitem.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_shoppingcart_s.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_shoppingcart_s.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_grow_fade_in_from_bottom.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\grow_fade_in_from_bottom.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_fade_in.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\fade_in.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_porduct.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_porduct.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_default_progress_thumb.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\drawable-hdpi-v4\\default_progress_thumb.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_up.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\slide_in_up.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_order_s.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_order_s.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_product_details_3d_kred_s.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\product_details_3d_kred_s.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_my_s.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_my_s.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_order.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_order.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_detail_item_bg.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_detail_item_bg.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_details_shoppingcart.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_details_shoppingcart.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_main_layout.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\main_layout.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_share_icon.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\share_icon.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_add_shopping_bg.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_add_shopping_bg.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_selector_main_my.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\selector_main_my.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_couple_wmen.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_couple_wmen.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_default_titlebar.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\default_titlebar.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_product_details_3d_kred_s.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\product_details_3d_kred_s.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_popup_menu_item.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\popup_menu_item.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_default_flipper_content.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\default_flipper_content.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_launch_pointer.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\launch_pointer.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_grow_fade_in_from_bottom.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_jpush_ic_richpush_actionbar_divider.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\jPushSDK300\\build\\intermediates\\packaged_res\\debug\\drawable-hdpi-v4\\jpush_ic_richpush_actionbar_divider.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_default_progress.9.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\drawable-hdpi-v4\\default_progress.9.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_porduct_s.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_porduct_s.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_product_specification_addshopping.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_product_specification_addshopping.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_default_frame_content.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\default_frame_content.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_left.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\slide_out_left.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_add_shopping_bg.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_add_shopping_bg.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_couple_men.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_couple_men.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_up.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\slide_out_up.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_selector_spinner_item_bg.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\selector_spinner_item_bg.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_product_detail2_color.9.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\product_detail2_color.9.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_pricre_help.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_pricre_help.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_my_s.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_my_s.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_order.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_order.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_product_detail_color.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\product_detail_color.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_share_icon.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\share_icon.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_jpush_webview_layout.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\jPushSDK300\\build\\intermediates\\packaged_res\\debug\\layout\\jpush_webview_layout.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_add_shopping_success.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_add_shopping_success.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_default_progress.9.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\drawable-hdpi-v4\\default_progress.9.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_menuitem.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_menuitem.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_pdfviewer_layout.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\pdfviewer_layout.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_details_f.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_details_f.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_couple_wmen.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_couple_wmen.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_details_f.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_details_f.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_grow_fade_in_center.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\grow_fade_in_center.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_shrink_fade_out_from_bottom.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_couple_wmen.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_couple_wmen.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_boss_couple_product_specification_layout.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\boss_couple_product_specification_layout.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_product_specification_addshopping2.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_product_specification_addshopping2.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_check_negativebutton.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\check_negativebutton.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_main_del.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_main_del.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_menuitem_s.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_menuitem_s.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_pricre_help.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_pricre_help.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_couple_men.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_couple_men.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_pull_to_load_horizontalfooter.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\pull_to_load_horizontalfooter.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_dot_container_bg.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\dot_container_bg.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_boss_couple_product_specification_layout.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\boss_couple_product_specification_layout.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_list_selector_bg_focus.9.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\drawable-hdpi-v4\\list_selector_bg_focus.9.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_splash_layout.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\splash_layout.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_product_details_3d_kyellow.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\product_details_3d_kyellow.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_product_specification_addshopping.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_product_specification_addshopping.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_selector_product_details_3d_kred.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\selector_product_details_3d_kred.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_right.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\slide_in_right.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_default_frame_content.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\default_frame_content.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_product_details_3d_kyellow.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\product_details_3d_kyellow.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_pull_arrow_down.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\pull_arrow_down.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_order.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_order.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_gia_bargain_layout.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\gia_bargain_layout.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_back_button.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\back_button.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_spinner_item_layout.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\spinner_item_layout.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher.jpg.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.jpg"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_add_shoppingcart_success_dialog.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\add_shoppingcart_success_dialog.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_launch_image_3.jpg.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\launch_image_3.jpg"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_default_fragment_layout.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\default_fragment_layout.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_shrink_fade_out_from_bottom.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\shrink_fade_out_from_bottom.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_porduct.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_porduct.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_default_fragment_layout.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\default_fragment_layout.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_boss_product_specification_selectprice.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\boss_product_specification_selectprice.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_selector_main_shoppingcart.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\selector_main_shoppingcart.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_splash_image.jpg.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\splash_image.jpg"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_product_image_pw.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\product_image_pw.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_up.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\slide_in_up.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_version_update_dialog.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\version_update_dialog.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_check_negativebutton.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\check_negativebutton.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_shrink_fade_out.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\shrink_fade_out.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_product_detail2_color.9.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\product_detail2_color.9.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_detail_item_bg.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_detail_item_bg.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_detail_download.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_detail_download.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_add_shopping_bg_s.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_add_shopping_bg_s.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_pricre_save.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_pricre_save.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_shop_dise.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_shop_dise.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_product_detail_color.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\product_detail_color.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_product_specification_addshopping_no.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_product_specification_addshopping_no.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_details_shoppingcart.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_details_shoppingcart.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_details_f.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_details_f.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_my.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_my.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_main_del.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_main_del.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_splash_image.jpg.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\splash_image.jpg"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_popup_menu_dialog.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\popup_menu_dialog.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_default_swiperefresh_webview.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\default_swiperefresh_webview.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_details_f.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_details_f.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_product_specification_addshopping2.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_product_specification_addshopping2.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_left.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\slide_in_left.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_main_del.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_main_del.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_selector_spinner_item_bg.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\selector_spinner_item_bg.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_product_details_3d_kwhite_s.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\product_details_3d_kwhite_s.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_loading_dialog.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\loading_dialog.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_product_details_3d_kyellow_s.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\product_details_3d_kyellow_s.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_confirm_dialog.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\confirm_dialog.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_boss_product_3d_layout.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\boss_product_3d_layout.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_main_add.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_main_add.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_details_shoppingcart.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_details_shoppingcart.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_details_1.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_details_1.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_pull_to_load_footer.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\pull_to_load_footer.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_default_frame_layout.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\default_frame_layout.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_menuitem_s.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_menuitem_s.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_boss_product_3d_layout.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\boss_product_3d_layout.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_down.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\slide_out_down.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_default_progress_thumb.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\drawable-hdpi-v4\\default_progress_thumb.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_launch_pointer.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\launch_pointer.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_jpush_richpush_progressbar.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\jPushSDK300\\build\\intermediates\\packaged_res\\debug\\drawable-hdpi-v4\\jpush_richpush_progressbar.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_viewpager_layout.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\viewpager_layout.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_boss_product_specification_layout.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\boss_product_specification_layout.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_pricre_help.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_pricre_help.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_shape_main_menubar_badge_bg.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\shape_main_menubar_badge_bg.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_pull_to_refresh_horizontalheader.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\pull_to_refresh_horizontalheader.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_default_loading_indicator.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\default_loading_indicator.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_save_help.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_save_help.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_add_shopping_bg_s.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_add_shopping_bg_s.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_product_details_3d_kyellow_s.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\product_details_3d_kyellow_s.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_my.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_my.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_porduct_s.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_porduct_s.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_launch_image_3.jpg.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\launch_image_3.jpg"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_search_s.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_search_s.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_search_s.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_search_s.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_base_main_layout.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\base_main_layout.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_product_specification_addshopping.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_product_specification_addshopping.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_product_details_3d_kwhite.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\product_details_3d_kwhite.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_selector_product_details_3d_kyellow.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\selector_product_details_3d_kyellow.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.jpg.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\ic_launcher.jpg"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_down.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\anim\\slide_out_down.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_product_details_3d_kwhite.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\product_details_3d_kwhite.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_rotate_refresh.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\drawable-hdpi-v4\\rotate_refresh.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_order.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_order.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_viewpager_layout.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\viewpager_layout.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_main_add.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_main_add.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_launch_image_1.jpg.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\launch_image_1.jpg"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_selector_product_details_3d_kwhite.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\selector_product_details_3d_kwhite.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_base_main_layout.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\base_main_layout.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_confirm_dialog.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\confirm_dialog.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_product_details_3d_kyellow_s.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\product_details_3d_kyellow_s.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_download_progress_dialog.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\download_progress_dialog.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_main_search_s.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\main_search_s.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_back_button.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\back_button.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_pull_arrow_down.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\drawable-hdpi-v4\\pull_arrow_down.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_porduct.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\main_porduct.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_product_details_3d_kwhite.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\product_details_3d_kwhite.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher.jpg.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.jpg"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_main_webview_layout.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\main_webview_layout.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_boss_product_specification_layout.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\boss_product_specification_layout.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_dot_container_bg.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\dot_container_bg.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_loading_dialog.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\loading_dialog.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_spinner_item_layout.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\spinner_item_layout.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_selector_main_menuitem.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\selector_main_menuitem.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_tryon_layout.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\tryon_layout.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_default_tab_content.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\androidExtendLib2\\build\\intermediates\\packaged_res\\debug\\layout\\default_tab_content.xml"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_product_details_3d_kred.png.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\product_details_3d_kred.png"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_boss_product_specification_addshopping.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xhdpi\\boss_product_specification_addshopping.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_selector_boss_couple_bg.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\selector_boss_couple_bg.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_boss_details_1.png.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable-xxhdpi\\boss_details_1.png"
     },
     {
-        "merged": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\drawable_selector_boss_couple_font.xml.flat",
-        "source": "D:\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\drawable\\selector_boss_couple_font.xml"
+        "merged": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\res\\merged\\debug\\layout_boss_product_details_layout.xml.flat",
+        "source": "D:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\src\\main\\res\\layout\\boss_product_details_layout.xml"
     }
 ]
