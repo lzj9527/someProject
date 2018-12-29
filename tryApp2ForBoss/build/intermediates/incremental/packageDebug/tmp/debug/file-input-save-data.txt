@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Nov 10 13:54:49 CST 2018
+#Fri Nov 16 11:52:30 CST 2018
 20.base=D\:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 143.base=D\:\\zsmt\\TryApp2ForBoss-master\\tryApp2ForBoss\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 237.path=app/default/static/images/detailIcon.png
